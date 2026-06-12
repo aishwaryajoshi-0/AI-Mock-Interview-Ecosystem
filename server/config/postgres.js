@@ -25,7 +25,7 @@ const sequelize = new Sequelize(env.PG_DATABASE, env.PG_USER, env.PG_PASSWORD, {
 const testPostgresConnection = async () => {
   try {
     await sequelize.authenticate();
-    console.log('PostgreSQL connection established successfully');
+    console.log('PostgreSQL connected');
 
     // NEW: PostgreSQL setup
     if (env.NODE_ENV === 'development') {
@@ -35,7 +35,13 @@ const testPostgresConnection = async () => {
 
     return true;
   } catch (error) {
-    console.error('PostgreSQL connection failed:', error.message);
+    const reason =
+      error?.parent?.message ||
+      error?.original?.message ||
+      error?.message ||
+      error?.name ||
+      String(error);
+    console.error(`PostgreSQL connection failed: ${reason}`);
     return false;
   }
 };

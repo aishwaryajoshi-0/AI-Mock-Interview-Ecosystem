@@ -53,13 +53,33 @@ export const createRedisClient = () => {
     console.log('Redis connected');
   });
 
-  client.connect().catch((err) => {
-    console.warn(`Redis disabled for this run: ${err.message}`);
-  });
-
   return client;
 };
 
 const redisClient = createRedisClient();
+
+export const testRedisConnection = async () => {
+  if (!env.REDIS_ENABLED) {
+    console.log('Redis disabled; set REDIS_ENABLED=true to connect');
+    return false;
+  }
+
+  if (!redisClient) {
+    console.warn('Redis not configured');
+    return false;
+  }
+
+  try {
+    if (redisClient.status === 'wait') {
+      await redisClient.connect();
+    }
+    await redisClient.ping();
+    console.log('Redis ping successful');
+    return true;
+  } catch (error) {
+    console.warn(`Redis connection failed: ${error.message}`);
+    return false;
+  }
+};
 
 export { env, redisClient };
