@@ -27,6 +27,9 @@ const env = {
   AI_ENGINE_URL: process.env.AI_ENGINE_URL,
   LLM_API_KEY: process.env.LLM_API_KEY,
   POSTGRES_URI: process.env.POSTGRES_URI,
+  EMAIL_USER: process.env.EMAIL_USER,
+  EMAIL_PASS: process.env.EMAIL_PASS,
+  EMAIL_FROM: process.env.EMAIL_FROM,
   // NEW: PostgreSQL Configuration
   PG_HOST: process.env.PG_HOST || 'localhost',
   PG_PORT: process.env.PG_PORT || 5432,

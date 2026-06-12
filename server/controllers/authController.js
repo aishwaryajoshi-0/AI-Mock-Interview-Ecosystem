@@ -1,8 +1,23 @@
 import bcrypt from 'bcryptjs';
 import cloudinary from '../config/cloudinary.js';
 import User from '../models/User.js';
+import { sendLoginOtpEmail } from '../services/emailService.js';
 import { apiError, apiSuccess } from '../utils/apiResponse.js';
 import { generateToken } from '../utils/generateToken.js';
+
+const loginOtpStore = new Map();
+const OTP_EXPIRY_MS = 10 * 60 * 1000;
+
+const createOtp = () => String(Math.floor(100000 + Math.random() * 900000));
+
+const getSafeUser = (user) => ({
+  id: user._id,
+  name: user.name,
+  email: user.email,
+  role: user.role,
+  avatar: user.avatar,
+  resumeUrl: user.resumeUrl,
+});
 
 const uploadToCloudinary = (buffer, folder) => {
   return new Promise((resolve, reject) => {
@@ -49,8 +64,49 @@ export const login = async (req, res, next) => {
       return apiError(res, 'Invalid email or password', 401);
     }
 
+    const otp = createOtp();
+    const otpHash = await bcrypt.hash(otp, 10);
+    loginOtpStore.set(user._id.toString(), {
+      otpHash,
+      expiresAt: Date.now() + OTP_EXPIRY_MS,
+    });
+
+    await sendLoginOtpEmail({ to: user.email, name: user.name, otp });
+
+    return apiSuccess(res, { userId: user._id, email: user.email }, 'OTP sent to your email');
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const verifyLoginOtp = async (req, res, next) => {
+  try {
+    const { userId, otp } = req.body;
+    const otpRecord = loginOtpStore.get(userId);
+
+    if (!otpRecord) {
+      return apiError(res, 'OTP expired or not requested', 400);
+    }
+
+    if (otpRecord.expiresAt < Date.now()) {
+      loginOtpStore.delete(userId);
+      return apiError(res, 'OTP expired. Please sign in again', 400);
+    }
+
+    const isValidOtp = await bcrypt.compare(otp, otpRecord.otpHash);
+    if (!isValidOtp) {
+      return apiError(res, 'Invalid OTP', 401);
+    }
+
+    loginOtpStore.delete(userId);
+
+    const user = await User.findById(userId);
+    if (!user) {
+      return apiError(res, 'User not found', 404);
+    }
+
     const token = generateToken({ id: user._id });
-    return apiSuccess(res, { user: { id: user._id, name: user.name, email: user.email, role: user.role, avatar: user.avatar, resumeUrl: user.resumeUrl }, token }, 'Login successful');
+    return apiSuccess(res, { user: getSafeUser(user), token }, 'Login successful');
   } catch (error) {
     next(error);
   }
