@@ -33,6 +33,12 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (values) => {
     const data = await authService.register(values);
+    toast.success("OTP sent to your email");
+    return data;
+  };
+
+  const verifyRegisterOtp = async (payload) => {
+    const data = await authService.verifyRegisterOtp(payload);
     const sessionToken = data.token;
     localStorage.setItem("mockInterviewToken", sessionToken);
     localStorage.setItem("mockInterviewUser", JSON.stringify(data.user));
@@ -57,6 +63,7 @@ export const AuthProvider = ({ children }) => {
       verifyLoginOtp,
       logout,
       register,
+      verifyRegisterOtp,
       isAuthenticated: Boolean(user && token),
     }),
     [user, token]

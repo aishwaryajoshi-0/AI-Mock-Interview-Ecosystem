@@ -16,6 +16,11 @@ export const register = async (payload) => {
   return response.data.data;
 };
 
+export const verifyRegisterOtp = async (payload) => {
+  const response = await api.post(API_ENDPOINTS.VERIFY_REGISTER_OTP, payload);
+  return response.data.data;
+};
+
 export const getProfile = async () => {
   const response = await api.get(API_ENDPOINTS.PROFILE);
   return response.data.data;

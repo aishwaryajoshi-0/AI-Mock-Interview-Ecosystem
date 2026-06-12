@@ -2,6 +2,7 @@ export const API_ENDPOINTS = {
   LOGIN: "/auth/login",
   VERIFY_LOGIN_OTP: "/auth/verify-login-otp",
   REGISTER: "/auth/register",
+  VERIFY_REGISTER_OTP: "/auth/verify-register-otp",
   PROFILE: "/auth/profile",
   INTERVIEW_SESSIONS: "/api/interview/start",
   SUBMIT_ANSWER: "/api/interview/submit-answer",

@@ -20,3 +20,13 @@ export const verifyLoginOtpValidator = [
     .isNumeric()
     .withMessage('OTP must contain only numbers'),
 ];
+
+export const verifyRegisterOtpValidator = [
+  body('email').isEmail().withMessage('Valid email is required'),
+  body('otp')
+    .trim()
+    .isLength({ min: 6, max: 6 })
+    .withMessage('OTP must be 6 digits')
+    .isNumeric()
+    .withMessage('OTP must contain only numbers'),
+];

@@ -1,11 +1,12 @@
 import bcrypt from 'bcryptjs';
 import cloudinary from '../config/cloudinary.js';
 import User from '../models/User.js';
-import { sendLoginOtpEmail } from '../services/emailService.js';
+import { sendLoginOtpEmail, sendRegisterOtpEmail } from '../services/emailService.js';
 import { apiError, apiSuccess } from '../utils/apiResponse.js';
 import { generateToken } from '../utils/generateToken.js';
 
 const loginOtpStore = new Map();
+const registerOtpStore = new Map();
 const OTP_EXPIRY_MS = 10 * 60 * 1000;
 
 const createOtp = () => String(Math.floor(100000 + Math.random() * 900000));
@@ -36,16 +37,69 @@ const uploadToCloudinary = (buffer, folder) => {
 export const register = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
-    const existingUser = await User.findOne({ email });
+    const normalizedEmail = email.toLowerCase().trim();
+    const normalizedName = name.trim();
+    const existingUser = await User.findOne({ email: normalizedEmail });
     if (existingUser) {
       return apiError(res, 'Email already registered', 400);
     }
 
+    const otp = createOtp();
     const hashedPassword = await bcrypt.hash(password, 12);
-    const user = await User.create({ name, email, password: hashedPassword });
-    const token = generateToken({ id: user._id });
+    const otpHash = await bcrypt.hash(otp, 10);
 
-    return apiSuccess(res, { user: { id: user._id, name: user.name, email: user.email, role: user.role, avatar: user.avatar, resumeUrl: user.resumeUrl }, token }, 'Registration successful', 201);
+    registerOtpStore.set(normalizedEmail, {
+      name: normalizedName,
+      email: normalizedEmail,
+      password: hashedPassword,
+      otpHash,
+      expiresAt: Date.now() + OTP_EXPIRY_MS,
+    });
+
+    await sendRegisterOtpEmail({ to: normalizedEmail, name: normalizedName, otp });
+
+    return apiSuccess(res, { email: normalizedEmail }, 'OTP sent to your email', 202);
+  } catch (error) {
+    next(error);
+  }
+};
+
+export const verifyRegisterOtp = async (req, res, next) => {
+  try {
+    const { email, otp } = req.body;
+    const normalizedEmail = email.toLowerCase().trim();
+    const otpRecord = registerOtpStore.get(normalizedEmail);
+
+    if (!otpRecord) {
+      return apiError(res, 'OTP expired or not requested', 400);
+    }
+
+    if (otpRecord.expiresAt < Date.now()) {
+      registerOtpStore.delete(normalizedEmail);
+      return apiError(res, 'OTP expired. Please create your account again', 400);
+    }
+
+    const isValidOtp = await bcrypt.compare(otp, otpRecord.otpHash);
+    if (!isValidOtp) {
+      return apiError(res, 'Invalid OTP', 401);
+    }
+
+    const existingUser = await User.findOne({ email: normalizedEmail });
+    if (existingUser) {
+      registerOtpStore.delete(normalizedEmail);
+      return apiError(res, 'Email already registered', 400);
+    }
+
+    const user = await User.create({
+      name: otpRecord.name,
+      email: otpRecord.email,
+      password: otpRecord.password,
+    });
+
+    registerOtpStore.delete(normalizedEmail);
+
+    const token = generateToken({ id: user._id });
+    return apiSuccess(res, { user: getSafeUser(user), token }, 'Registration successful', 201);
   } catch (error) {
     next(error);
   }

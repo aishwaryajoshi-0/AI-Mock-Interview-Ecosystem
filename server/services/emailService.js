@@ -36,3 +36,25 @@ export const sendLoginOtpEmail = async ({ to, name, otp }) => {
     `,
   });
 };
+
+export const sendRegisterOtpEmail = async ({ to, name, otp }) => {
+  const transporter = createTransporter();
+  if (!transporter) {
+    throw new Error('Email is not configured');
+  }
+
+  await transporter.sendMail({
+    from: env.EMAIL_FROM || env.EMAIL_USER,
+    to,
+    subject: 'Verify your AI Mock Interview account',
+    text: `Hi ${name || 'there'}, your account verification OTP is ${otp}. It expires in 10 minutes.`,
+    html: `
+      <div style="font-family: Arial, sans-serif; line-height: 1.5;">
+        <p>Hi ${name || 'there'},</p>
+        <p>Your account verification OTP is:</p>
+        <p style="font-size: 28px; font-weight: 700; letter-spacing: 4px;">${otp}</p>
+        <p>This code expires in 10 minutes.</p>
+      </div>
+    `,
+  });
+};

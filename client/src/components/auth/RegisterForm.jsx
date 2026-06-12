@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Mail, Lock, User } from "lucide-react";
+import { KeyRound, Lock, Mail, User } from "lucide-react";
 import Button from "../ui/Button";
 import Input from "../ui/Input";
 import { matchPassword, required, validateEmail, validatePassword } from "../../utils/validators";
@@ -7,52 +8,88 @@ import useAuth from "../../hooks/useAuth";
 
 const RegisterForm = () => {
   const { register: signup, handleSubmit, watch, formState: { errors, isSubmitting } } = useForm();
-  const { register: registerAccount } = useAuth();
+  const { register: registerAccount, verifyRegisterOtp } = useAuth();
+  const [otpSession, setOtpSession] = useState(null);
   const password = watch("password", "");
 
   const onSubmit = async (values) => {
-    await registerAccount(values);
+    if (!otpSession) {
+      const data = await registerAccount(values);
+      setOtpSession({ email: data.email });
+      return;
+    }
+
+    await verifyRegisterOtp({ email: otpSession.email, otp: values.otp });
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
-      <Input
-        label="Full name"
-        placeholder="Jane Doe"
-        icon={<User size={18} />}
-        error={errors.name?.message}
-        {...signup("name", { required })}
-      />
-      <Input
-        label="Email"
-        type="email"
-        placeholder="you@example.com"
-        icon={<Mail size={18} />}
-        error={errors.email?.message}
-        {...signup("email", { required, validate: validateEmail })}
-      />
-      <Input
-        label="Password"
-        type="password"
-        placeholder="Create a password"
-        icon={<Lock size={18} />}
-        error={errors.password?.message}
-        {...signup("password", { required, validate: validatePassword })}
-      />
-      <Input
-        label="Confirm password"
-        type="password"
-        placeholder="Repeat your password"
-        icon={<Lock size={18} />}
-        error={errors.confirmPassword?.message}
-        {...signup("confirmPassword", {
-          required,
-          validate: (value) => matchPassword(value, password),
-        })}
-      />
+      {!otpSession ? (
+        <>
+          <Input
+            label="Full name"
+            placeholder="Jane Doe"
+            icon={<User size={18} />}
+            error={errors.name?.message}
+            {...signup("name", { required })}
+          />
+          <Input
+            label="Email"
+            type="email"
+            placeholder="you@example.com"
+            icon={<Mail size={18} />}
+            error={errors.email?.message}
+            {...signup("email", { required, validate: validateEmail })}
+          />
+          <Input
+            label="Password"
+            type="password"
+            placeholder="Create a password"
+            icon={<Lock size={18} />}
+            error={errors.password?.message}
+            {...signup("password", { required, validate: validatePassword })}
+          />
+          <Input
+            label="Confirm password"
+            type="password"
+            placeholder="Repeat your password"
+            icon={<Lock size={18} />}
+            error={errors.confirmPassword?.message}
+            {...signup("confirmPassword", {
+              required,
+              validate: (value) => matchPassword(value, password),
+            })}
+          />
+        </>
+      ) : (
+        <Input
+          label="OTP"
+          type="text"
+          inputMode="numeric"
+          placeholder="Enter 6-digit OTP"
+          icon={<KeyRound size={18} />}
+          error={errors.otp?.message}
+          {...signup("otp", {
+            required,
+            pattern: {
+              value: /^\d{6}$/,
+              message: "Enter the 6-digit OTP sent to your email.",
+            },
+          })}
+        />
+      )}
       <Button type="submit" className="w-full" disabled={isSubmitting}>
-        {isSubmitting ? "Creating account..." : "Create account"}
+        {isSubmitting ? (otpSession ? "Verifying..." : "Sending OTP...") : otpSession ? "Verify OTP" : "Create account"}
       </Button>
+      {otpSession && (
+        <button
+          type="button"
+          className="w-full text-sm font-medium text-brand-600 hover:text-brand-700"
+          onClick={() => setOtpSession(null)}
+        >
+          Use a different email
+        </button>
+      )}
     </form>
   );
 };
