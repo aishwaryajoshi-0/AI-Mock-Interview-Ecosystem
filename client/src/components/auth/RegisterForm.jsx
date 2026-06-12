@@ -10,16 +10,26 @@ const RegisterForm = () => {
   const { register: signup, handleSubmit, watch, formState: { errors, isSubmitting } } = useForm();
   const { register: registerAccount, verifyRegisterOtp } = useAuth();
   const [otpSession, setOtpSession] = useState(null);
+  const [formMessage, setFormMessage] = useState("");
+  const [formError, setFormError] = useState("");
   const password = watch("password", "");
 
   const onSubmit = async (values) => {
-    if (!otpSession) {
-      const data = await registerAccount(values);
-      setOtpSession({ email: data.email });
-      return;
-    }
+    setFormMessage("");
+    setFormError("");
 
-    await verifyRegisterOtp({ email: otpSession.email, otp: values.otp });
+    try {
+      if (!otpSession) {
+        const data = await registerAccount(values);
+        setOtpSession({ email: data.email });
+        setFormMessage(`OTP sent to ${data.email}`);
+        return;
+      }
+
+      await verifyRegisterOtp({ email: otpSession.email, otp: values.otp });
+    } catch (error) {
+      setFormError(error?.response?.data?.message || error.message || "Something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -81,6 +91,8 @@ const RegisterForm = () => {
       <Button type="submit" className="w-full" disabled={isSubmitting}>
         {isSubmitting ? (otpSession ? "Verifying..." : "Sending OTP...") : otpSession ? "Verify OTP" : "Create account"}
       </Button>
+      {formMessage && <p className="text-center text-sm font-medium text-emerald-600">{formMessage}</p>}
+      {formError && <p className="text-center text-sm font-medium text-rose-600">{formError}</p>}
       {otpSession && (
         <button
           type="button"

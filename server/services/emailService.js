@@ -8,9 +8,12 @@ const createTransporter = () => {
 
   return nodemailer.createTransport({
     service: 'gmail',
+    connectionTimeout: 10000,
+    greetingTimeout: 10000,
+    socketTimeout: 15000,
     auth: {
       user: env.EMAIL_USER,
-      pass: env.EMAIL_PASS,
+      pass: env.EMAIL_PASS.replace(/\s/g, ''),
     },
   });
 };
