@@ -11,6 +11,7 @@ const env = {
   CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
   CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
+  REDIS_ENABLED: process.env.REDIS_ENABLED === 'true',
   REDIS_HOST: process.env.REDIS_HOST || '127.0.0.1',
   REDIS_PORT: process.env.REDIS_PORT || 6379,
   REDIS_PASSWORD: process.env.REDIS_PASSWORD || '',
@@ -29,7 +30,7 @@ const env = {
 };
 
 export const createRedisClient = () => {
-  if (!env.REDIS_HOST || !env.REDIS_PORT) {
+  if (!env.REDIS_ENABLED || !env.REDIS_HOST || !env.REDIS_PORT) {
     return null;
   }
 
@@ -37,14 +38,23 @@ export const createRedisClient = () => {
     host: env.REDIS_HOST,
     port: env.REDIS_PORT,
     password: env.REDIS_PASSWORD || undefined,
+    lazyConnect: true,
+    maxRetriesPerRequest: 1,
+    retryStrategy(times) {
+      return times <= 3 ? Math.min(times * 250, 1000) : null;
+    },
   });
 
   client.on('error', (err) => {
-    console.error('Redis connection error:', err);
+    console.warn(`Redis unavailable: ${err.message}`);
   });
 
-  client.on('connect', () => {
+  client.on('ready', () => {
     console.log('Redis connected');
+  });
+
+  client.connect().catch((err) => {
+    console.warn(`Redis disabled for this run: ${err.message}`);
   });
 
   return client;
