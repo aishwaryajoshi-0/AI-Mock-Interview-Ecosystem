@@ -3,6 +3,14 @@ import Redis from 'ioredis';
 
 dotenv.config({ path: '.env' });
 
+const withTimeout = (promise, ms, label) =>
+  Promise.race([
+    promise,
+    new Promise((_, reject) => {
+      setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+    }),
+  ]);
+
 const env = {
   PORT: process.env.PORT || 5000,
   MONGO_URI: process.env.MONGO_URI,
@@ -12,11 +20,13 @@ const env = {
   CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
   REDIS_ENABLED: process.env.REDIS_ENABLED === 'true',
+  REDIS_URL: process.env.REDIS_URL,
   REDIS_HOST: process.env.REDIS_HOST || '127.0.0.1',
   REDIS_PORT: process.env.REDIS_PORT || 6379,
   REDIS_PASSWORD: process.env.REDIS_PASSWORD || '',
   AI_ENGINE_URL: process.env.AI_ENGINE_URL,
   LLM_API_KEY: process.env.LLM_API_KEY,
+  POSTGRES_URI: process.env.POSTGRES_URI,
   // NEW: PostgreSQL Configuration
   PG_HOST: process.env.PG_HOST || 'localhost',
   PG_PORT: process.env.PG_PORT || 5432,
@@ -34,16 +44,22 @@ export const createRedisClient = () => {
     return null;
   }
 
-  const client = new Redis({
-    host: env.REDIS_HOST,
-    port: env.REDIS_PORT,
-    password: env.REDIS_PASSWORD || undefined,
+  const redisOptions = {
     lazyConnect: true,
     maxRetriesPerRequest: 1,
     retryStrategy(times) {
       return times <= 3 ? Math.min(times * 250, 1000) : null;
     },
-  });
+  };
+
+  const client = env.REDIS_URL
+    ? new Redis(env.REDIS_URL, redisOptions)
+    : new Redis({
+        host: env.REDIS_HOST,
+        port: env.REDIS_PORT,
+        password: env.REDIS_PASSWORD || undefined,
+        ...redisOptions,
+      });
 
   client.on('error', (err) => {
     console.warn(`Redis unavailable: ${err.message}`);
@@ -71,9 +87,9 @@ export const testRedisConnection = async () => {
 
   try {
     if (redisClient.status === 'wait') {
-      await redisClient.connect();
+      await withTimeout(redisClient.connect(), 10000, 'Redis connection');
     }
-    await redisClient.ping();
+    await withTimeout(redisClient.ping(), 10000, 'Redis ping');
     console.log('Redis ping successful');
     return true;
   } catch (error) {

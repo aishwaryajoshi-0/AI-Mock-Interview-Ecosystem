@@ -6,6 +6,8 @@ export const connectDatabase = async () => {
   const connectOptions = {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 10000,
+    connectTimeoutMS: 10000,
   };
 
   if (env.MONGO_URI) {

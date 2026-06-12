@@ -1,6 +1,14 @@
 import { v2 as cloudinary } from 'cloudinary';
 import { env } from './env.js';
 
+const withTimeout = (promise, ms, label) =>
+  Promise.race([
+    promise,
+    new Promise((_, reject) => {
+      setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+    }),
+  ]);
+
 cloudinary.config({
   cloud_name: env.CLOUDINARY_CLOUD_NAME,
   api_key: env.CLOUDINARY_API_KEY,
@@ -14,7 +22,7 @@ export const testCloudinaryConnection = async () => {
   }
 
   try {
-    await cloudinary.api.ping();
+    await withTimeout(cloudinary.api.ping(), 10000, 'Cloudinary ping');
     console.log('Cloudinary connected');
     return true;
   } catch (error) {
