@@ -1,0 +1,65 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [22.x]
+        python-version: [3.12]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Frontend install and build
+        working-directory: ./client
+        run: |
+          npm install
+          npm run build
+          npm test --if-present
+
+      - name: Backend install and test
+        working-directory: ./server
+        run: |
+          npm install
+          npm test --if-present
+
+      - name: AI service install and test
+        working-directory: ./ai-mock-interview/docker
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pytest test_ai_service.py
+
+      - name: Build client Docker image
+        working-directory: ./ai-mock-interview/docker
+        run: |
+          docker build --file Dockerfile.client --tag ai-mock-interview-client:ci ..
+
+      - name: Build server Docker image
+        working-directory: ./ai-mock-interview/docker
+        run: |
+          docker build --file Dockerfile.server --tag ai-mock-interview-server:ci ..
+
+      - name: Build AI service Docker image
+        working-directory: ./ai-mock-interview/docker
+        run: |
+          docker build --file Dockerfile.ai --tag ai-mock-interview-ai:ci .

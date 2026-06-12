@@ -1,0 +1,22 @@
+import api from "./api";
+import { API_ENDPOINTS } from "../constants/apiEndpoints";
+
+export const login = async (payload) => {
+  const response = await api.post(API_ENDPOINTS.LOGIN, payload);
+  return response.data;
+};
+
+export const register = async (payload) => {
+  const response = await api.post(API_ENDPOINTS.REGISTER, payload);
+  return response.data;
+};
+
+export const getProfile = async () => {
+  const response = await api.get(API_ENDPOINTS.PROFILE);
+  return response.data;
+};
+
+export const logout = async () => {
+  await api.post("/auth/logout");
+  localStorage.removeItem("mockInterviewToken");
+};
