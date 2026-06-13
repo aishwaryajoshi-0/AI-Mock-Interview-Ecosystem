@@ -1,5 +1,15 @@
 import express from 'express';
-import { register, verifyRegisterOtp, login, verifyLoginOtp, logout, getProfile, updateProfile, uploadAvatar } from '../controllers/authController.js';
+import {
+  registerSendOTP,
+  registerVerifyOTP,
+  loginSendOTP,
+  loginVerifyOTP,
+  resendOTP,
+  logout,
+  getProfile,
+  updateProfile,
+  uploadAvatar,
+} from '../controllers/authController.js';
 import { authMiddleware } from '../middleware/authMiddleware.js';
 import { validate } from '../middleware/validate.js';
 import { registerValidator, verifyRegisterOtpValidator, loginValidator, verifyLoginOtpValidator } from '../validators/authValidator.js';
@@ -7,10 +17,14 @@ import { uploadAvatar as avatarUpload, uploadErrorHandler } from '../middleware/
 
 const router = express.Router();
 
-router.post('/register', registerValidator, validate, register);
-router.post('/verify-register-otp', verifyRegisterOtpValidator, validate, verifyRegisterOtp);
-router.post('/login', loginValidator, validate, login);
-router.post('/verify-login-otp', verifyLoginOtpValidator, validate, verifyLoginOtp);
+// OTP Routes
+router.post('/register/send-otp', registerValidator, validate, registerSendOTP);
+router.post('/register/verify-otp', verifyRegisterOtpValidator, validate, registerVerifyOTP);
+router.post('/login/send-otp', loginValidator, validate, loginSendOTP);
+router.post('/login/verify-otp', verifyLoginOtpValidator, validate, loginVerifyOTP);
+router.post('/resend-otp', resendOTP);
+
+// Protected Routes
 router.post('/logout', authMiddleware, logout);
 router.get('/profile', authMiddleware, getProfile);
 router.put('/profile', authMiddleware, updateProfile);

@@ -1,8 +1,8 @@
 export const API_ENDPOINTS = {
-  LOGIN: "/auth/login",
-  VERIFY_LOGIN_OTP: "/auth/verify-login-otp",
-  REGISTER: "/auth/register",
-  VERIFY_REGISTER_OTP: "/auth/verify-register-otp",
+  LOGIN: "/auth/login/send-otp",
+  VERIFY_LOGIN_OTP: "/auth/login/verify-otp",
+  REGISTER: "/auth/register/send-otp",
+  VERIFY_REGISTER_OTP: "/auth/register/verify-otp",
   PROFILE: "/auth/profile",
   INTERVIEW_SESSIONS: "/api/interview/start",
   SUBMIT_ANSWER: "/api/interview/submit-answer",

@@ -1,5 +1,5 @@
 // MODIFIED
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { ROUTES } from "../constants/routes";
 import Home from "../pages/Home";
 import Login from "../pages/Login";

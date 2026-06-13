@@ -4,10 +4,14 @@ import { connectDatabase } from './config/db.js';
 import { testPostgresConnection } from './config/postgres.js';
 import { env, testRedisConnection } from './config/env.js';
 import { testCloudinaryConnection } from './config/cloudinary.js';
+import { initializeRedis } from './utils/redisClient.js';
 
 const startServer = async () => {
   try {
-    // NEW: PostgreSQL setup
+    // NEW: Initialize Redis for OTP storage
+    initializeRedis();
+
+    // PostgreSQL setup
     await connectDatabase();
     await testCloudinaryConnection();
     await testRedisConnection();
