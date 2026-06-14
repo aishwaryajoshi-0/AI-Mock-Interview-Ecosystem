@@ -29,4 +29,5 @@ export const getProfile = async () => {
 export const logout = async () => {
   await api.post("/auth/logout");
   localStorage.removeItem("mockInterviewToken");
+  localStorage.removeItem("mockInterviewUser");
 };

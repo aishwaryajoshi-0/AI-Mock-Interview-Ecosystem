@@ -12,6 +12,7 @@ export const connectDatabase = async () => {
 
   if (env.MONGO_URI) {
     try {
+      console.log('Connecting to MongoDB...');
       await mongoose.connect(env.MONGO_URI, connectOptions);
       console.log('MongoDB connected');
       return;
@@ -22,6 +23,10 @@ export const connectDatabase = async () => {
 
   if (process.env.NODE_ENV === 'production') {
     throw new Error('MongoDB connection failed and no fallback is available in production');
+  }
+
+  if (process.env.USE_MEMORY_MONGO !== 'true') {
+    throw new Error('MongoDB connection failed. Check MONGO_URI in server/.env, or set USE_MEMORY_MONGO=true for local fallback.');
   }
 
   const mongod = await MongoMemoryServer.create();

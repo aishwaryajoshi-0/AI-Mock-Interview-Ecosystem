@@ -8,21 +8,32 @@ import { initializeRedis } from './utils/redisClient.js';
 
 const startServer = async () => {
   try {
-    // NEW: Initialize Redis for OTP storage
     initializeRedis();
 
-    // PostgreSQL setup
     await connectDatabase();
-    await testCloudinaryConnection();
-    await testRedisConnection();
-    const pgConnected = await testPostgresConnection();
-
-    if (!pgConnected) {
-      console.warn('Server starting without PostgreSQL connection');
-    }
 
     const server = app.listen(env.PORT, () => {
       console.log(`Server listening on port ${env.PORT}`);
+    });
+
+    Promise.allSettled([
+      testCloudinaryConnection(),
+      testRedisConnection(),
+      testPostgresConnection(),
+    ]).then((results) => {
+      const [cloudinaryResult, redisResult, postgresResult] = results;
+
+      if (cloudinaryResult.status === 'rejected') {
+        console.warn(`Cloudinary health check failed: ${cloudinaryResult.reason?.message || cloudinaryResult.reason}`);
+      }
+
+      if (redisResult.status === 'rejected') {
+        console.warn(`Redis health check failed: ${redisResult.reason?.message || redisResult.reason}`);
+      }
+
+      if (postgresResult.status === 'rejected' || postgresResult.value === false) {
+        console.warn('Server running without PostgreSQL connection');
+      }
     });
 
     server.on('error', (error) => {

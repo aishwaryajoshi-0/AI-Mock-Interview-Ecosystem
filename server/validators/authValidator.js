@@ -12,7 +12,7 @@ export const loginValidator = [
 ];
 
 export const verifyLoginOtpValidator = [
-  body('userId').notEmpty().withMessage('User id is required'),
+  body('email').isEmail().withMessage('Valid email is required'),
   body('otp')
     .trim()
     .isLength({ min: 6, max: 6 })

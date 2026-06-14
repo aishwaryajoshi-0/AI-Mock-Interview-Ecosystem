@@ -60,8 +60,8 @@ const LoginForm = () => {
       const result = await loginVerifyOTP(email, otp);
 
       // Store token and user data
-      localStorage.setItem('token', result.token);
-      localStorage.setItem('user', JSON.stringify(result.user));
+      localStorage.setItem('mockInterviewToken', result.token);
+      localStorage.setItem('mockInterviewUser', JSON.stringify(result.user));
 
       setMessage('Login successful!');
       setTimeout(() => navigate('/dashboard'), 1500);

@@ -1,129 +1,109 @@
-import Redis from 'ioredis';
-import { env } from '../config/env.js';
+import { env, redisClient } from '../config/env.js';
 
-let redisClient = null;
+const memoryOtpStore = new Map();
 
-/**
- * Initialize Redis client
- * @returns {Redis|null} Redis instance or null if disabled
- */
+const withTimeout = (promise, ms, label) =>
+  Promise.race([
+    promise,
+    new Promise((_, reject) => {
+      setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms);
+    }),
+  ]);
+
 export const initializeRedis = () => {
   if (!env.REDIS_ENABLED) {
     console.log('Redis is disabled');
     return null;
   }
 
-  if (redisClient) {
-    return redisClient;
-  }
-
-  try {
-    if (env.REDIS_URL) {
-      redisClient = new Redis(env.REDIS_URL);
-    } else {
-      redisClient = new Redis({
-        host: env.REDIS_HOST,
-        port: env.REDIS_PORT,
-        password: env.REDIS_PASSWORD || undefined,
-        retryStrategy: (times) => {
-          const delay = Math.min(times * 50, 2000);
-          return delay;
-        },
-      });
-    }
-
-    redisClient.on('connect', () => {
-      console.log('Redis connected');
-    });
-
-    redisClient.on('error', (err) => {
-      console.error('Redis error:', err);
-    });
-
-    return redisClient;
-  } catch (error) {
-    console.error('Failed to initialize Redis:', error);
-    return null;
-  }
-};
-
-/**
- * Get Redis client instance
- * @returns {Redis|null}
- */
-export const getRedisClient = () => {
-  if (!redisClient && env.REDIS_ENABLED) {
-    initializeRedis();
-  }
   return redisClient;
 };
 
-/**
- * Store OTP in Redis with TTL
- * @param {string} type - 'register' or 'login'
- * @param {string} email - User email
- * @param {object} data - Data to store
- * @param {number} ttl - Time to live in seconds (default 300 = 5 minutes)
- */
-export const setOTP = async (type, email, data, ttl = 300) => {
+export const getRedisClient = () => redisClient;
+
+const getReadyRedisClient = async () => {
   const client = getRedisClient();
   if (!client) {
-    throw new Error('Redis is not available');
+    throw new Error('Redis is not available. Check REDIS_ENABLED and Redis connection settings.');
   }
 
-  const key = `otp:${type}:${email.toLowerCase()}`;
-  const jsonData = JSON.stringify(data);
+  if (client.status === 'wait') {
+    await withTimeout(client.connect(), 10000, 'Redis connection');
+  }
+
+  return client;
+};
+
+const getOtpKey = (type, email) => `otp:${type}:${email.toLowerCase()}`;
+
+const setMemoryOTP = (key, data, ttl) => {
+  const expiresAt = Date.now() + ttl * 1000;
+  memoryOtpStore.set(key, { data, expiresAt });
+};
+
+const getMemoryOTP = (key) => {
+  const record = memoryOtpStore.get(key);
+  if (!record) return null;
+
+  if (record.expiresAt <= Date.now()) {
+    memoryOtpStore.delete(key);
+    return null;
+  }
+
+  return record.data;
+};
+
+const shouldUseMemoryFallback = () => env.NODE_ENV !== 'production';
+
+export const setOTP = async (type, email, data, ttl = 300) => {
+  const key = getOtpKey(type, email);
 
   try {
-    await client.setex(key, ttl, jsonData);
+    const client = await getReadyRedisClient();
+    await client.setex(key, ttl, JSON.stringify(data));
     return true;
   } catch (error) {
     console.error('Error setting OTP in Redis:', error);
+    if (shouldUseMemoryFallback()) {
+      console.warn('Using in-memory OTP fallback for development');
+      setMemoryOTP(key, data, ttl);
+      return true;
+    }
     throw error;
   }
 };
 
-/**
- * Get OTP data from Redis
- * @param {string} type - 'register' or 'login'
- * @param {string} email - User email
- * @returns {object|null}
- */
 export const getOTP = async (type, email) => {
-  const client = getRedisClient();
-  if (!client) {
-    throw new Error('Redis is not available');
-  }
-
-  const key = `otp:${type}:${email.toLowerCase()}`;
+  const key = getOtpKey(type, email);
 
   try {
+    const client = await getReadyRedisClient();
     const data = await client.get(key);
     return data ? JSON.parse(data) : null;
   } catch (error) {
     console.error('Error getting OTP from Redis:', error);
+    if (shouldUseMemoryFallback()) {
+      console.warn('Reading OTP from in-memory fallback for development');
+      return getMemoryOTP(key);
+    }
     throw error;
   }
 };
 
-/**
- * Delete OTP from Redis
- * @param {string} type - 'register' or 'login'
- * @param {string} email - User email
- */
 export const deleteOTP = async (type, email) => {
-  const client = getRedisClient();
-  if (!client) {
-    throw new Error('Redis is not available');
-  }
-
-  const key = `otp:${type}:${email.toLowerCase()}`;
+  const key = getOtpKey(type, email);
 
   try {
+    const client = await getReadyRedisClient();
     await client.del(key);
+    memoryOtpStore.delete(key);
     return true;
   } catch (error) {
     console.error('Error deleting OTP from Redis:', error);
+    if (shouldUseMemoryFallback()) {
+      memoryOtpStore.delete(key);
+      return true;
+    }
     throw error;
   }
 };

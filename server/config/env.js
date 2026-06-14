@@ -1,7 +1,12 @@
 import dotenv from 'dotenv';
 import Redis from 'ioredis';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-dotenv.config({ path: '.env' });
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const withTimeout = (promise, ms, label) =>
   Promise.race([
@@ -13,13 +18,13 @@ const withTimeout = (promise, ms, label) =>
 
 const env = {
   PORT: process.env.PORT || 5000,
-  MONGO_URI: process.env.MONGO_URI,
+  MONGO_URI: process.env.MONGO_URI || process.env.MONGODB_URI,
   JWT_SECRET: process.env.JWT_SECRET,
-  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || '7d',
+  JWT_EXPIRES_IN: process.env.JWT_EXPIRES_IN || process.env.JWT_EXPIRE || '7d',
   CLOUDINARY_CLOUD_NAME: process.env.CLOUDINARY_CLOUD_NAME,
   CLOUDINARY_API_KEY: process.env.CLOUDINARY_API_KEY,
   CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
-  REDIS_ENABLED: process.env.REDIS_ENABLED === 'true',
+  REDIS_ENABLED: process.env.REDIS_ENABLED !== 'false',
   REDIS_URL: process.env.REDIS_URL,
   REDIS_HOST: process.env.REDIS_HOST || '127.0.0.1',
   REDIS_PORT: process.env.REDIS_PORT || 6379,
@@ -31,11 +36,11 @@ const env = {
   EMAIL_PASS: process.env.EMAIL_PASS,
   EMAIL_FROM: process.env.EMAIL_FROM,
   // NEW: PostgreSQL Configuration
-  PG_HOST: process.env.PG_HOST || 'localhost',
-  PG_PORT: process.env.PG_PORT || 5432,
-  PG_USER: process.env.PG_USER || 'postgres',
-  PG_PASSWORD: process.env.PG_PASSWORD,
-  PG_DATABASE: process.env.PG_DATABASE || 'interview_platform',
+  PG_HOST: process.env.PG_HOST || process.env.POSTGRES_HOST || 'localhost',
+  PG_PORT: process.env.PG_PORT || process.env.POSTGRES_PORT || 5432,
+  PG_USER: process.env.PG_USER || process.env.POSTGRES_USER || 'postgres',
+  PG_PASSWORD: process.env.PG_PASSWORD || process.env.POSTGRES_PASSWORD,
+  PG_DATABASE: process.env.PG_DATABASE || process.env.POSTGRES_DB || 'interview_platform',
   // NEW: OpenAI Configuration
   OPENAI_API_KEY: process.env.OPENAI_API_KEY,
   OPENAI_MODEL: process.env.OPENAI_MODEL || 'gpt-4o',
