@@ -16,6 +16,8 @@ import memoryRoutes from './routes/memory.routes.js';
 import skillProfileRoutes from './routes/skillProfile.routes.js';
 import companyRoutes from './routes/company.routes.js';
 import recommendationRoutes from './routes/recommendation.routes.js';
+import profileRoutes from './routes/profile.routes.js';
+import progressRoutes from './routes/progress.routes.js';
 
 const app = express();
 
@@ -40,6 +42,8 @@ app.use('/api/memory', memoryRoutes);
 app.use('/api/skill-profile', skillProfileRoutes);
 app.use('/api/companies', companyRoutes);
 app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/profile', profileRoutes);
+app.use('/api/progress', progressRoutes);
 
 app.use(errorHandler);
 

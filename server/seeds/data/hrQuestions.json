@@ -1,0 +1,3192 @@
+[
+  {
+    "text": "Tell me about yourself.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Provide a concise summary of your professional background, highlighting key experiences, skills, and achievements relevant to the position. Keep it under 2 minutes.",
+    "keywords": ["background", "experience", "skills", "achievements", "professional"],
+    "tags": ["introduction", "self-introduction"]
+  },
+  {
+    "text": "What are your greatest strengths?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Identify 2-3 key strengths relevant to the job and provide specific examples of how you've demonstrated these strengths in past experiences.",
+    "keywords": ["strengths", "skills", "abilities", "examples", "achievements"],
+    "tags": ["strengths", "self-assessment"]
+  },
+  {
+    "text": "What is your greatest weakness?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Choose a real weakness that doesn't disqualify you from the job, explain how you're working to improve it, and show self-awareness and growth mindset.",
+    "keywords": ["weakness", "improvement", "growth", "self-awareness", "development"],
+    "tags": ["weakness", "self-assessment"]
+  },
+  {
+    "text": "Why do you want to work for this company?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Demonstrate research about the company, align your values with the company's mission, and explain how the role fits your career goals.",
+    "keywords": ["company", "mission", "values", "career goals", "research"],
+    "tags": ["motivation", "company-research"]
+  },
+  {
+    "text": "Where do you see yourself in 5 years?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Show ambition while being realistic, align your goals with the company's growth, and demonstrate commitment to professional development.",
+    "keywords": ["career", "goals", "growth", "development", "future"],
+    "tags": ["career-goals", "future-planning"]
+  },
+  {
+    "text": "Describe a challenging situation you faced at work and how you handled it.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Use the STAR method: describe the Situation, Task, Action you took, and Result. Focus on problem-solving and positive outcomes.",
+    "keywords": ["challenge", "problem-solving", "star method", "solution", "outcome"],
+    "tags": ["behavioral", "problem-solving"]
+  },
+  {
+    "text": "How do you handle stress and pressure?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Share specific stress management techniques, provide examples of high-pressure situations you've handled, and demonstrate emotional intelligence.",
+    "keywords": ["stress", "pressure", "management", "emotional intelligence", "coping"],
+    "tags": ["stress-management", "emotional-intelligence"]
+  },
+  {
+    "text": "Tell me about a time you worked in a team.",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your role in the team, how you collaborated with others, any challenges you faced together, and the successful outcome of the project.",
+    "keywords": ["teamwork", "collaboration", "communication", "cooperation", "project"],
+    "tags": ["teamwork", "collaboration"]
+  },
+  {
+    "text": "How do you handle conflict with colleagues?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Emphasize open communication, active listening, finding common ground, and focusing on solutions rather than personal differences.",
+    "keywords": ["conflict", "resolution", "communication", "listening", "compromise"],
+    "tags": ["conflict-resolution", "communication"]
+  },
+  {
+    "text": "What motivates you at work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Identify intrinsic and extrinsic motivators such as learning opportunities, meaningful work, recognition, or team success.",
+    "keywords": ["motivation", "drive", "inspiration", "goals", "satisfaction"],
+    "tags": ["motivation", "self-awareness"]
+  },
+  {
+    "text": "Describe your leadership style.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your approach to leading others, provide examples of how you've motivated teams or mentored colleagues, and adaptability to different situations.",
+    "keywords": ["leadership", "management", "mentoring", "team motivation", "style"],
+    "tags": ["leadership", "management"]
+  },
+  {
+    "text": "How do you prioritize your work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your prioritization framework, how you handle competing deadlines, and tools or methods you use to stay organized.",
+    "keywords": ["prioritization", "organization", "deadlines", "time management", "efficiency"],
+    "tags": ["time-management", "organization"]
+  },
+  {
+    "text": "Tell me about a time you failed.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Be honest about a failure, take responsibility, explain what you learned from it, and how you've applied those lessons to improve.",
+    "keywords": ["failure", "learning", "growth", "responsibility", "improvement"],
+    "tags": ["failure", "learning", "growth-mindset"]
+  },
+  {
+    "text": "Why are you leaving your current position?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Focus on positive reasons for seeking new opportunities such as growth, new challenges, or better alignment with career goals rather than criticizing current employer.",
+    "keywords": ["career change", "growth", "opportunity", "goals", "transition"],
+    "tags": ["career-change", "motivation"]
+  },
+  {
+    "text": "What do you know about our company culture?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Demonstrate research about the company's values, work environment, and reputation, and explain why you would thrive in that culture.",
+    "keywords": ["culture", "values", "environment", "research", "fit"],
+    "tags": ["company-culture", "research"]
+  },
+  {
+    "text": "How do you handle constructive criticism?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Express openness to feedback, describe how you process and learn from criticism, and provide examples of how you've improved based on feedback.",
+    "keywords": ["feedback", "criticism", "improvement", "learning", "growth"],
+    "tags": ["feedback", "growth-mindset"]
+  },
+  {
+    "text": "Describe a time you had to adapt to change.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Share a specific example of adapting to change, your thought process during the transition, and the positive outcome of your adaptability.",
+    "keywords": ["adaptability", "change", "flexibility", "transition", "resilience"],
+    "tags": ["adaptability", "change-management"]
+  },
+  {
+    "text": "What are your salary expectations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Research market rates for the position, provide a range based on your research and experience, and express flexibility based on the total compensation package.",
+    "keywords": ["salary", "compensation", "market rate", "negotiation", "expectations"],
+    "tags": ["salary", "negotiation"]
+  },
+  {
+    "text": "How do you stay current with industry trends?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Mention specific resources like publications, podcasts, conferences, or online courses, and explain how you apply this knowledge to your work.",
+    "keywords": ["learning", "trends", "industry", "development", "resources"],
+    "tags": ["learning", "industry-trends"]
+  },
+  {
+    "text": "Tell me about a time you had to work with a difficult person.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe the situation professionally, explain how you maintained professionalism, focused on work goals, and found ways to collaborate effectively.",
+    "keywords": ["difficult person", "professionalism", "collaboration", "conflict", "communication"],
+    "tags": ["conflict-resolution", "professionalism"]
+  },
+  {
+    "text": "What questions do you have for us?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Prepare thoughtful questions about the role, team, company culture, challenges, or growth opportunities that demonstrate your interest and research.",
+    "keywords": ["questions", "interest", "research", "curiosity", "engagement"],
+    "tags": ["questions", "engagement"]
+  },
+  {
+    "text": "Describe your ideal work environment.",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Describe the type of culture, management style, and work conditions where you thrive, while showing flexibility and adaptability.",
+    "keywords": ["environment", "culture", "management", "conditions", "preferences"],
+    "tags": ["work-environment", "preferences"]
+  },
+  {
+    "text": "How do you handle tight deadlines?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your approach to time management under pressure, how you communicate about deadlines, and strategies you use to deliver quality work on time.",
+    "keywords": ["deadlines", "pressure", "time management", "communication", "quality"],
+    "tags": ["time-management", "pressure"]
+  },
+  {
+    "text": "What makes you unique compared to other candidates?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Highlight specific combinations of skills, experiences, or perspectives that set you apart, and connect these to the value you would bring to the role.",
+    "keywords": ["unique", "differentiation", "value", "skills", "experience"],
+    "tags": ["differentiation", "value-proposition"]
+  },
+  {
+    "text": "Describe a time you took initiative.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Share a specific example where you identified an opportunity or problem and took action without being asked, describing the impact of your initiative.",
+    "keywords": ["initiative", "proactive", "action", "impact", "leadership"],
+    "tags": ["initiative", "leadership"]
+  },
+  {
+    "text": "How do you build relationships with coworkers?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your approach to building rapport, communication habits, team participation, and how you contribute to a positive work environment.",
+    "keywords": ["relationships", "rapport", "communication", "teamwork", "collaboration"],
+    "tags": ["teamwork", "relationships"]
+  },
+  {
+    "text": "What do you consider your biggest career achievement?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe a significant accomplishment, your role in achieving it, the challenges you overcame, and the impact it had on your organization.",
+    "keywords": ["achievement", "accomplishment", "impact", "success", "pride"],
+    "tags": ["achievement", "success"]
+  },
+  {
+    "text": "How do you handle multiple projects simultaneously?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your project management approach, prioritization methods, communication strategies, and tools you use to track progress across multiple initiatives.",
+    "keywords": ["projects", "multitasking", "prioritization", "organization", "tracking"],
+    "tags": ["project-management", "organization"]
+  },
+  {
+    "text": "Describe your communication style.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Explain how you adapt your communication to different audiences and situations, your preferences for written vs verbal communication, and examples of effective communication.",
+    "keywords": ["communication", "style", "adaptability", "verbal", "written"],
+    "tags": ["communication", "style"]
+  },
+  {
+    "text": "How do you make decisions?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your decision-making framework, how you gather information, weigh options, consider stakeholders, and take responsibility for outcomes.",
+    "keywords": ["decision-making", "analysis", "stakeholders", "responsibility", "framework"],
+    "tags": ["decision-making", "problem-solving"]
+  },
+  {
+    "text": "Tell me about a time you had to learn something quickly.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe a situation requiring rapid learning, your approach to acquiring new knowledge, how you applied it, and the results.",
+    "keywords": ["learning", "adaptability", "quick learning", "application", "results"],
+    "tags": ["learning", "adaptability"]
+  },
+  {
+    "text": "What do you look for in a manager?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Describe qualities like clear communication, support, feedback, and opportunities for growth, while showing flexibility to work with different management styles.",
+    "keywords": ["manager", "leadership", "support", "communication", "growth"],
+    "tags": ["management", "preferences"]
+  },
+  {
+    "text": "How do you handle repetitive tasks?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Explain how you maintain quality and attention to detail, strategies for staying motivated, and how you might look for ways to improve efficiency.",
+    "keywords": ["repetitive", "quality", "attention to detail", "motivation", "efficiency"],
+    "tags": ["work-habits", "quality"]
+  },
+  {
+    "text": "Describe a time you had to persuade someone.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the situation, your approach to persuasion, how you addressed concerns, and the outcome of your efforts.",
+    "keywords": ["persuasion", "influence", "communication", "negotiation", "outcome"],
+    "tags": ["persuasion", "communication"]
+  },
+  {
+    "text": "What would your previous coworkers say about you?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Highlight positive qualities your colleagues would mention, provide specific examples that support these perceptions, and demonstrate self-awareness.",
+    "keywords": ["coworkers", "teamwork", "reputation", "collaboration", "feedback"],
+    "tags": ["teamwork", "reputation"]
+  },
+  {
+    "text": "How do you handle disagreement with your manager?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you would express disagreement respectfully, provide data or reasoning, listen to their perspective, and work toward a solution.",
+    "keywords": ["disagreement", "manager", "respect", "communication", "solution"],
+    "tags": ["conflict-resolution", "communication"]
+  },
+  {
+    "text": "What are your long-term career goals?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Share your career aspirations, how this role aligns with those goals, and your commitment to growing with the organization.",
+    "keywords": ["career", "goals", "aspirations", "growth", "alignment"],
+    "tags": ["career-goals", "future-planning"]
+  },
+  {
+    "text": "Describe a time you had to work with limited resources.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the constraints, how you prioritized and innovated to achieve results, and what you learned from the experience.",
+    "keywords": ["resources", "constraints", "innovation", "prioritization", "results"],
+    "tags": ["resourcefulness", "problem-solving"]
+  },
+  {
+    "text": "How do you maintain work-life balance?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your boundaries, time management strategies, and how you maintain productivity while taking care of personal well-being.",
+    "keywords": ["work-life balance", "boundaries", "well-being", "productivity", "time management"],
+    "tags": ["work-life-balance", "well-being"]
+  },
+  {
+    "text": "What frustrates you at work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Identify professional frustrations (not personal), explain how you constructively handle these situations, and maintain professionalism.",
+    "keywords": ["frustration", "professionalism", "handling", "constructive", "challenges"],
+    "tags": ["emotional-intelligence", "professionalism"]
+  },
+  {
+    "text": "Describe a time you had to deliver bad news.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you prepared, communicated clearly and empathetically, focused on solutions, and followed up appropriately.",
+    "keywords": ["bad news", "communication", "empathy", "solutions", "delivery"],
+    "tags": ["communication", "empathy"]
+  },
+  {
+    "text": "How do you approach networking?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your networking philosophy, how you build and maintain professional relationships, and the value you place on professional connections.",
+    "keywords": ["networking", "relationships", "professional", "connections", "value"],
+    "tags": ["networking", "career-development"]
+  },
+  {
+    "text": "What role do you typically take in group settings?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your natural role in teams (leader, supporter, innovator, etc.), how you adapt based on team needs, and examples of your contributions.",
+    "keywords": ["team role", "collaboration", "adaptability", "contribution", "group dynamics"],
+    "tags": ["teamwork", "group-dynamics"]
+  },
+  {
+    "text": "How do you handle ambiguity?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you seek clarity when needed, make decisions with incomplete information, and remain flexible as situations evolve.",
+    "keywords": ["ambiguity", "clarity", "flexibility", "decision-making", "adaptability"],
+    "tags": ["adaptability", "decision-making"]
+  },
+  {
+    "text": "Describe a time you had to work with someone from a different background.",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Highlight your openness to different perspectives, how you found common ground, and what you learned from the experience.",
+    "keywords": ["diversity", "background", "perspectives", "collaboration", "learning"],
+    "tags": ["diversity", "teamwork"]
+  },
+  {
+    "text": "What do you do when you're not at work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Share hobbies and interests that demonstrate well-roundedness, skills that might transfer to work, or activities that show work-life balance.",
+    "keywords": ["hobbies", "interests", "work-life balance", "activities", "well-rounded"],
+    "tags": ["personal", "work-life-balance"]
+  },
+  {
+    "text": "How do you approach feedback you disagree with?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you listen openly, ask clarifying questions, consider the perspective, and respond professionally even when you disagree.",
+    "keywords": ["feedback", "disagreement", "listening", "professionalism", "perspective"],
+    "tags": ["feedback", "professionalism"]
+  },
+  {
+    "text": "Describe a time you had to meet a challenging goal.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Use the STAR method to describe the goal, your planning and execution, obstacles you overcame, and the final outcome.",
+    "keywords": ["goal", "challenge", "planning", "execution", "outcome"],
+    "tags": ["goal-setting", "achievement"]
+  },
+  {
+    "text": "What would you do if you saw a coworker behaving unethically?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Describe your commitment to ethical behavior, how you would address the situation appropriately through proper channels, and the importance of integrity.",
+    "keywords": ["ethics", "integrity", "reporting", "professionalism", "values"],
+    "tags": ["ethics", "integrity"]
+  },
+  {
+    "text": "How do you stay organized?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe specific tools, systems, or habits you use to stay organized, prioritize tasks, and manage your time effectively.",
+    "keywords": ["organization", "tools", "systems", "prioritization", "time management"],
+    "tags": ["organization", "time-management"]
+  },
+  {
+    "text": "Describe a time you had to compromise.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the situation, your priorities, how you found middle ground, and the outcome of the compromise.",
+    "keywords": ["compromise", "negotiation", "middle ground", "priorities", "outcome"],
+    "tags": ["compromise", "negotiation"]
+  },
+  {
+    "text": "What motivates you to do your best work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Identify intrinsic and extrinsic factors that drive your performance, such as meaningful work, recognition, growth opportunities, or team success.",
+    "keywords": ["motivation", "performance", "drive", "excellence", "factors"],
+    "tags": ["motivation", "performance"]
+  },
+  {
+    "text": "How do you handle being micromanaged?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you would proactively communicate, build trust through reliability, and have a constructive conversation about management style.",
+    "keywords": ["micromanagement", "trust", "communication", "proactive", "reliability"],
+    "tags": ["management", "communication"]
+  },
+  {
+    "text": "Describe a time you had to learn a new skill for a project.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the skill needed, your learning approach, how you applied it to the project, and the results achieved.",
+    "keywords": ["learning", "skill development", "application", "project", "results"],
+    "tags": ["learning", "skill-development"]
+  },
+  {
+    "text": "What do you think is the most important trait for success in this role?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Identify a key trait relevant to the position, explain why it's important, and provide examples of how you demonstrate this trait.",
+    "keywords": ["trait", "success", "role", "importance", "example"],
+    "tags": ["self-assessment", "role-understanding"]
+  },
+  {
+    "text": "How do you handle working with remote teams?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your communication strategies, tools you use, how you build relationships remotely, and methods for maintaining collaboration.",
+    "keywords": ["remote", "communication", "collaboration", "tools", "relationships"],
+    "tags": ["remote-work", "collaboration"]
+  },
+  {
+    "text": "Describe a time you had to present to a group.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your preparation, presentation approach, how you engaged the audience, handled questions, and the outcome.",
+    "keywords": ["presentation", "communication", "preparation", "engagement", "audience"],
+    "tags": ["presentation", "communication"]
+  },
+  {
+    "text": "What do you do when you make a mistake?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe taking responsibility, communicating transparently, fixing the issue, learning from the experience, and preventing recurrence.",
+    "keywords": ["mistake", "responsibility", "transparency", "learning", "prevention"],
+    "tags": ["accountability", "learning"]
+  },
+  {
+    "text": "How do you approach continuous learning?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your learning habits, resources you use, how you identify skill gaps, and how you apply new knowledge.",
+    "keywords": ["continuous learning", "development", "resources", "application", "growth"],
+    "tags": ["learning", "development"]
+  },
+  {
+    "text": "Describe a time you had to work under pressure.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the pressure situation, how you maintained focus and quality, your stress management techniques, and the outcome.",
+    "keywords": ["pressure", "stress management", "focus", "quality", "outcome"],
+    "tags": ["pressure", "stress-management"]
+  },
+  {
+    "text": "What makes a team successful?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Identify key factors like clear communication, shared goals, trust, diversity of skills, and strong leadership, with examples.",
+    "keywords": ["team success", "communication", "goals", "trust", "leadership"],
+    "tags": ["teamwork", "leadership"]
+  },
+  {
+    "text": "How do you handle competing priorities?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your prioritization framework, how you communicate with stakeholders, and how you manage expectations when resources are limited.",
+    "keywords": ["priorities", "competing", "framework", "communication", "stakeholders"],
+    "tags": ["prioritization", "time-management"]
+  },
+  {
+    "text": "Describe a time you had to say no to a request.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the situation, how you communicated your refusal professionally, offered alternatives, and maintained the relationship.",
+    "keywords": ["saying no", "boundaries", "communication", "alternatives", "professionalism"],
+    "tags": ["boundaries", "communication"]
+  },
+  {
+    "text": "What do you value most in a workplace?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Identify key values like integrity, innovation, collaboration, or growth, and explain why these are important to you.",
+    "keywords": ["values", "workplace", "importance", "culture", "alignment"],
+    "tags": ["values", "motivation"]
+  },
+  {
+    "text": "How do you approach problem-solving?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your problem-solving methodology, how you gather information, generate solutions, evaluate options, and implement decisions.",
+    "keywords": ["problem-solving", "methodology", "analysis", "solutions", "implementation"],
+    "tags": ["problem-solving", "methodology"]
+  },
+  {
+    "text": "Describe a time you had to mentor someone.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your mentoring approach, how you identified needs, provided guidance, and the growth you observed in the mentee.",
+    "keywords": ["mentoring", "guidance", "growth", "leadership", "development"],
+    "tags": ["mentoring", "leadership"]
+  },
+  {
+    "text": "What do you think sets great employees apart from good ones?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Identify qualities like initiative, continuous improvement, emotional intelligence, and going beyond expectations with examples.",
+    "keywords": ["great employees", "qualities", "initiative", "improvement", "excellence"],
+    "tags": ["self-assessment", "excellence"]
+  },
+  {
+    "text": "How do you handle working with different personality types?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your adaptability, how you identify and respect different working styles, and strategies for effective collaboration.",
+    "keywords": ["personality types", "adaptability", "working styles", "collaboration", "respect"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to rebuild trust.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the situation that damaged trust, your approach to rebuilding it through consistent actions, and the outcome of your efforts.",
+    "keywords": ["trust", "rebuilding", "consistency", "actions", "outcome"],
+    "tags": ["trust", "conflict-resolution"]
+  },
+  {
+    "text": "What do you do to prepare for an important meeting?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your preparation process including research, agenda setting, material preparation, and mental preparation.",
+    "keywords": ["preparation", "meeting", "research", "agenda", "materials"],
+    "tags": ["preparation", "professionalism"]
+  },
+  {
+    "text": "How do you handle criticism from someone you don't respect?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain how you separate the message from the messenger, evaluate the feedback objectively, and respond professionally regardless of personal feelings.",
+    "keywords": ["criticism", "professionalism", "objectivity", "feedback", "separation"],
+    "tags": ["professionalism", "emotional-intelligence"]
+  },
+  {
+    "text": "Describe a time you had to work with incomplete information.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you made reasonable assumptions, sought additional information when possible, and remained flexible as new information emerged.",
+    "keywords": ["incomplete information", "assumptions", "flexibility", "decision-making", "adaptability"],
+    "tags": ["decision-making", "adaptability"]
+  },
+  {
+    "text": "What do you think is the biggest challenge facing our industry?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Demonstrate industry knowledge by identifying a significant challenge, explaining its impact, and suggesting potential approaches to address it.",
+    "keywords": ["industry", "challenge", "knowledge", "impact", "solutions"],
+    "tags": ["industry-knowledge", "insight"]
+  },
+  {
+    "text": "How do you maintain motivation during difficult projects?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your motivation strategies, how you break down large tasks, celebrate small wins, and keep the end goal in mind.",
+    "keywords": ["motivation", "difficult projects", "strategies", "progress", "goals"],
+    "tags": ["motivation", "resilience"]
+  },
+  {
+    "text": "Describe a time you had to adapt your communication style.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the situation, how you identified the need to adapt, the changes you made, and the improved outcome.",
+    "keywords": ["communication", "adaptation", "style", "audience", "outcome"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "What do you look for in a company?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like mission alignment, growth opportunities, culture, leadership, and work-life balance that are important to you.",
+    "keywords": ["company", "factors", "alignment", "growth", "culture"],
+    "tags": ["motivation", "company-research"]
+  },
+  {
+    "text": "How do you handle working with tight budgets?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your approach to prioritization, cost-conscious decision-making, creative problem-solving, and communication about budget constraints.",
+    "keywords": ["budget", "constraints", "prioritization", "cost-conscious", "communication"],
+    "tags": ["resourcefulness", "problem-solving"]
+  },
+  {
+    "text": "Describe a time you had to delegate work.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you assessed team capabilities, assigned tasks appropriately, provided support, and ensured successful completion.",
+    "keywords": ["delegation", "team capabilities", "assignment", "support", "completion"],
+    "tags": ["leadership", "delegation"]
+  },
+  {
+    "text": "What do you do when you don't know the answer to a question?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe how you acknowledge what you don't know, commit to finding the answer, and follow up appropriately.",
+    "keywords": ["unknown", "acknowledgment", "commitment", "follow-up", "honesty"],
+    "tags": ["honesty", "learning"]
+  },
+  {
+    "text": "How do you approach building trust with a new team?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your approach to building relationships, demonstrating reliability, communicating openly, and contributing to team success.",
+    "keywords": ["trust", "new team", "relationships", "reliability", "communication"],
+    "tags": ["teamwork", "trust"]
+  },
+  {
+    "text": "Describe a time you had to handle a dissatisfied customer.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you listened empathetically, acknowledged their concerns, took ownership, and worked toward a satisfactory resolution.",
+    "keywords": ["customer", "dissatisfaction", "empathy", "resolution", "ownership"],
+    "tags": ["customer-service", "communication"]
+  },
+  {
+    "text": "What do you think about working overtime?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Express willingness when needed for important projects, while emphasizing efficiency and work-life balance during normal operations.",
+    "keywords": ["overtime", "willingness", "efficiency", "work-life balance", "priorities"],
+    "tags": ["work-habits", "work-life-balance"]
+  },
+  {
+    "text": "How do you stay motivated when doing repetitive work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you focus on quality improvement, find efficiency opportunities, and connect the work to larger goals.",
+    "keywords": ["repetitive work", "motivation", "quality", "efficiency", "goals"],
+    "tags": ["motivation", "work-habits"]
+  },
+  {
+    "text": "Describe a time you had to work with a difficult client.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you maintained professionalism, understood their needs, communicated clearly, and achieved a positive outcome.",
+    "keywords": ["client", "difficult", "professionalism", "communication", "outcome"],
+    "tags": ["client-relations", "communication"]
+  },
+  {
+    "text": "What do you think is the key to successful collaboration?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like clear communication, mutual respect, shared goals, and complementary skills with examples.",
+    "keywords": ["collaboration", "communication", "respect", "goals", "skills"],
+    "tags": ["teamwork", "collaboration"]
+  },
+  {
+    "text": "How do you handle receiving praise?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe how you accept praise graciously, share credit with team members when appropriate, and use positive feedback as motivation.",
+    "keywords": ["praise", "gracious", "credit", "motivation", "team"],
+    "tags": ["emotional-intelligence", "teamwork"]
+  },
+  {
+    "text": "Describe a time you had to make a quick decision.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the time pressure, your decision-making process, the rationale for your choice, and the outcome.",
+    "keywords": ["quick decision", "time pressure", "process", "rationale", "outcome"],
+    "tags": ["decision-making", "pressure"]
+  },
+  {
+    "text": "What do you do to ensure quality in your work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your quality control processes, attention to detail, review methods, and commitment to excellence.",
+    "keywords": ["quality", "attention to detail", "review", "excellence", "processes"],
+    "tags": ["quality", "work-habits"]
+  },
+  {
+    "text": "How do you approach learning from failures?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your reflective process, how you identify lessons learned, and how you apply those insights to improve future performance.",
+    "keywords": ["failure", "learning", "reflection", "lessons", "improvement"],
+    "tags": ["learning", "growth-mindset"]
+  },
+  {
+    "text": "Describe a time you had to work with limited supervision.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you took initiative, managed your time, communicated progress, and delivered results independently.",
+    "keywords": ["supervision", "initiative", "time management", "communication", "independence"],
+    "tags": ["initiative", "independence"]
+  },
+  {
+    "text": "What do you think is the most important skill for this role?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Identify a key skill relevant to the position, explain why it's critical, and provide evidence of your proficiency in this area.",
+    "keywords": ["skill", "role", "importance", "proficiency", "evidence"],
+    "tags": ["self-assessment", "role-understanding"]
+  },
+  {
+    "text": "How do you handle working across different time zones?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your communication strategies, scheduling considerations, and methods for maintaining collaboration across time differences.",
+    "keywords": ["time zones", "communication", "scheduling", "collaboration", "global"],
+    "tags": ["remote-work", "collaboration"]
+  },
+  {
+    "text": "Describe a time you had to give difficult feedback.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your preparation, how you delivered the feedback constructively, focused on behavior not personality, and followed up appropriately.",
+    "keywords": ["feedback", "difficult", "constructive", "behavior", "follow-up"],
+    "tags": ["feedback", "communication"]
+  },
+  {
+    "text": "What do you do to stay productive?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your productivity strategies, time management techniques, focus methods, and how you avoid distractions.",
+    "keywords": ["productivity", "strategies", "time management", "focus", "distractions"],
+    "tags": ["productivity", "time-management"]
+  },
+  {
+    "text": "How do you approach building professional relationships?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your approach to networking, building rapport, maintaining connections, and adding value to professional relationships.",
+    "keywords": ["relationships", "networking", "rapport", "connections", "value"],
+    "tags": ["networking", "relationships"]
+  },
+  {
+    "text": "Describe a time you had to handle a crisis.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the crisis situation, your immediate response, how you communicated with stakeholders, the resolution, and lessons learned.",
+    "keywords": ["crisis", "response", "communication", "resolution", "lessons"],
+    "tags": ["crisis-management", "leadership"]
+  },
+  {
+    "text": "What do you think about company loyalty?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Express commitment to organizations that invest in their employees, while acknowledging that loyalty is a two-way street based on mutual value.",
+    "keywords": ["loyalty", "commitment", "investment", "mutual value", "relationship"],
+    "tags": ["career-goals", "values"]
+  },
+  {
+    "text": "How do you handle working with people who have different communication styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your adaptability, how you identify different styles, adjust your approach, and ensure effective understanding.",
+    "keywords": ["communication styles", "adaptability", "adjustment", "understanding", "flexibility"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to take on additional responsibilities.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the situation, how you stepped up, managed the increased workload, and the positive outcome of your contribution.",
+    "keywords": ["responsibilities", "stepping up", "workload", "contribution", "outcome"],
+    "tags": ["initiative", "leadership"]
+  },
+  {
+    "text": "What do you do when you feel overwhelmed?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your coping strategies, how you prioritize tasks, seek support when needed, and maintain perspective during stressful periods.",
+    "keywords": ["overwhelmed", "coping", "prioritization", "support", "perspective"],
+    "tags": ["stress-management", "self-awareness"]
+  },
+  {
+    "text": "How do you approach giving recognition to others?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "easy",
+    "idealAnswer": "Describe how you identify achievements, give timely and specific recognition, and ensure credit is shared appropriately.",
+    "keywords": ["recognition", "achievements", "timely", "specific", "credit"],
+    "tags": ["leadership", "teamwork"]
+  },
+  {
+    "text": "Describe a time you had to work with a cross-functional team.",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the team composition, your role, how you bridged different perspectives, and the successful collaboration outcome.",
+    "keywords": ["cross-functional", "collaboration", "perspectives", "bridging", "outcome"],
+    "tags": ["teamwork", "collaboration"]
+  },
+  {
+    "text": "What do you think is the biggest risk in this role?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Identify potential risks relevant to the position, explain your awareness of them, and describe how you would mitigate these risks.",
+    "keywords": ["risk", "awareness", "mitigation", "challenges", "preparation"],
+    "tags": ["risk-management", "role-understanding"]
+  },
+  {
+    "text": "How do you handle working with people who have different priorities?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different perspectives, find common ground, negotiate priorities, and align on shared goals.",
+    "keywords": ["priorities", "perspectives", "common ground", "negotiation", "alignment"],
+    "tags": ["teamwork", "negotiation"]
+  },
+  {
+    "text": "Describe a time you had to learn from a mistake.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the mistake, your reflection process, the lessons learned, and how you applied those lessons to improve.",
+    "keywords": ["mistake", "reflection", "lessons", "improvement", "application"],
+    "tags": ["learning", "growth-mindset"]
+  },
+  {
+    "text": "What do you do to maintain professional relationships?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your approach to staying in touch, adding value, showing appreciation, and nurturing professional connections over time.",
+    "keywords": ["relationships", "maintenance", "value", "appreciation", "nurturing"],
+    "tags": ["networking", "relationships"]
+  },
+  {
+    "text": "How do you approach setting goals?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your goal-setting framework, how you ensure goals are SMART, track progress, and adjust as needed.",
+    "keywords": ["goals", "framework", "SMART", "progress", "adjustment"],
+    "tags": ["goal-setting", "planning"]
+  },
+  {
+    "text": "Describe a time you had to work with a challenging deadline.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain the deadline challenge, your planning and execution, how you managed stress, and the final outcome.",
+    "keywords": ["deadline", "planning", "execution", "stress", "outcome"],
+    "tags": ["time-management", "pressure"]
+  },
+  {
+    "text": "What do you think is the key to professional growth?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like continuous learning, seeking feedback, taking on challenges, and building relationships with examples.",
+    "keywords": ["growth", "learning", "feedback", "challenges", "relationships"],
+    "tags": ["career-development", "growth"]
+  },
+  {
+    "text": "How do you handle working with people who have different work ethics?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you maintain your standards, lead by example, address performance issues constructively, and focus on team outcomes.",
+    "keywords": ["work ethics", "standards", "example", "constructive", "outcomes"],
+    "tags": ["teamwork", "leadership"]
+  },
+  {
+    "text": "Describe a time you had to advocate for your ideas.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Explain your idea, how you built support, presented your case persuasively, and the outcome of your advocacy.",
+    "keywords": ["advocacy", "ideas", "support", "persuasion", "outcome"],
+    "tags": ["communication", "leadership"]
+  },
+  {
+    "text": "What do you do when you disagree with company policy?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Describe how you would express concerns through appropriate channels, focus on business impact, and respect the final decision.",
+    "keywords": ["policy", "disagreement", "channels", "impact", "respect"],
+    "tags": ["professionalism", "communication"]
+  },
+  {
+    "text": "How do you approach building your professional network?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your networking strategy, how you add value to relationships, maintain connections, and leverage your network appropriately.",
+    "keywords": ["networking", "strategy", "value", "maintenance", "leverage"],
+    "tags": ["networking", "career-development"]
+  },
+  {
+    "text": "Describe a time you had to work with limited authority.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you influenced others without formal authority, built consensus, and achieved results through collaboration.",
+    "keywords": ["authority", "influence", "consensus", "collaboration", "results"],
+    "tags": ["leadership", "influence"]
+  },
+  {
+    "text": "What do you think is the most important leadership quality?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify a key leadership quality like empathy, vision, integrity, or communication, and explain why it's critical with examples.",
+    "keywords": ["leadership", "quality", "empathy", "vision", "integrity"],
+    "tags": ["leadership", "values"]
+  },
+  {
+    "text": "How do you handle working with people who have different communication preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you identify preferences, adapt your style, ensure clarity, and accommodate different communication needs.",
+    "keywords": ["communication preferences", "adaptation", "clarity", "accommodation", "flexibility"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project without clear requirements.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain how you gathered information, made reasonable assumptions, communicated uncertainties, and adapted as requirements became clearer.",
+    "keywords": ["requirements", "uncertainty", "assumptions", "communication", "adaptation"],
+    "tags": ["project-management", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're meeting expectations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe how you clarify expectations, seek regular feedback, track your performance, and proactively address any gaps.",
+    "keywords": ["expectations", "clarification", "feedback", "performance", "proactive"],
+    "tags": ["performance", "communication"]
+  },
+  {
+    "text": "How do you approach working with people from different generations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your respect for different perspectives, how you find common ground, learn from different experiences, and bridge generational gaps.",
+    "keywords": ["generations", "perspectives", "common ground", "learning", "bridging"],
+    "tags": ["diversity", "teamwork"]
+  },
+  {
+    "text": "Describe a time you had to handle a personnel issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the issue, your investigation process, how you addressed it fairly and professionally, and the outcome.",
+    "keywords": ["personnel issue", "investigation", "fairness", "professionalism", "outcome"],
+    "tags": ["leadership", "management"]
+  },
+  {
+    "text": "What do you think is the key to job satisfaction?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like meaningful work, growth opportunities, recognition, good relationships, and work-life balance with examples.",
+    "keywords": ["satisfaction", "meaningful work", "growth", "recognition", "balance"],
+    "tags": ["motivation", "satisfaction"]
+  },
+  {
+    "text": "How do you handle working with people who have different problem-solving approaches?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you value diverse approaches, find complementary strengths, integrate different methods, and reach better solutions together.",
+    "keywords": ["problem-solving", "diversity", "complementary", "integration", "solutions"],
+    "tags": ["teamwork", "problem-solving"]
+  },
+  {
+    "text": "Describe a time you had to make a decision with incomplete data.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the information gap, your decision framework, how you managed risk, and the outcome of your decision.",
+    "keywords": ["incomplete data", "decision framework", "risk", "outcome", "judgment"],
+    "tags": ["decision-making", "risk-management"]
+  },
+  {
+    "text": "What do you do to maintain your professional reputation?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you deliver quality work, maintain integrity, build strong relationships, and consistently meet commitments.",
+    "keywords": ["reputation", "quality", "integrity", "relationships", "commitments"],
+    "tags": ["professionalism", "reputation"]
+  },
+  {
+    "text": "How do you approach working with people who have different cultural backgrounds?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your cultural sensitivity, how you learn about different norms, respect differences, and find common ground.",
+    "keywords": ["cultural background", "sensitivity", "norms", "respect", "common ground"],
+    "tags": ["diversity", "teamwork"]
+  },
+  {
+    "text": "Describe a time you had to handle a budget cut.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Explain how you prioritized essential activities, found efficiencies, communicated transparently, and maintained morale during the cut.",
+    "keywords": ["budget cut", "prioritization", "efficiency", "communication", "morale"],
+    "tags": ["resourcefulness", "leadership"]
+  },
+  {
+    "text": "What do you think is the biggest challenge facing new employees?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Identify challenges like learning curve, building relationships, understanding culture, and proving value with strategies to address them.",
+    "keywords": ["new employees", "challenges", "learning", "relationships", "culture"],
+    "tags": ["onboarding", "career-development"]
+  },
+  {
+    "text": "How do you handle working with people who have different risk tolerances?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different risk perspectives, find balanced approaches, communicate trade-offs, and reach consensus.",
+    "keywords": ["risk tolerance", "perspectives", "balance", "trade-offs", "consensus"],
+    "tags": ["teamwork", "decision-making"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with changing requirements.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain how you adapted to changes, communicated impacts, managed stakeholder expectations, and delivered successfully despite changes.",
+    "keywords": ["changing requirements", "adaptation", "communication", "stakeholders", "delivery"],
+    "tags": ["project-management", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're continuously improving?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your reflection practices, feedback seeking, skill development, and how you apply lessons learned to improve performance.",
+    "keywords": ["improvement", "reflection", "feedback", "development", "application"],
+    "tags": ["continuous-improvement", "learning"]
+  },
+  {
+    "text": "How do you approach working with people who have different working hours?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your scheduling flexibility, communication strategies, and methods for maintaining collaboration despite time differences.",
+    "keywords": ["working hours", "flexibility", "scheduling", "communication", "collaboration"],
+    "tags": ["remote-work", "collaboration"]
+  },
+  {
+    "text": "Describe a time you had to handle a security issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the security concern, your immediate response, how you communicated with stakeholders, the resolution, and preventive measures implemented.",
+    "keywords": ["security", "response", "communication", "resolution", "prevention"],
+    "tags": ["crisis-management", "security"]
+  },
+  {
+    "text": "What do you think is the key to successful remote work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like communication, discipline, collaboration tools, work-life boundaries, and trust with examples.",
+    "keywords": ["remote work", "communication", "discipline", "tools", "boundaries"],
+    "tags": ["remote-work", "productivity"]
+  },
+  {
+    "text": "How do you handle working with people who have different levels of experience?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you respect all experience levels, mentor when appropriate, learn from others, and create inclusive team dynamics.",
+    "keywords": ["experience levels", "respect", "mentoring", "learning", "inclusion"],
+    "tags": ["teamwork", "leadership"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with a distributed team.",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "hard",
+    "idealAnswer": "Explain your communication strategies, collaboration tools, how you built team cohesion, and managed project delivery across locations.",
+    "keywords": ["distributed team", "communication", "collaboration", "cohesion", "delivery"],
+    "tags": ["remote-work", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're meeting stakeholder needs?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you identify stakeholders, understand their needs, communicate regularly, and deliver value that meets expectations.",
+    "keywords": ["stakeholders", "needs", "communication", "value", "expectations"],
+    "tags": ["stakeholder-management", "communication"]
+  },
+  {
+    "text": "How do you approach working with people who have different communication speeds?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you adapt your pace, ensure understanding, allow time for processing, and find effective communication rhythms.",
+    "keywords": ["communication speed", "adaptation", "understanding", "processing", "rhythm"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a public relations issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the issue, your response strategy, how you communicated with the public, the resolution, and lessons learned.",
+    "keywords": ["public relations", "strategy", "communication", "resolution", "lessons"],
+    "tags": ["communication", "crisis-management"]
+  },
+  {
+    "text": "What do you think is the key to successful change management?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear communication, stakeholder engagement, training, support, and celebrating milestones with examples.",
+    "keywords": ["change management", "communication", "engagement", "training", "support"],
+    "tags": ["change-management", "leadership"]
+  },
+  {
+    "text": "How do you handle working with people who have different decision-making styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different styles, adapt your approach, find common ground, and reach decisions collaboratively.",
+    "keywords": ["decision-making styles", "adaptation", "common ground", "collaboration", "decisions"],
+    "tags": ["teamwork", "decision-making"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with a tight budget.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain your budget management approach, cost-saving strategies, how you prioritized spending, and delivered value within constraints.",
+    "keywords": ["budget", "management", "cost-saving", "prioritization", "value"],
+    "tags": ["project-management", "resourcefulness"]
+  },
+  {
+    "text": "What do you do to ensure you're aligned with organizational goals?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand organizational objectives, align your work, measure impact, and adjust to support strategic priorities.",
+    "keywords": ["organizational goals", "alignment", "objectives", "impact", "strategy"],
+    "tags": ["alignment", "strategy"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different approaches, find effective resolution methods, and adapt to achieve positive outcomes.",
+    "keywords": ["conflict resolution", "styles", "adaptation", "methods", "outcomes"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a compliance issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the compliance concern, your investigation, corrective actions taken, communication with relevant parties, and preventive measures.",
+    "keywords": ["compliance", "investigation", "corrective action", "communication", "prevention"],
+    "tags": ["compliance", "risk-management"]
+  },
+  {
+    "text": "What do you think is the key to successful delegation?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear expectations, matching skills to tasks, providing support, and establishing accountability with examples.",
+    "keywords": ["delegation", "expectations", "skills", "support", "accountability"],
+    "tags": ["leadership", "delegation"]
+  },
+  {
+    "text": "How do you handle working with people who have different feedback preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you identify preferences, adapt your feedback style, ensure constructive delivery, and follow up appropriately.",
+    "keywords": ["feedback preferences", "adaptation", "constructive", "delivery", "follow-up"],
+    "tags": ["feedback", "communication"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with multiple stakeholders.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain your stakeholder management approach, communication strategies, how you balanced competing interests, and delivered successful outcomes.",
+    "keywords": ["stakeholders", "management", "communication", "interests", "outcomes"],
+    "tags": ["stakeholder-management", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining work quality under pressure?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your quality assurance processes, time management under pressure, stress management techniques, and commitment to excellence.",
+    "keywords": ["quality", "pressure", "assurance", "time management", "excellence"],
+    "tags": ["quality", "stress-management"]
+  },
+  {
+    "text": "How do you approach working with people who have different learning styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you identify learning preferences, adapt your teaching or sharing approach, and ensure knowledge transfer is effective.",
+    "keywords": ["learning styles", "adaptation", "teaching", "sharing", "transfer"],
+    "tags": ["teamwork", "learning"]
+  },
+  {
+    "text": "Describe a time you had to handle a legal issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the legal concern, how you sought appropriate counsel, followed proper procedures, communicated with stakeholders, and resolved the issue.",
+    "keywords": ["legal", "counsel", "procedures", "communication", "resolution"],
+    "tags": ["compliance", "risk-management"]
+  },
+  {
+    "text": "What do you think is the key to successful mentorship?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like active listening, guidance tailored to needs, sharing experiences, and celebrating mentee progress with examples.",
+    "keywords": ["mentorship", "listening", "guidance", "experiences", "progress"],
+    "tags": ["leadership", "mentoring"]
+  },
+  {
+    "text": "How do you handle working with people who have different work styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand and respect different approaches, find complementary strengths, and create effective collaboration.",
+    "keywords": ["work styles", "respect", "complementary", "collaboration", "effectiveness"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with technical constraints.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the technical limitations, your problem-solving approach, how you worked within constraints, and the innovative solutions you implemented.",
+    "keywords": ["technical constraints", "problem-solving", "limitations", "innovation", "solutions"],
+    "tags": ["problem-solving", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're developing professionally?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "easy",
+    "idealAnswer": "Describe your professional development plan, learning activities, skill-building efforts, and how you measure your growth.",
+    "keywords": ["professional development", "learning", "skills", "growth", "measurement"],
+    "tags": ["career-development", "learning"]
+  },
+  {
+    "text": "How do you approach working with people who have different communication frequencies?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you establish communication preferences, adapt to different needs, ensure important information is shared, and maintain connection.",
+    "keywords": ["communication frequency", "preferences", "adaptation", "information", "connection"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a data breach.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the breach response, your immediate actions, communication with affected parties, remediation steps, and preventive measures implemented.",
+    "keywords": ["data breach", "response", "communication", "remediation", "prevention"],
+    "tags": ["crisis-management", "security"]
+  },
+  {
+    "text": "What do you think is the key to successful team building?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like shared goals, trust, clear roles, effective communication, and celebrating successes with examples.",
+    "keywords": ["team building", "goals", "trust", "roles", "communication"],
+    "tags": ["teamwork", "leadership"]
+  },
+  {
+    "text": "How do you handle working with people who have different problem-solving styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you value diverse approaches, integrate different methods, leverage complementary strengths, and reach optimal solutions.",
+    "keywords": ["problem-solving styles", "diversity", "integration", "complementary", "solutions"],
+    "tags": ["teamwork", "problem-solving"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with resource constraints.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the resource limitations, your prioritization strategy, how you maximized available resources, and the successful delivery despite constraints.",
+    "keywords": ["resource constraints", "prioritization", "maximization", "delivery", "success"],
+    "tags": ["resourcefulness", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining work-life integration?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your boundaries, time management, communication about availability, and strategies for balancing professional and personal priorities.",
+    "keywords": ["work-life integration", "boundaries", "time management", "communication", "balance"],
+    "tags": ["work-life-balance", "well-being"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict handling styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different approaches, adapt your conflict resolution style, and find effective ways to address disagreements.",
+    "keywords": ["conflict handling", "styles", "adaptation", "resolution", "disagreements"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a regulatory issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the regulatory concern, your investigation, compliance measures taken, communication with authorities, and process improvements.",
+    "keywords": ["regulatory", "investigation", "compliance", "communication", "improvement"],
+    "tags": ["compliance", "risk-management"]
+  },
+  {
+    "text": "What do you think is the key to successful performance management?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear goals, regular feedback, development planning, recognition, and fair evaluation with examples.",
+    "keywords": ["performance management", "goals", "feedback", "development", "evaluation"],
+    "tags": ["leadership", "management"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand preferences, adapt meeting formats, ensure productive discussions, and respect different meeting styles.",
+    "keywords": ["meeting preferences", "adaptation", "formats", "productivity", "styles"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with scope changes.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the scope changes, your change management process, how you communicated impacts, and delivered successfully despite evolving requirements.",
+    "keywords": ["scope changes", "change management", "communication", "impacts", "delivery"],
+    "tags": ["project-management", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional boundaries?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your approach to maintaining appropriate professional relationships, setting boundaries, and balancing friendliness with professionalism.",
+    "keywords": ["boundaries", "professional relationships", "appropriateness", "friendliness", "professionalism"],
+    "tags": ["professionalism", "boundaries"]
+  },
+  {
+    "text": "How do you approach working with people who have different decision-making timelines?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different pacing, adapt your timeline expectations, provide appropriate information for decisions, and maintain momentum.",
+    "keywords": ["decision-making timelines", "pacing", "adaptation", "information", "momentum"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a vendor issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the vendor problem, your resolution approach, how you maintained the relationship while addressing the issue, and preventive measures.",
+    "keywords": ["vendor", "resolution", "relationship", "issue", "prevention"],
+    "tags": ["vendor-management", "problem-solving"]
+  },
+  {
+    "text": "What do you think is the key to successful time management?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like prioritization, planning, focus, delegation, and saying no appropriately with examples.",
+    "keywords": ["time management", "prioritization", "planning", "focus", "delegation"],
+    "tags": ["time-management", "productivity"]
+  },
+  {
+    "text": "How do you handle working with people who have different feedback delivery preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you identify preferences for receiving feedback, adapt your delivery style, ensure constructive communication, and follow up effectively.",
+    "keywords": ["feedback delivery", "preferences", "adaptation", "constructive", "follow-up"],
+    "tags": ["feedback", "communication"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with team turnover.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the turnover impact, your knowledge transfer strategy, how you maintained project continuity, and successfully onboarded new team members.",
+    "keywords": ["turnover", "knowledge transfer", "continuity", "onboarding", "success"],
+    "tags": ["team-management", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining mental well-being at work?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your stress management techniques, boundaries, self-care practices, and how you seek support when needed.",
+    "keywords": ["mental well-being", "stress management", "boundaries", "self-care", "support"],
+    "tags": ["well-being", "self-care"]
+  },
+  {
+    "text": "How do you approach working with people who have different collaboration tool preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand tool preferences, find common platforms, ensure everyone can participate effectively, and maintain productivity.",
+    "keywords": ["collaboration tools", "preferences", "platforms", "participation", "productivity"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a customer escalation.",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the escalation, your immediate response, how you de-escalated the situation, the resolution, and preventive measures implemented.",
+    "keywords": ["customer escalation", "response", "de-escalation", "resolution", "prevention"],
+    "tags": ["customer-service", "crisis-management"]
+  },
+  {
+    "text": "What do you think is the key to successful conflict prevention?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear communication, setting expectations, building relationships, and addressing issues early with examples.",
+    "keywords": ["conflict prevention", "communication", "expectations", "relationships", "early intervention"],
+    "tags": ["conflict-resolution", "communication"]
+  },
+  {
+    "text": "How do you handle working with people who have different availability patterns?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand availability constraints, plan accordingly, communicate effectively, and maintain collaboration despite schedule differences.",
+    "keywords": ["availability", "constraints", "planning", "communication", "collaboration"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with unclear objectives.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain how you clarified objectives, gathered requirements, aligned stakeholders, and adapted as goals became clearer.",
+    "keywords": ["unclear objectives", "clarification", "requirements", "stakeholders", "adaptation"],
+    "tags": ["project-management", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional development momentum?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your learning habits, goal setting, accountability mechanisms, and how you stay motivated to continue growing.",
+    "keywords": ["professional development", "learning", "goals", "accountability", "motivation"],
+    "tags": ["career-development", "learning"]
+  },
+  {
+    "text": "How do you approach working with people who have different documentation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand documentation needs, adapt your documentation style, ensure clarity and completeness, and maintain useful records.",
+    "keywords": ["documentation", "preferences", "adaptation", "clarity", "records"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a partnership dispute.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the dispute, your negotiation approach, how you protected interests while preserving the relationship, and the resolution achieved.",
+    "keywords": ["partnership dispute", "negotiation", "interests", "relationship", "resolution"],
+    "tags": ["conflict-resolution", "negotiation"]
+  },
+  {
+    "text": "What do you think is the key to successful knowledge sharing?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like creating safe environments, using effective formats, encouraging participation, and recognizing contributors with examples.",
+    "keywords": ["knowledge sharing", "environment", "formats", "participation", "recognition"],
+    "tags": ["teamwork", "learning"]
+  },
+  {
+    "text": "How do you handle working with people who have different urgency perceptions?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different urgency perspectives, communicate priorities effectively, find appropriate pacing, and meet critical deadlines.",
+    "keywords": ["urgency", "perspectives", "priorities", "pacing", "deadlines"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with political constraints.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the political landscape, your navigation strategy, how you built alliances, and achieved objectives while managing organizational dynamics.",
+    "keywords": ["political constraints", "navigation", "alliances", "objectives", "dynamics"],
+    "tags": ["organizational-awareness", "leadership"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional curiosity?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you stay curious about your field, ask questions, explore new ideas, and maintain a growth mindset.",
+    "keywords": ["curiosity", "questions", "exploration", "ideas", "growth mindset"],
+    "tags": ["learning", "growth-mindset"]
+  },
+  {
+    "text": "How do you approach working with people who have different presentation styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you appreciate different presentation approaches, adapt your own style for different audiences, and ensure effective communication.",
+    "keywords": ["presentation styles", "appreciation", "adaptation", "audiences", "communication"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a contract dispute.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the contract issue, your analysis of the situation, negotiation approach, legal considerations, and the resolution achieved.",
+    "keywords": ["contract dispute", "analysis", "negotiation", "legal", "resolution"],
+    "tags": ["conflict-resolution", "negotiation"]
+  },
+  {
+    "text": "What do you think is the key to successful cross-cultural communication?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like cultural awareness, adaptability, clarity, patience, and respect with examples.",
+    "keywords": ["cross-cultural", "awareness", "adaptability", "clarity", "respect"],
+    "tags": ["communication", "diversity"]
+  },
+  {
+    "text": "How do you handle working with people who have different quality standards?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different quality expectations, find common standards, communicate requirements clearly, and deliver consistent quality.",
+    "keywords": ["quality standards", "expectations", "common standards", "communication", "consistency"],
+    "tags": ["teamwork", "quality"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with external dependencies.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the external dependencies, your coordination strategy, how you managed risks, and delivered successfully despite external factors.",
+    "keywords": ["external dependencies", "coordination", "risks", "delivery", "external factors"],
+    "tags": ["project-management", "coordination"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional integrity?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you maintain ethical standards, take responsibility, communicate honestly, and make decisions aligned with your values.",
+    "keywords": ["integrity", "ethics", "responsibility", "honesty", "values"],
+    "tags": ["ethics", "professionalism"]
+  },
+  {
+    "text": "How do you approach working with people who have different meeting participation styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you encourage participation from different styles, create inclusive meeting environments, and ensure all voices are heard.",
+    "keywords": ["meeting participation", "encouragement", "inclusion", "voices", "environment"],
+    "tags": ["communication", "leadership"]
+  },
+  {
+    "text": "Describe a time you had to handle a intellectual property issue.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the IP concern, your investigation, legal considerations, protective measures taken, and process improvements to prevent future issues.",
+    "keywords": ["intellectual property", "investigation", "legal", "protection", "prevention"],
+    "tags": ["compliance", "risk-management"]
+  },
+  {
+    "text": "What do you think is the key to successful remote collaboration?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear communication, trust, effective tools, regular check-ins, and documented processes with examples.",
+    "keywords": ["remote collaboration", "communication", "trust", "tools", "check-ins"],
+    "tags": ["remote-work", "collaboration"]
+  },
+  {
+    "text": "How do you handle working with people who have different email communication preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand email preferences, adapt your communication style, ensure clarity and appropriateness, and respect different communication norms.",
+    "keywords": ["email", "preferences", "adaptation", "clarity", "norms"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with multiple vendors.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain your vendor management strategy, coordination approach, how you managed relationships, and delivered successful outcomes across multiple suppliers.",
+    "keywords": ["vendor management", "coordination", "relationships", "outcomes", "suppliers"],
+    "tags": ["vendor-management", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional resilience?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your resilience-building practices, how you bounce back from setbacks, maintain perspective, and continue performing under pressure.",
+    "keywords": ["resilience", "setbacks", "perspective", "pressure", "performance"],
+    "tags": ["resilience", "well-being"]
+  },
+  {
+    "text": "How do you approach working with people who have different project management methodologies?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different methodologies, find common ground, adapt your approach, and ensure successful project delivery.",
+    "keywords": ["project management", "methodologies", "common ground", "adaptation", "delivery"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a safety incident.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the safety incident, your immediate response, investigation process, corrective actions, and preventive measures implemented.",
+    "keywords": ["safety incident", "response", "investigation", "corrective actions", "prevention"],
+    "tags": ["safety", "crisis-management"]
+  },
+  {
+    "text": "What do you think is the key to successful stakeholder management?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like understanding needs, regular communication, managing expectations, building relationships, and delivering value with examples.",
+    "keywords": ["stakeholder management", "needs", "communication", "expectations", "value"],
+    "tags": ["leadership", "stakeholder-management"]
+  },
+  {
+    "text": "How do you handle working with people who have different urgency levels?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different urgency perspectives, communicate priorities effectively, find appropriate pacing, and balance competing demands.",
+    "keywords": ["urgency", "perspectives", "priorities", "pacing", "demands"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with geographic dispersion.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the geographic challenges, your coordination strategy, communication approaches, and how you built team cohesion across locations.",
+    "keywords": ["geographic dispersion", "coordination", "communication", "cohesion", "locations"],
+    "tags": ["remote-work", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional humility?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you acknowledge limitations, give credit to others, remain open to feedback, and maintain a learning mindset.",
+    "keywords": ["humility", "limitations", "credit", "feedback", "learning"],
+    "tags": ["professionalism", "growth-mindset"]
+  },
+  {
+    "text": "How do you approach working with people who have different reporting preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand reporting needs, adapt your reporting style, ensure clarity and relevance, and meet stakeholder expectations.",
+    "keywords": ["reporting", "preferences", "adaptation", "clarity", "expectations"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a competitive threat.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the competitive threat, your analysis, strategic response, how you communicated with stakeholders, and the outcome of your actions.",
+    "keywords": ["competitive threat", "analysis", "strategy", "communication", "outcome"],
+    "tags": ["strategy", "competitive-intelligence"]
+  },
+  {
+    "text": "What do you think is the key to successful innovation?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like creativity, experimentation, collaboration, learning from failure, and customer focus with examples.",
+    "keywords": ["innovation", "creativity", "experimentation", "collaboration", "failure"],
+    "tags": ["innovation", "leadership"]
+  },
+  {
+    "text": "How do you handle working with people who have different decision-making criteria?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different decision frameworks, align on criteria, provide relevant information, and reach consensus.",
+    "keywords": ["decision-making criteria", "frameworks", "alignment", "information", "consensus"],
+    "tags": ["teamwork", "decision-making"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with technology constraints.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the technology limitations, your problem-solving approach, how you worked within constraints, and the solutions you implemented.",
+    "keywords": ["technology constraints", "problem-solving", "limitations", "solutions", "implementation"],
+    "tags": ["problem-solving", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional accountability?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you take ownership, meet commitments, communicate proactively, and hold yourself responsible for outcomes.",
+    "keywords": ["accountability", "ownership", "commitments", "communication", "responsibility"],
+    "tags": ["accountability", "professionalism"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict escalation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand escalation preferences, address conflicts at appropriate levels, and find effective resolution paths.",
+    "keywords": ["conflict escalation", "preferences", "resolution", "levels", "paths"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a market disruption.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the market disruption, your assessment, strategic response, how you adapted operations, and the outcome of your actions.",
+    "keywords": ["market disruption", "assessment", "strategy", "adaptation", "outcome"],
+    "tags": ["strategy", "adaptability"]
+  },
+  {
+    "text": "What do you think is the key to successful organizational change?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear vision, communication, stakeholder engagement, support, and celebrating progress with examples.",
+    "keywords": ["organizational change", "vision", "communication", "engagement", "support"],
+    "tags": ["change-management", "leadership"]
+  },
+  {
+    "text": "How do you handle working with people who have different risk appetites?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different risk perspectives, find balanced approaches, communicate trade-offs, and reach consensus on risk decisions.",
+    "keywords": ["risk appetite", "perspectives", "balance", "trade-offs", "consensus"],
+    "tags": ["teamwork", "risk-management"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with cultural differences.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the cultural challenges, your cultural sensitivity approach, how you bridged differences, and achieved successful collaboration.",
+    "keywords": ["cultural differences", "sensitivity", "bridging", "collaboration", "success"],
+    "tags": ["diversity", "cross-cultural"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional courage?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you speak up about important issues, take principled stands, address difficult topics, and maintain integrity under pressure.",
+    "keywords": ["courage", "speaking up", "principles", "integrity", "pressure"],
+    "tags": ["leadership", "integrity"]
+  },
+  {
+    "text": "How do you approach working with people who have different feedback timing preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand timing preferences, provide feedback at appropriate moments, ensure relevance, and balance timeliness with thoughtfulness.",
+    "keywords": ["feedback timing", "preferences", "appropriateness", "relevance", "balance"],
+    "tags": ["feedback", "communication"]
+  },
+  {
+    "text": "Describe a time you had to handle a crisis of confidence.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the confidence crisis, your response strategy, how you rebuilt trust, communicated transparently, and restored confidence.",
+    "keywords": ["confidence crisis", "response", "trust", "transparency", "restoration"],
+    "tags": ["leadership", "crisis-management"]
+  },
+  {
+    "text": "What do you think is the key to successful team motivation?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear goals, recognition, growth opportunities, positive culture, and meaningful work with examples.",
+    "keywords": ["team motivation", "goals", "recognition", "growth", "culture"],
+    "tags": ["leadership", "motivation"]
+  },
+  {
+    "text": "How do you handle working with people who have different collaboration expectations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand collaboration expectations, align on working approaches, communicate clearly, and deliver on collaborative commitments.",
+    "keywords": ["collaboration expectations", "alignment", "approaches", "communication", "commitments"],
+    "tags": ["teamwork", "collaboration"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with regulatory changes.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the regulatory changes, your compliance approach, how you adapted operations, and maintained project delivery under new requirements.",
+    "keywords": ["regulatory changes", "compliance", "adaptation", "operations", "delivery"],
+    "tags": ["compliance", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional authenticity?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you stay true to your values, communicate genuinely, build trust through authenticity, and maintain consistency in your professional identity.",
+    "keywords": ["authenticity", "values", "genuine communication", "trust", "consistency"],
+    "tags": ["professionalism", "authenticity"]
+  },
+  {
+    "text": "How do you approach working with people who have different problem-solving timelines?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different pacing needs, find appropriate timelines, balance thoroughness with urgency, and maintain team alignment.",
+    "keywords": ["problem-solving timelines", "pacing", "timelines", "thoroughness", "urgency"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a talent shortage.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the talent challenge, your recruitment and retention strategies, how you developed existing talent, and managed workload constraints.",
+    "keywords": ["talent shortage", "recruitment", "retention", "development", "workload"],
+    "tags": ["leadership", "talent-management"]
+  },
+  {
+    "text": "What do you think is the key to successful strategic thinking?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like long-term vision, market awareness, competitive analysis, scenario planning, and alignment with execution with examples.",
+    "keywords": ["strategic thinking", "vision", "market awareness", "analysis", "alignment"],
+    "tags": ["strategy", "leadership"]
+  },
+  {
+    "text": "How do you handle working with people who have different communication channel preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand channel preferences, adapt your communication methods, ensure information reaches people effectively, and maintain connectivity.",
+    "keywords": ["communication channels", "preferences", "adaptation", "information", "connectivity"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with financial constraints.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the financial limitations, your budget management approach, cost optimization strategies, and how you delivered value within constraints.",
+    "keywords": ["financial constraints", "budget management", "optimization", "value", "constraints"],
+    "tags": ["resourcefulness", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional empathy?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand others' perspectives, listen actively, show genuine concern, and build relationships through empathy.",
+    "keywords": ["empathy", "perspectives", "listening", "concern", "relationships"],
+    "tags": ["emotional-intelligence", "communication"]
+  },
+  {
+    "text": "How do you approach working with people who have different decision authority levels?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you respect authority levels, navigate decision hierarchies, provide appropriate recommendations, and support decision processes.",
+    "keywords": ["decision authority", "hierarchies", "recommendations", "processes", "support"],
+    "tags": ["teamwork", "organizational-awareness"]
+  },
+  {
+    "text": "Describe a time you had to handle a reputational risk.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the reputational threat, your crisis management approach, communication strategy, how you protected the brand, and lessons learned.",
+    "keywords": ["reputational risk", "crisis management", "communication", "brand protection", "lessons"],
+    "tags": ["crisis-management", "leadership"]
+  },
+  {
+    "text": "What do you think is the key to successful execution?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear plans, accountability, resource allocation, monitoring, and adaptability with examples.",
+    "keywords": ["execution", "planning", "accountability", "resources", "monitoring"],
+    "tags": ["leadership", "execution"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting frequency preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand frequency preferences, find appropriate meeting cadences, ensure necessary communication, and respect time constraints.",
+    "keywords": ["meeting frequency", "preferences", "cadences", "communication", "time"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with scope creep.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the scope creep issue, your change control process, how you managed stakeholder expectations, and delivered successfully despite expanding requirements.",
+    "keywords": ["scope creep", "change control", "stakeholders", "expectations", "delivery"],
+    "tags": ["project-management", "change-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional curiosity about your industry?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you stay informed about industry trends, follow thought leaders, attend events, and apply industry insights to your work.",
+    "keywords": ["industry curiosity", "trends", "thought leaders", "events", "insights"],
+    "tags": ["learning", "industry-knowledge"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand resolution preferences, adapt your approach, find effective methods, and achieve positive outcomes.",
+    "keywords": ["conflict resolution", "preferences", "adaptation", "methods", "outcomes"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a technology disruption.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the technology disruption, your assessment, adaptation strategy, how you maintained operations, and the outcome of your response.",
+    "keywords": ["technology disruption", "assessment", "adaptation", "operations", "outcome"],
+    "tags": ["adaptability", "technology"]
+  },
+  {
+    "text": "What do you think is the key to successful delegation?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like clear expectations, matching skills, providing support, establishing accountability, and following up with examples.",
+    "keywords": ["delegation", "expectations", "skills", "support", "accountability"],
+    "tags": ["leadership", "delegation"]
+  },
+  {
+    "text": "How do you handle working with people who have different urgency communication styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand urgency communication preferences, convey priority appropriately, avoid unnecessary urgency, and maintain calm under pressure.",
+    "keywords": ["urgency communication", "preferences", "priority", "calm", "pressure"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with timeline compression.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the timeline compression, your acceleration strategies, how you maintained quality, and delivered successfully under time pressure.",
+    "keywords": ["timeline compression", "acceleration", "quality", "delivery", "pressure"],
+    "tags": ["project-management", "pressure"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional growth mindset?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you embrace challenges, learn from feedback, view failure as learning, and continuously seek development opportunities.",
+    "keywords": ["growth mindset", "challenges", "feedback", "failure", "development"],
+    "tags": ["growth-mindset", "learning"]
+  },
+  {
+    "text": "How do you approach working with people who have different information sharing preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand sharing preferences, provide appropriate information levels, ensure transparency while respecting boundaries, and maintain trust.",
+    "keywords": ["information sharing", "preferences", "transparency", "boundaries", "trust"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a supply chain disruption.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the supply chain issue, your contingency planning, alternative sourcing strategies, how you communicated with stakeholders, and the resolution.",
+    "keywords": ["supply chain", "contingency", "sourcing", "communication", "resolution"],
+    "tags": ["crisis-management", "operations"]
+  },
+  {
+    "text": "What do you think is the key to successful team alignment?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like shared vision, clear goals, regular communication, role clarity, and mutual accountability with examples.",
+    "keywords": ["team alignment", "vision", "goals", "communication", "accountability"],
+    "tags": ["leadership", "teamwork"]
+  },
+  {
+    "text": "How do you handle working with people who have different problem-solving frameworks?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand different frameworks, find complementary approaches, integrate methods, and reach optimal solutions together.",
+    "keywords": ["problem-solving frameworks", "complementary", "integration", "methods", "solutions"],
+    "tags": ["teamwork", "problem-solving"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with resource reallocation.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the resource changes, your reallocation strategy, how you maintained project momentum, and delivered successfully despite resource shifts.",
+    "keywords": ["resource reallocation", "strategy", "momentum", "delivery", "shifts"],
+    "tags": ["resourcefulness", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional adaptability?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you embrace change, learn quickly, adjust your approach, and maintain effectiveness in evolving situations.",
+    "keywords": ["adaptability", "change", "learning", "adjustment", "effectiveness"],
+    "tags": ["adaptability", "growth-mindset"]
+  },
+  {
+    "text": "How do you approach working with people who have different decision documentation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand documentation needs, provide appropriate decision records, ensure clarity and traceability, and support organizational memory.",
+    "keywords": ["decision documentation", "records", "clarity", "traceability", "memory"],
+    "tags": ["communication", "organization"]
+  },
+  {
+    "text": "Describe a time you had to handle a market shift.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the market shift, your analysis, strategic pivot, how you communicated changes, and the outcome of your adaptation.",
+    "keywords": ["market shift", "analysis", "strategic pivot", "communication", "adaptation"],
+    "tags": ["strategy", "adaptability"]
+  },
+  {
+    "text": "What do you think is the key to successful influence?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like building trust, understanding needs, effective communication, providing value, and finding mutual benefit with examples.",
+    "keywords": ["influence", "trust", "needs", "communication", "value"],
+    "tags": ["leadership", "influence"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting structure preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand structure preferences, adapt meeting formats, ensure productive discussions, and respect different meeting styles.",
+    "keywords": ["meeting structure", "preferences", "formats", "productivity", "styles"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with stakeholder changes.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the stakeholder changes, your relationship management approach, how you realigned expectations, and maintained project success through transitions.",
+    "keywords": ["stakeholder changes", "relationship management", "expectations", "transitions", "success"],
+    "tags": ["stakeholder-management", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional patience?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you manage frustration, maintain perspective, practice mindfulness, and stay focused on long-term goals during delays.",
+    "keywords": ["patience", "frustration", "perspective", "mindfulness", "goals"],
+    "tags": ["emotional-intelligence", "resilience"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict initiation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand conflict initiation styles, address issues appropriately, encourage constructive dialogue, and resolve conflicts effectively.",
+    "keywords": ["conflict initiation", "styles", "dialogue", "resolution", "constructive"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a competitive pressure.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the competitive pressure, your strategic response, how you differentiated your approach, and the outcome of your competitive positioning.",
+    "keywords": ["competitive pressure", "strategy", "differentiation", "positioning", "outcome"],
+    "tags": ["strategy", "competitive-intelligence"]
+  },
+  {
+    "text": "What do you think is the key to successful negotiation?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like preparation, understanding interests, finding common ground, creative problem-solving, and maintaining relationships with examples.",
+    "keywords": ["negotiation", "preparation", "interests", "common ground", "relationships"],
+    "tags": ["negotiation", "communication"]
+  },
+  {
+    "text": "How do you handle working with people who have different urgency prioritization methods?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand prioritization approaches, align on priorities, communicate urgency appropriately, and manage competing demands effectively.",
+    "keywords": ["urgency prioritization", "approaches", "alignment", "communication", "demands"],
+    "tags": ["teamwork", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with requirement volatility.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the requirement volatility, your agile approach, how you managed change, and delivered successfully despite evolving requirements.",
+    "keywords": ["requirement volatility", "agile", "change management", "delivery", "evolution"],
+    "tags": ["project-management", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional focus?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you minimize distractions, prioritize effectively, maintain deep work periods, and stay aligned with key objectives.",
+    "keywords": ["focus", "distractions", "prioritization", "deep work", "objectives"],
+    "tags": ["productivity", "time-management"]
+  },
+  {
+    "text": "How do you approach working with people who have different information processing styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand processing preferences, adapt information presentation, ensure comprehension, and accommodate different learning styles.",
+    "keywords": ["information processing", "preferences", "presentation", "comprehension", "learning styles"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a talent gap.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the talent gap, your development strategy, how you built capabilities, and managed work until skills were developed.",
+    "keywords": ["talent gap", "development", "capabilities", "work management", "skills"],
+    "tags": ["leadership", "talent-management"]
+  },
+  {
+    "text": "What do you think is the key to successful time management?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like prioritization, planning, focus, delegation, and boundary setting with examples.",
+    "keywords": ["time management", "prioritization", "planning", "focus", "boundaries"],
+    "tags": ["time-management", "productivity"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting outcome expectations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you clarify meeting objectives, manage expectations, ensure productive outcomes, and follow up on action items.",
+    "keywords": ["meeting outcomes", "objectives", "expectations", "productivity", "follow-up"],
+    "tags": ["communication", "productivity"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with team conflict.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the team conflict, your intervention approach, how you facilitated resolution, and restored team collaboration for project success.",
+    "keywords": ["team conflict", "intervention", "resolution", "collaboration", "success"],
+    "tags": ["conflict-resolution", "team-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional balance?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you balance competing priorities, maintain work-life boundaries, manage energy, and sustain long-term effectiveness.",
+    "keywords": ["balance", "priorities", "boundaries", "energy", "effectiveness"],
+    "tags": ["work-life-balance", "well-being"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution timing preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand timing preferences, address conflicts at appropriate moments, balance urgency with thoroughness, and achieve lasting resolution.",
+    "keywords": ["conflict resolution timing", "preferences", "urgency", "thoroughness", "lasting"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a resource competition.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the resource competition, your negotiation strategy, how you made the case for your needs, and achieved fair resource allocation.",
+    "keywords": ["resource competition", "negotiation", "case making", "allocation", "fairness"],
+    "tags": ["resourcefulness", "negotiation"]
+  },
+  {
+    "text": "What do you think is the key to successful prioritization?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like impact, urgency, alignment with goals, resource requirements, and stakeholder needs with examples.",
+    "keywords": ["prioritization", "impact", "urgency", "goals", "stakeholders"],
+    "tags": ["prioritization", "time-management"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting preparation expectations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand preparation preferences, prepare appropriately, encourage others to prepare, and ensure productive meetings.",
+    "keywords": ["meeting preparation", "preferences", "encouragement", "productivity", "meetings"],
+    "tags": ["communication", "productivity"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with unclear success metrics.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain how you defined success metrics, aligned stakeholders, measured progress, and ensured project value despite initial ambiguity.",
+    "keywords": ["success metrics", "definition", "stakeholders", "measurement", "value"],
+    "tags": ["project-management", "strategy"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional enthusiasm?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you stay engaged, find meaning in work, celebrate successes, and maintain positive energy through challenges.",
+    "keywords": ["enthusiasm", "engagement", "meaning", "successes", "energy"],
+    "tags": ["motivation", "attitude"]
+  },
+  {
+    "text": "How do you approach working with people who have different decision communication styles?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand decision communication preferences, adapt your notification style, ensure clarity, and follow up appropriately.",
+    "keywords": ["decision communication", "preferences", "adaptation", "clarity", "follow-up"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a strategic misalignment.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the strategic misalignment, your analysis, how you facilitated realignment, and the outcome of your strategic intervention.",
+    "keywords": ["strategic misalignment", "analysis", "realignment", "intervention", "outcome"],
+    "tags": ["strategy", "leadership"]
+  },
+  {
+    "text": "What do you think is the key to successful teamwork?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like clear goals, trust, communication, complementary skills, and mutual support with examples.",
+    "keywords": ["teamwork", "goals", "trust", "communication", "support"],
+    "tags": ["teamwork", "collaboration"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting follow-up preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand follow-up preferences, ensure appropriate documentation, communicate action items, and maintain accountability.",
+    "keywords": ["meeting follow-up", "preferences", "documentation", "action items", "accountability"],
+    "tags": ["communication", "productivity"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with cross-functional dependencies.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the cross-functional dependencies, your coordination strategy, how you managed interfaces, and delivered successful integration.",
+    "keywords": ["cross-functional", "dependencies", "coordination", "interfaces", "integration"],
+    "tags": ["project-management", "collaboration"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional optimism?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you maintain positive outlook, focus on solutions, learn from setbacks, and inspire confidence in others.",
+    "keywords": ["optimism", "positive outlook", "solutions", "setbacks", "confidence"],
+    "tags": ["attitude", "leadership"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution communication preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand communication preferences during conflict, adapt your approach, ensure constructive dialogue, and achieve resolution.",
+    "keywords": ["conflict communication", "preferences", "adaptation", "dialogue", "resolution"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a priority conflict.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the priority conflict, your analysis, how you negotiated priorities, and the outcome of your resolution.",
+    "keywords": ["priority conflict", "analysis", "negotiation", "resolution", "outcome"],
+    "tags": ["prioritization", "negotiation"]
+  },
+  {
+    "text": "What do you think is the key to successful communication?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like clarity, listening, understanding audience, choosing right medium, and following up with examples.",
+    "keywords": ["communication", "clarity", "listening", "audience", "medium"],
+    "tags": ["communication", "skills"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting decision-making preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand decision-making preferences in meetings, facilitate appropriate decision processes, and ensure clear outcomes.",
+    "keywords": ["meeting decisions", "preferences", "facilitation", "processes", "outcomes"],
+    "tags": ["communication", "leadership"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with stakeholder conflict.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the stakeholder conflict, your mediation approach, how you found common ground, and achieved alignment for project success.",
+    "keywords": ["stakeholder conflict", "mediation", "common ground", "alignment", "success"],
+    "tags": ["conflict-resolution", "stakeholder-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional composure?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you manage emotions under pressure, maintain professionalism, stay focused, and respond calmly in challenging situations.",
+    "keywords": ["composure", "emotions", "pressure", "professionalism", "calm"],
+    "tags": ["emotional-intelligence", "professionalism"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict follow-up preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand follow-up preferences after conflict, ensure appropriate closure, monitor resolution, and rebuild relationships.",
+    "keywords": ["conflict follow-up", "preferences", "closure", "monitoring", "relationships"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a resource allocation dispute.",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the resource dispute, your negotiation approach, how you made a data-driven case, and achieved fair allocation.",
+    "keywords": ["resource dispute", "negotiation", "data-driven", "allocation", "fairness"],
+    "tags": ["negotiation", "resourcefulness"]
+  },
+  {
+    "text": "What do you think is the key to successful problem-solving?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like clear definition, root cause analysis, creative solutions, implementation, and learning with examples.",
+    "keywords": ["problem-solving", "definition", "analysis", "solutions", "implementation"],
+    "tags": ["problem-solving", "methodology"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting facilitation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand facilitation preferences, adapt your facilitation style, ensure inclusive participation, and achieve meeting objectives.",
+    "keywords": ["meeting facilitation", "preferences", "adaptation", "participation", "objectives"],
+    "tags": ["communication", "leadership"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with timeline uncertainty.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the timeline uncertainty, your planning approach, how you managed expectations, and delivered with flexibility.",
+    "keywords": ["timeline uncertainty", "planning", "expectations", "flexibility", "delivery"],
+    "tags": ["project-management", "adaptability"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional curiosity about new technologies?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you explore emerging technologies, assess their relevance, experiment with new tools, and apply innovations to your work.",
+    "keywords": ["technology curiosity", "emerging tech", "relevance", "experimentation", "innovation"],
+    "tags": ["learning", "technology"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict documentation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand documentation preferences during conflict, ensure appropriate records, maintain confidentiality, and support resolution.",
+    "keywords": ["conflict documentation", "preferences", "records", "confidentiality", "resolution"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a strategic pivot.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the need for strategic pivot, your planning, how you communicated the change, managed the transition, and achieved new strategic objectives.",
+    "keywords": ["strategic pivot", "planning", "communication", "transition", "objectives"],
+    "tags": ["strategy", "leadership"]
+  },
+  {
+    "text": "What do you think is the key to successful leadership?",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like vision, communication, empathy, decisiveness, and developing others with examples.",
+    "keywords": ["leadership", "vision", "communication", "empathy", "decisiveness"],
+    "tags": ["leadership", "management"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting time preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand time preferences, schedule meetings appropriately, accommodate different time zones, and respect personal schedules.",
+    "keywords": ["meeting time", "preferences", "scheduling", "time zones", "schedules"],
+    "tags": ["communication", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with organizational change.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the organizational change, your change management approach, how you maintained project momentum, and delivered through transition.",
+    "keywords": ["organizational change", "change management", "momentum", "delivery", "transition"],
+    "tags": ["change-management", "project-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional creativity?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you nurture creative thinking, seek inspiration, experiment with new approaches, and innovate in your work.",
+    "keywords": ["creativity", "inspiration", "experimentation", "innovation", "approaches"],
+    "tags": ["creativity", "innovation"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict mediation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand mediation preferences, facilitate appropriate mediation processes, ensure fairness, and achieve sustainable resolution.",
+    "keywords": ["conflict mediation", "preferences", "facilitation", "fairness", "resolution"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a competitive disadvantage.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the competitive disadvantage, your strategic response, how you differentiated your approach, and overcame the challenge.",
+    "keywords": ["competitive disadvantage", "strategy", "differentiation", "challenge", "overcoming"],
+    "tags": ["strategy", "resilience"]
+  },
+  {
+    "text": "What do you think is the key to successful collaboration?",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "easy",
+    "idealAnswer": "Identify factors like trust, communication, shared goals, complementary skills, and mutual respect with examples.",
+    "keywords": ["collaboration", "trust", "communication", "goals", "respect"],
+    "tags": ["teamwork", "collaboration"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting agenda preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand agenda preferences, structure meetings appropriately, ensure all topics are covered, and maintain meeting effectiveness.",
+    "keywords": ["meeting agenda", "preferences", "structure", "topics", "effectiveness"],
+    "tags": ["communication", "productivity"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with leadership change.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the leadership change, your transition management approach, how you maintained continuity, and ensured project success.",
+    "keywords": ["leadership change", "transition", "continuity", "success", "management"],
+    "tags": ["change-management", "leadership"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional discipline?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you maintain consistent work habits, stay focused on priorities, follow through on commitments, and deliver reliable results.",
+    "keywords": ["discipline", "habits", "priorities", "commitments", "reliability"],
+    "tags": ["discipline", "productivity"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict prevention preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand prevention preferences, implement proactive measures, address issues early, and maintain harmonious relationships.",
+    "keywords": ["conflict prevention", "preferences", "proactive", "early intervention", "relationships"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a market entry challenge.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the market entry challenge, your market analysis, entry strategy, how you managed risks, and achieved successful market penetration.",
+    "keywords": ["market entry", "analysis", "strategy", "risks", "penetration"],
+    "tags": ["strategy", "business-development"]
+  },
+  {
+    "text": "What do you think is the key to successful adaptability?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like openness to change, learning agility, flexibility, resilience, and maintaining core values with examples.",
+    "keywords": ["adaptability", "change", "learning", "flexibility", "resilience"],
+    "tags": ["adaptability", "growth-mindset"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting participation expectations?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand participation expectations, encourage appropriate engagement, manage dominant voices, and ensure inclusive discussions.",
+    "keywords": ["meeting participation", "expectations", "engagement", "voices", "inclusion"],
+    "tags": ["communication", "leadership"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with cultural integration challenges.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the cultural challenges, your integration approach, how you built understanding, and achieved successful collaboration across cultures.",
+    "keywords": ["cultural integration", "challenges", "understanding", "collaboration", "success"],
+    "tags": ["diversity", "cross-cultural"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional self-awareness?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you reflect on your behavior, seek feedback, understand your impact on others, and continuously improve your professional effectiveness.",
+    "keywords": ["self-awareness", "reflection", "feedback", "impact", "improvement"],
+    "tags": ["self-awareness", "growth-mindset"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution communication channel preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand channel preferences, choose appropriate communication methods, ensure message effectiveness, and respect privacy needs.",
+    "keywords": ["conflict channels", "preferences", "communication methods", "effectiveness", "privacy"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a technology adoption challenge.",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the technology adoption challenge, your change management approach, how you addressed resistance, and achieved successful implementation.",
+    "keywords": ["technology adoption", "change management", "resistance", "implementation", "success"],
+    "tags": ["change-management", "technology"]
+  },
+  {
+    "text": "What do you think is the key to successful resilience?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like optimism, problem-solving, support systems, self-care, and learning from adversity with examples.",
+    "keywords": ["resilience", "optimism", "problem-solving", "support", "learning"],
+    "tags": ["resilience", "well-being"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting outcome documentation preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand documentation preferences, ensure appropriate meeting records, distribute outcomes effectively, and maintain accountability.",
+    "keywords": ["meeting documentation", "preferences", "records", "distribution", "accountability"],
+    "tags": ["communication", "organization"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with team formation challenges.",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the team formation challenges, your team building approach, how you developed cohesion, and achieved high-performing team dynamics.",
+    "keywords": ["team formation", "team building", "cohesion", "dynamics", "performance"],
+    "tags": ["teamwork", "leadership"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional growth?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Describe your development plan, learning activities, skill-building efforts, how you seek growth opportunities, and measure your progress.",
+    "keywords": ["professional growth", "development plan", "learning", "skills", "progress"],
+    "tags": ["career-development", "learning"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution stakeholder involvement preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand stakeholder involvement preferences, engage appropriate parties, manage confidentiality, and achieve resolution.",
+    "keywords": ["conflict stakeholders", "preferences", "engagement", "confidentiality", "resolution"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a business model transformation.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the business model transformation, your strategic planning, how you managed the transition, and achieved successful transformation.",
+    "keywords": ["business model", "transformation", "strategic planning", "transition", "success"],
+    "tags": ["strategy", "leadership"]
+  },
+  {
+    "text": "What do you think is the key to successful self-management?",
+    "type": "hr",
+    "company": null,
+    "domain": "Behavioral",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like self-awareness, emotional regulation, time management, prioritization, and continuous improvement with examples.",
+    "keywords": ["self-management", "self-awareness", "emotional regulation", "time management", "improvement"],
+    "tags": ["self-management", "productivity"]
+  },
+  {
+    "text": "How do you handle working with people who have different meeting technology preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Communication",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand technology preferences, select appropriate tools, ensure accessibility, and maintain meeting effectiveness.",
+    "keywords": ["meeting technology", "preferences", "tools", "accessibility", "effectiveness"],
+    "tags": ["communication", "technology"]
+  },
+  {
+    "text": "Describe a time you had to manage a project with virtual team challenges.",
+    "type": "hr",
+    "company": null,
+    "domain": "Teamwork",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the virtual team challenges, your remote management approach, how you built cohesion, and achieved successful virtual collaboration.",
+    "keywords": ["virtual team", "remote management", "cohesion", "collaboration", "success"],
+    "tags": ["remote-work", "team-management"]
+  },
+  {
+    "text": "What do you do to ensure you're maintaining professional purpose?",
+    "type": "hr",
+    "company": null,
+    "domain": "Motivation",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you connect your work to meaning, align with your values, find purpose in daily tasks, and maintain motivation through challenges.",
+    "keywords": ["purpose", "meaning", "values", "motivation", "challenges"],
+    "tags": ["motivation", "purpose"]
+  },
+  {
+    "text": "How do you approach working with people who have different conflict resolution outcome preferences?",
+    "type": "hr",
+    "company": null,
+    "domain": "Conflict Resolution",
+    "difficulty": "medium",
+    "idealAnswer": "Describe how you understand outcome preferences, find mutually beneficial solutions, ensure fairness, and achieve sustainable resolution.",
+    "keywords": ["conflict outcomes", "preferences", "solutions", "fairness", "sustainability"],
+    "tags": ["conflict-resolution", "adaptability"]
+  },
+  {
+    "text": "Describe a time you had to handle a digital transformation.",
+    "type": "hr",
+    "company": null,
+    "domain": "Leadership",
+    "difficulty": "hard",
+    "idealAnswer": "Explain the digital transformation, your change leadership, how you managed adoption, and achieved successful digital integration.",
+    "keywords": ["digital transformation", "change leadership", "adoption", "integration", "success"],
+    "tags": ["change-management", "technology"]
+  },
+  {
+    "text": "What do you think is the key to successful personal development?",
+    "type": "hr",
+    "company": null,
+    "domain": "Career Goals",
+    "difficulty": "medium",
+    "idealAnswer": "Identify factors like self-awareness, goal setting, continuous learning, feedback seeking, and reflection with examples.",
+    "keywords": ["personal development", "self-awareness", "goals", "learning", "feedback"],
+    "tags": ["career-development", "growth"]
+  }
+]
