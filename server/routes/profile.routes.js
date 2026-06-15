@@ -1,5 +1,5 @@
 import express from 'express';
-import { authenticate } from '../middleware/authMiddleware.js';
+import { authMiddleware } from '../middleware/authMiddleware.js';
 import multer from 'multer';
 import { completeOnboarding, getProfile, updateProfile } from '../controllers/profileController.js';
 
@@ -20,7 +20,7 @@ const upload = multer({
 });
 
 // All profile routes require authentication
-router.use(authenticate);
+router.use(authMiddleware);
 
 /**
  * POST /api/profile/onboarding

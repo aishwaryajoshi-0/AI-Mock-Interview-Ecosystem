@@ -1,11 +1,11 @@
 import express from 'express';
-import { authenticate } from '../middleware/authMiddleware.js';
+import { authMiddleware } from '../middleware/authMiddleware.js';
 import { getProgressOverview, getSessionFeedback } from '../controllers/progressController.js';
 
 const router = express.Router();
 
 // All progress routes require authentication
-router.use(authenticate);
+router.use(authMiddleware);
 
 /**
  * GET /api/progress/overview

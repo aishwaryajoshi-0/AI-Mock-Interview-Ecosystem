@@ -73,7 +73,9 @@ const SkillProfile = sequelize.define(
   {
     tableName: 'skill_profiles',
     timestamps: true,
-    indexes: [{ fields: ['user_id'] }],
+    indexes: [
+      { fields: ['user_id'], unique: true }
+    ],
   }
 );
 

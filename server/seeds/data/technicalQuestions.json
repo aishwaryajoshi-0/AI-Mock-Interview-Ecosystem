@@ -1,0 +1,1852 @@
+[
+  {
+    "text": "Explain the difference between SQL and NoSQL databases.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "SQL databases are relational, use structured schema, support ACID transactions, and are best for structured data with complex relationships. NoSQL databases are non-relational, offer flexible schema, scale horizontally, and are better for unstructured data and high throughput.",
+    "keywords": ["SQL", "NoSQL", "relational", "schema", "ACID", "scalability"],
+    "tags": ["databases", "DBMS", "comparison"]
+  },
+  {
+    "text": "What is the difference between GET and POST HTTP methods?",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "easy",
+    "idealAnswer": "GET requests data from a server, parameters are in URL, is cacheable, and has length limitations. POST sends data to a server, parameters are in body, is not cacheable, and has no length limitations. GET should be idempotent while POST is not.",
+    "keywords": ["GET", "POST", "HTTP", "cache", "idempotent", "parameters"],
+    "tags": ["HTTP", "web", "API"]
+  },
+  {
+    "text": "Explain the concept of polymorphism in object-oriented programming.",
+    "type": "technical",
+    "company": null,
+    "domain": "OOP",
+    "difficulty": "medium",
+    "idealAnswer": "Polymorphism allows objects of different classes to be treated as objects of a common superclass. It enables methods to do different things based on the object it is acting upon. Types include method overloading (compile-time) and method overriding (runtime).",
+    "keywords": ["polymorphism", "OOP", "overloading", "overriding", "inheritance", "methods"],
+    "tags": ["OOP", "programming", "concepts"]
+  },
+  {
+    "text": "What is the difference between process and thread?",
+    "type": "technical",
+    "company": null,
+    "domain": "OS",
+    "difficulty": "medium",
+    "idealAnswer": "A process is a program in execution with its own memory space, resources, and address space. Threads are lightweight units within a process that share the same memory space and resources but have separate execution paths. Processes are isolated while threads within a process share memory.",
+    "keywords": ["process", "thread", "memory", "resources", "isolation", "execution"],
+    "tags": ["OS", "concurrency", "processes"]
+  },
+  {
+    "text": "Explain the concept of Big O notation.",
+    "type": "technical",
+    "company": null,
+    "domain": "DSA",
+    "difficulty": "easy",
+    "idealAnswer": "Big O notation describes the upper bound of an algorithm's time or space complexity as input size grows. It helps analyze algorithm efficiency by focusing on the worst-case scenario. Common complexities include O(1), O(log n), O(n), O(n log n), O(n²), and O(2ⁿ).",
+    "keywords": ["Big O", "complexity", "algorithm", "efficiency", "time complexity", "space complexity"],
+    "tags": ["DSA", "algorithms", "complexity"]
+  },
+  {
+    "text": "What is the difference between TCP and UDP?",
+    "type": "technical",
+    "company": null,
+    "domain": "Networking",
+    "difficulty": "medium",
+    "idealAnswer": "TCP is connection-oriented, reliable, ordered, and has error checking with flow control. UDP is connectionless, unreliable, unordered, has no error checking, but is faster with lower overhead. TCP is used for web browsing, email, file transfers. UDP is used for streaming, gaming, DNS.",
+    "keywords": ["TCP", "UDP", "reliable", "connection", "error checking", "protocols"],
+    "tags": ["networking", "protocols", "transport"]
+  },
+  {
+    "text": "Explain the concept of encapsulation in OOP.",
+    "type": "technical",
+    "company": null,
+    "domain": "OOP",
+    "difficulty": "easy",
+    "idealAnswer": "Encapsulation is the bundling of data and methods that operate on that data within a single unit (class). It hides internal state and requires interaction through well-defined interfaces. This provides data protection, reduces complexity, and allows implementation changes without affecting external code.",
+    "keywords": ["encapsulation", "OOP", "data hiding", "class", "interface", "protection"],
+    "tags": ["OOP", "programming", "concepts"]
+  },
+  {
+    "text": "What is a RESTful API?",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "easy",
+    "idealAnswer": "RESTful API is an architectural style for designing networked applications using HTTP requests to access and manipulate data. It follows REST principles: stateless communication, resource-based URLs, standard HTTP methods (GET, POST, PUT, DELETE), and uses standard data formats like JSON.",
+    "keywords": ["REST", "API", "HTTP", "stateless", "resources", "JSON"],
+    "tags": ["API", "web", "architecture"]
+  },
+  {
+    "text": "Explain the difference between stack and queue data structures.",
+    "type": "technical",
+    "company": null,
+    "domain": "DSA",
+    "difficulty": "easy",
+    "idealAnswer": "Stack is LIFO (Last In First Out) - elements are added and removed from the same end (top). Queue is FIFO (First In First Out) - elements are added at rear and removed from front. Stack operations: push, pop, peek. Queue operations: enqueue, dequeue, peek.",
+    "keywords": ["stack", "queue", "LIFO", "FIFO", "data structure", "operations"],
+    "tags": ["DSA", "data structures"]
+  },
+  {
+    "text": "What is the difference between authentication and authorization?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "easy",
+    "idealAnswer": "Authentication verifies who a user is (identity) through credentials like passwords, biometrics, or tokens. Authorization determines what an authenticated user can do (permissions) based on roles, policies, or access rules. Authentication comes first, then authorization.",
+    "keywords": ["authentication", "authorization", "identity", "permissions", "security", "access"],
+    "tags": ["security", "system design"]
+  },
+  {
+    "text": "Explain the concept of inheritance in object-oriented programming.",
+    "type": "technical",
+    "company": null,
+    "domain": "OOP",
+    "difficulty": "easy",
+    "idealAnswer": "Inheritance allows a class to acquire properties and methods from another class (parent/superclass). It promotes code reuse, establishes hierarchical relationships, and enables polymorphism. Types include single inheritance, multiple inheritance, multilevel inheritance, and hierarchical inheritance.",
+    "keywords": ["inheritance", "OOP", "parent class", "child class", "reuse", "hierarchy"],
+    "tags": ["OOP", "programming", "concepts"]
+  },
+  {
+    "text": "What is the difference between synchronous and asynchronous programming?",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Synchronous code executes sequentially, blocking further execution until completion. Asynchronous code allows execution to continue while waiting for operations, using callbacks, promises, or async/await. Async is better for I/O operations, network requests, and preventing UI blocking.",
+    "keywords": ["synchronous", "asynchronous", "blocking", "callbacks", "promises", "async/await"],
+    "tags": ["programming", "concurrency", "JavaScript"]
+  },
+  {
+    "text": "Explain the concept of indexing in databases.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Database indexes are data structures that improve query speed by allowing fast data retrieval without scanning entire tables. They work like book indexes, pointing to data locations. Types include B-tree, hash, and full-text indexes. Trade-offs include increased storage and slower write operations.",
+    "keywords": ["index", "database", "query performance", "B-tree", "storage", "trade-offs"],
+    "tags": ["databases", "DBMS", "performance"]
+  },
+  {
+    "text": "What is the difference between monolithic and microservices architecture?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Monolithic architecture has all functionality in a single deployable unit, simpler to develop initially but harder to scale and maintain. Microservices break applications into small, independent services that communicate via APIs, offering better scalability, fault isolation, and technology flexibility but with increased complexity.",
+    "keywords": ["monolithic", "microservices", "architecture", "scalability", "independence", "complexity"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "Explain the concept of recursion in programming.",
+    "type": "technical",
+    "company": null,
+    "domain": "DSA",
+    "difficulty": "medium",
+    "idealAnswer": "Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem. It requires a base case to terminate and recursive case to break down the problem. Common uses include tree traversal, divide and conquer algorithms, and mathematical computations.",
+    "keywords": ["recursion", "base case", "recursive case", "function call", "divide and conquer", "stack"],
+    "tags": ["programming", "DSA", "algorithms"]
+  },
+  {
+    "text": "What is the difference between HTTP and HTTPS?",
+    "type": "technical",
+    "company": null,
+    "domain": "Networking",
+    "difficulty": "easy",
+    "idealAnswer": "HTTP is unencrypted, sends data in plain text, uses port 80. HTTPS encrypts data using SSL/TLS, provides secure communication, uses port 443. HTTPS protects against eavesdropping, tampering, and man-in-the-middle attacks. HTTPS requires SSL certificates.",
+    "keywords": ["HTTP", "HTTPS", "encryption", "SSL", "TLS", "security"],
+    "tags": ["networking", "security", "protocols"]
+  },
+  {
+    "text": "Explain the concept of normalization in databases.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Normalization is the process of organizing data to reduce redundancy and improve data integrity. It involves dividing databases into tables and establishing relationships. Normal forms (1NF, 2NF, 3NF, BCNF) provide rules for eliminating dependencies and anomalies. Trade-offs include query complexity.",
+    "keywords": ["normalization", "redundancy", "integrity", "normal forms", "dependencies", "anomalies"],
+    "tags": ["databases", "DBMS", "design"]
+  },
+  {
+    "text": "What is the difference between abstract class and interface?",
+    "type": "technical",
+    "company": null,
+    "domain": "OOP",
+    "difficulty": "medium",
+    "idealAnswer": "Abstract class can have both abstract and concrete methods, can have instance variables, supports constructors, and single inheritance. Interface only has abstract methods, no instance variables, no constructors, and supports multiple implementation. Abstract classes share code, interfaces define contracts.",
+    "keywords": ["abstract class", "interface", "methods", "inheritance", "contract", "implementation"],
+    "tags": ["OOP", "programming", "design"]
+  },
+  {
+    "text": "Explain the concept of load balancing in system design.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Load balancing distributes incoming network traffic across multiple servers to ensure no single server bears too much demand. It improves responsiveness, availability, and reliability. Algorithms include round robin, least connections, IP hash. Can be implemented with hardware or software solutions.",
+    "keywords": ["load balancing", "traffic distribution", "scalability", "availability", "algorithms", "servers"],
+    "tags": ["system design", "scalability"]
+  },
+  {
+    "text": "What is the difference between primary key and unique key?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "Primary key uniquely identifies each record, cannot be null, only one per table. Unique key ensures uniqueness but can be null, multiple unique keys allowed per table. Both enforce uniqueness but primary key is the main identifier while unique keys are additional constraints.",
+    "keywords": ["primary key", "unique key", "uniqueness", "null", "constraints", "identifier"],
+    "tags": ["databases", "DBMS", "SQL"]
+  },
+  {
+    "text": "Explain the concept of caching in system design.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Caching stores frequently accessed data in fast storage to reduce latency and database load. Types include browser cache, CDN cache, database cache, application cache. Cache eviction policies include LRU, LFU, FIFO. Challenges include cache invalidation, consistency, and stale data.",
+    "keywords": ["caching", "latency", "performance", "eviction policies", "consistency", "stale data"],
+    "tags": ["system design", "performance"]
+  },
+  {
+    "text": "What is the difference between shallow copy and deep copy?",
+    "type": "technical",
+    "company": null,
+    "domain": "Programming",
+    "difficulty": "medium",
+    "idealAnswer": "Shallow copy copies the object structure but nested objects are still referenced. Deep copy creates completely independent copies including nested objects. Shallow copy is faster but shares references. Deep copy is slower but creates true independence. Implementation varies by language.",
+    "keywords": ["shallow copy", "deep copy", "references", "independence", "nested objects", "memory"],
+    "tags": ["programming", "memory", "concepts"]
+  },
+  {
+    "text": "Explain the concept of database transactions and ACID properties.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Database transactions are sequences of operations treated as a single unit of work. ACID properties ensure reliability: Atomicity (all or nothing), Consistency (database remains valid), Isolation (transactions don't interfere), Durability (committed transactions persist). Essential for financial and critical operations.",
+    "keywords": ["transactions", "ACID", "atomicity", "consistency", "isolation", "durability"],
+    "tags": ["databases", "DBMS", "reliability"]
+  },
+  {
+    "text": "What is the difference between SQL joins: INNER, LEFT, RIGHT, FULL?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "INNER JOIN returns rows with matching values in both tables. LEFT JOIN returns all rows from left table and matching from right (null if no match). RIGHT JOIN returns all rows from right table and matching from left (null if no match). FULL JOIN returns all rows when there's a match in either table.",
+    "keywords": ["SQL joins", "INNER JOIN", "LEFT JOIN", "RIGHT JOIN", "FULL JOIN", "tables"],
+    "tags": ["SQL", "databases", "queries"]
+  },
+  {
+    "text": "Explain the concept of message queues in system design.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Message queues enable asynchronous communication between services by storing messages temporarily. They decouple producers and consumers, handle varying processing rates, and provide fault tolerance. Common implementations include RabbitMQ, Kafka, AWS SQS. Patterns include point-to-point and publish-subscribe.",
+    "keywords": ["message queues", "asynchronous", "decoupling", "fault tolerance", "Kafka", "RabbitMQ"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "What is the difference between array and linked list?",
+    "type": "technical",
+    "company": null,
+    "domain": "DSA",
+    "difficulty": "easy",
+    "idealAnswer": "Arrays have contiguous memory, O(1) random access, fixed size, efficient iteration. Linked lists have non-contiguous memory, O(n) access, dynamic size, efficient insertion/deletion. Arrays use less memory per element. Linked lists require extra memory for pointers. Choice depends on use case.",
+    "keywords": ["array", "linked list", "memory", "access time", "dynamic size", "pointers"],
+    "tags": ["DSA", "data structures"]
+  },
+  {
+    "text": "Explain the concept of dependency injection.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Dependency injection is a design pattern where dependencies are provided to a class rather than created internally. It promotes loose coupling, easier testing, and better maintainability. Types include constructor injection, setter injection, and interface injection. Commonly used in frameworks like Spring and Angular.",
+    "keywords": ["dependency injection", "loose coupling", "testing", "maintainability", "constructor", "setter"],
+    "tags": ["design patterns", "architecture"]
+  },
+  {
+    "text": "What is the difference between NoSQL document stores and key-value stores?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Document stores (MongoDB) store data in flexible JSON-like documents with nested structures, support complex queries, and are schema-less. Key-value stores (Redis) store simple key-value pairs, offer extremely fast performance, but have limited query capabilities. Document stores for complex data, key-value for caching and simple lookups.",
+    "keywords": ["document store", "key-value store", "MongoDB", "Redis", "JSON", "performance"],
+    "tags": ["databases", "NoSQL", "comparison"]
+  },
+  {
+    "text": "Explain the concept of horizontal vs vertical scaling.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Vertical scaling adds more resources (CPU, RAM) to a single server. Simpler but has limits and single point of failure. Horizontal scaling adds more servers to distribute load. More complex but offers unlimited scaling and better fault tolerance. Cloud environments favor horizontal scaling.",
+    "keywords": ["horizontal scaling", "vertical scaling", "resources", "fault tolerance", "cloud", "load distribution"],
+    "tags": ["system design", "scalability"]
+  },
+  {
+    "text": "What is the difference between cookie and session?",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "easy",
+    "idealAnswer": "Cookies are small text files stored on client browser, sent with HTTP requests, have size limits, can be persistent. Sessions are server-side storage of user data, identified by session ID (often stored in cookie), more secure, no size limits. Cookies for client storage, sessions for server-side state.",
+    "keywords": ["cookie", "session", "client", "server", "storage", "security"],
+    "tags": ["web", "HTTP", "security"]
+  },
+  {
+    "text": "Explain the concept of database sharding.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "hard",
+    "idealAnswer": "Sharding partitions a large database across multiple servers (shards) based on a shard key. Each shard holds a subset of data. Improves scalability and performance but adds complexity for queries, transactions, and rebalancing. Common strategies include range-based, hash-based, and directory-based sharding.",
+    "keywords": ["sharding", "partitioning", "scalability", "shard key", "complexity", "distribution"],
+    "tags": ["databases", "scalability", "architecture"]
+  },
+  {
+    "text": "What is the difference between GraphQL and REST?",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "REST uses multiple endpoints for different resources, over-fetching/under-fetching data, HTTP methods define operations. GraphQL uses single endpoint, clients specify exact data needed, strongly typed schema, real-time subscriptions. REST simpler for caching, GraphQL more flexible for complex data requirements.",
+    "keywords": ["GraphQL", "REST", "endpoint", "over-fetching", "schema", "flexibility"],
+    "tags": ["API", "web", "architecture"]
+  },
+  {
+    "text": "Explain the concept of database replication.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Database replication copies data from a primary database to one or more replicas. Improves read performance, provides fault tolerance, and enables disaster recovery. Types include master-slave (one-way), master-master (bi-directional), and multi-master. Challenges include consistency, latency, and conflict resolution.",
+    "keywords": ["replication", "primary", "replica", "fault tolerance", "consistency", "latency"],
+    "tags": ["databases", "scalability", "reliability"]
+  },
+  {
+    "text": "What is the difference between compiler and interpreter?",
+    "type": "technical",
+    "company": null,
+    "domain": "Programming",
+    "difficulty": "easy",
+    "idealAnswer": "Compiler translates entire source code to machine code before execution, produces executable file, faster execution, better optimization. Interpreter translates and executes line by line, no executable file, slower execution, easier debugging. Some languages use both (JIT compilation).",
+    "keywords": ["compiler", "interpreter", "translation", "execution", "optimization", "debugging"],
+    "tags": ["programming", "concepts", "languages"]
+  },
+  {
+    "text": "Explain the concept of microservices communication patterns.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "hard",
+    "idealAnswer": "Microservices communicate via synchronous (REST, gRPC) or asynchronous (message queues, event streaming) patterns. Synchronous is simpler but creates coupling. Asynchronous provides decoupling and reliability. Service mesh handles communication complexity. API gateways provide single entry point. Event-driven architecture enables loose coupling.",
+    "keywords": ["microservices", "communication", "synchronous", "asynchronous", "API gateway", "service mesh"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL when to use each?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Use SQL when data structure is well-defined, relationships are complex, ACID transactions required, data consistency critical. Use NoSQL when data structure is flexible or evolving, high write throughput needed, horizontal scaling required, unstructured data. SQL for traditional applications, NoSQL for big data, real-time apps, and rapid prototyping.",
+    "keywords": ["SQL", "NoSQL", "use cases", "relationships", "consistency", "scalability"],
+    "tags": ["databases", "DBMS", "design"]
+  },
+  {
+    "text": "Explain the concept of API rate limiting.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API rate limiting controls the number of requests a client can make in a time period. Prevents abuse, ensures fair usage, and protects system resources. Algorithms include token bucket, leaky bucket, fixed window, and sliding window. Can be implemented at API gateway, application level, or using reverse proxies.",
+    "keywords": ["rate limiting", "API", "algorithms", "protection", "fair usage", "throttling"],
+    "tags": ["system design", "security", "API"]
+  },
+  {
+    "text": "What is the difference between stateful and stateless applications?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Stateful applications maintain client context between requests, store session data, harder to scale, require sticky sessions. Stateless applications don't maintain context, each request independent, easier to scale horizontally, require external session storage. Modern architectures favor stateless for scalability and reliability.",
+    "keywords": ["stateful", "stateless", "context", "scalability", "session", "independence"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "Explain the concept of database connection pooling.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Connection pooling maintains a cache of database connections to reuse for multiple requests. Reduces overhead of creating new connections, improves performance, and limits resource usage. Pool size configuration balances performance and resource consumption. Common in web applications and ORM frameworks.",
+    "keywords": ["connection pooling", "performance", "overhead", "reuse", "resources", "configuration"],
+    "tags": ["databases", "performance", "optimization"]
+  },
+  {
+    "text": "What is the difference between monolithic and serverless architecture?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Monolithic runs continuously on servers, you manage infrastructure, predictable costs, easier debugging. Serverless runs on-demand in functions, cloud manages infrastructure, pay-per-use, automatic scaling. Monolithic for stable workloads, serverless for sporadic traffic and rapid development. Serverless has cold starts and vendor lock-in.",
+    "keywords": ["monolithic", "serverless", "infrastructure", "scaling", "costs", "vendor lock-in"],
+    "tags": ["system design", "architecture", "cloud"]
+  },
+  {
+    "text": "Explain the concept of API versioning strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API versioning manages changes without breaking existing clients. Strategies include URL versioning (/v1/resource), header versioning (Accept: application/vnd.api.v1+json), query parameter versioning (?version=1), and content negotiation. Each has trade-offs in caching, implementation complexity, and client experience.",
+    "keywords": ["API versioning", "strategies", "URL", "headers", "query parameters", "negotiation"],
+    "tags": ["API", "web", "design"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data models?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL uses relational model with tables, rows, columns, and predefined schemas. Enforces data integrity through constraints. NoSQL offers various models: document (JSON-like), key-value, column-family, and graph. More flexible schemas, better for unstructured data. SQL for structured data with relationships, NoSQL for flexible and hierarchical data.",
+    "keywords": ["SQL", "NoSQL", "data models", "schema", "integrity", "flexibility"],
+    "tags": ["databases", "DBMS", "comparison"]
+  },
+  {
+    "text": "Explain the concept of eventual consistency in distributed systems.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "hard",
+    "idealAnswer": "Eventual consistency guarantees that if no new updates are made, eventually all accesses will return the last updated value. Used in distributed systems where immediate consistency is impractical. Trade-offs include temporary inconsistencies and complex conflict resolution. Common in NoSQL databases and CDN systems.",
+    "keywords": ["eventual consistency", "distributed systems", "CAP theorem", "conflict resolution", "latency", "availability"],
+    "tags": ["system design", "distributed systems", "consistency"]
+  },
+  {
+    "text": "What is the difference between synchronous and asynchronous replication?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Synchronous replication waits for acknowledgment from all replicas before confirming write, ensures strong consistency but slower performance. Asynchronous replication confirms write immediately, replicates in background, faster performance but risk of data loss if primary fails. Choice depends on consistency vs performance requirements.",
+    "keywords": ["synchronous", "asynchronous", "replication", "consistency", "performance", "data loss"],
+    "tags": ["databases", "replication", "consistency"]
+  },
+  {
+    "text": "Explain the concept of API authentication methods.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API authentication methods include API keys (simple but less secure), OAuth 2.0 (industry standard for delegated access), JWT (stateless tokens), Basic Auth (username/password), and mutual TLS (certificate-based). Choice depends on security requirements, use case, and implementation complexity. OAuth 2.0 and JWT are most common.",
+    "keywords": ["authentication", "API keys", "OAuth 2.0", "JWT", "Basic Auth", "mTLS"],
+    "tags": ["security", "API", "authentication"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL scaling?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases traditionally scale vertically (bigger servers), though some support horizontal scaling with complexity. NoSQL databases designed for horizontal scaling across commodity servers. SQL scaling limited by single-server constraints. NoSQL scales better for large datasets and high throughput but may sacrifice some consistency features.",
+    "keywords": ["SQL", "NoSQL", "scaling", "vertical", "horizontal", "throughput"],
+    "tags": ["databases", "scalability", "performance"]
+  },
+  {
+    "text": "Explain the concept of database indexing strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Indexing strategies include B-tree indexes (range queries, equality), hash indexes (equality only), composite indexes (multiple columns), covering indexes (include all needed columns), and partial indexes (subset of data). Choice depends on query patterns, read/write ratios, and storage constraints. Over-indexing slows writes.",
+    "keywords": ["indexing", "strategies", "B-tree", "hash", "composite", "query patterns"],
+    "tags": ["databases", "performance", "optimization"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL query languages?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL uses standardized declarative language (SELECT, INSERT, UPDATE) with JOINs for relational data. NoSQL query languages vary by type: document stores use JSON-like queries, key-value stores use simple key access, column-family uses Cassandra Query Language, graph databases use graph traversal languages. SQL is more standardized, NoSQL varies by implementation.",
+    "keywords": ["SQL", "NoSQL", "query languages", "standardization", "JOINs", "variety"],
+    "tags": ["databases", "DBMS", "queries"]
+  },
+  {
+    "text": "Explain the concept of API security best practices.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API security best practices include using HTTPS, implementing proper authentication and authorization, rate limiting, input validation, output encoding, using security headers (CORS, CSP), logging and monitoring, and keeping dependencies updated. Defense in depth approach with multiple security layers.",
+    "keywords": ["API security", "HTTPS", "authentication", "rate limiting", "validation", "monitoring"],
+    "tags": ["security", "API", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL transaction support?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases provide full ACID transaction support across multiple operations and tables. NoSQL transaction support varies: some document databases support multi-document transactions, key-value stores often limited to single-key operations, distributed databases offer eventual consistency. SQL for complex transactions, NoSQL may sacrifice ACID for performance and scalability.",
+    "keywords": ["SQL", "NoSQL", "transactions", "ACID", "consistency", "scalability"],
+    "tags": ["databases", "DBMS", "transactions"]
+  },
+  {
+    "text": "Explain the concept of API documentation tools.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "easy",
+    "idealAnswer": "API documentation tools include Swagger/OpenAPI (interactive documentation, code generation), Postman (testing and documentation), API Blueprint (Markdown-based), and RAML (RESTful API Modeling Language). Tools help create, maintain, and share API documentation, improving developer experience and API adoption.",
+    "keywords": ["API documentation", "Swagger", "OpenAPI", "Postman", "developer experience", "adoption"],
+    "tags": ["API", "tools", "documentation"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL schema flexibility?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases require predefined schema with fixed columns and types, schema changes are expensive and require migrations. NoSQL databases offer schema flexibility, can store varying structures, evolve schema without downtime. SQL for stable data structures, NoSQL for evolving or heterogeneous data. Schema flexibility vs data integrity trade-off.",
+    "keywords": ["SQL", "NoSQL", "schema", "flexibility", "migrations", "integrity"],
+    "tags": ["databases", "DBMS", "design"]
+  },
+  {
+    "text": "Explain the concept of API testing strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API testing strategies include unit testing (individual endpoints), integration testing (API interactions), contract testing (API compliance), performance testing (load and stress), and security testing (vulnerabilities). Tools include Postman, JMeter, SoapUI. Automated testing in CI/CD ensures API reliability and performance.",
+    "keywords": ["API testing", "unit testing", "integration testing", "performance", "security", "automation"],
+    "tags": ["API", "testing", "quality assurance"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data consistency models?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "hard",
+    "idealAnswer": "SQL databases typically offer strong consistency (immediate, all nodes see same data). NoSQL databases offer various consistency models: strong, eventual, causal, and tunable consistency. Trade-offs between consistency, availability, and partition tolerance (CAP theorem). SQL for immediate consistency, NoSQL for availability and partition tolerance.",
+    "keywords": ["SQL", "NoSQL", "consistency", "CAP theorem", "availability", "partition tolerance"],
+    "tags": ["databases", "distributed systems", "consistency"]
+  },
+  {
+    "text": "Explain the concept of API gateway patterns.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API gateway patterns include single entry point, request routing, composition (aggregating multiple service calls), protocol translation, and cross-cutting concerns (authentication, rate limiting). Simplifies client interaction, provides security, and handles traffic management. Popular implementations include Kong, AWS API Gateway, and Netflix Zuul.",
+    "keywords": ["API gateway", "routing", "composition", "security", "traffic management", "patterns"],
+    "tags": ["system design", "API", "gateway"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL use cases?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL use cases: financial systems, inventory management, CRM, applications requiring complex queries and relationships. NoSQL use cases: real-time big data, content management, social networks, IoT data, rapid prototyping. SQL for structured, relational data with consistency requirements. NoSQL for flexible, high-volume, distributed data.",
+    "keywords": ["SQL", "NoSQL", "use cases", "financial", "big data", "IoT"],
+    "tags": ["databases", "DBMS", "applications"]
+  },
+  {
+    "text": "Explain the concept of API monitoring and observability.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API monitoring tracks metrics (response time, error rates, throughput), logging captures events, tracing follows requests across services. Tools include Prometheus, Grafana, ELK stack, Jaeger. Observability combines monitoring, logging, and tracing to understand system behavior, debug issues, and ensure performance.",
+    "keywords": ["monitoring", "observability", "metrics", "logging", "tracing", "performance"],
+    "tags": ["system design", "monitoring"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL deployment models?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases often deployed on dedicated servers or managed services with vertical scaling focus. NoSQL databases designed for distributed deployment across clusters, horizontal scaling, and cloud-native environments. SQL deployment simpler initially, NoSQL better for cloud and distributed architectures. Both available as managed cloud services.",
+    "keywords": ["SQL", "NoSQL", "deployment", "scaling", "cloud", "distributed"],
+    "tags": ["databases", "deployment", "cloud"]
+  },
+  {
+    "text": "Explain the concept of API design principles.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API design principles include using nouns for resources, plural names, consistent naming conventions, appropriate HTTP methods, status codes, pagination, filtering, sorting, versioning, and comprehensive documentation. Good API design improves developer experience, reduces integration complexity, and ensures long-term maintainability.",
+    "keywords": ["API design", "REST", "naming conventions", "HTTP methods", "status codes", "documentation"],
+    "tags": ["API", "design", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL backup and recovery?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL backup typically involves full database dumps, transaction logs, point-in-time recovery. NoSQL backup varies: document stores use snapshots, key-value stores use key-level backup, distributed systems use replica-based recovery. SQL backup more standardized, NoSQL backup depends on implementation and data model.",
+    "keywords": ["SQL", "NoSQL", "backup", "recovery", "snapshots", "replicas"],
+    "tags": ["databases", "operations", "reliability"]
+  },
+  {
+    "text": "Explain the concept of API rate limiting algorithms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Rate limiting algorithms include token bucket (fixed capacity, tokens replenish over time), leaky bucket (fixed rate, requests leak out), fixed window (reset counter after time period), and sliding window (more accurate tracking). Choice depends on desired traffic shape, implementation complexity, and accuracy requirements.",
+    "keywords": ["rate limiting", "algorithms", "token bucket", "leaky bucket", "fixed window", "sliding window"],
+    "tags": ["system design", "algorithms", "API"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL cost structures?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases often have higher upfront costs for hardware and licensing, predictable scaling costs. NoSQL databases designed for commodity hardware, lower initial costs, but operational complexity can increase costs. Cloud services offer pay-as-you-go for both. Total cost depends on workload, scaling requirements, and operational expertise.",
+    "keywords": ["SQL", "NoSQL", "cost", "scaling", "cloud", "operations"],
+    "tags": ["databases", "cost", "operations"]
+  },
+  {
+    "text": "Explain the concept of API error handling strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API error handling includes using appropriate HTTP status codes (4xx for client errors, 5xx for server errors), consistent error response formats, detailed error messages, error codes for programmatic handling, and logging for debugging. Good error handling improves developer experience and debugging capability.",
+    "keywords": ["error handling", "HTTP status codes", "error responses", "logging", "debugging", "developer experience"],
+    "tags": ["API", "design", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL community and ecosystem?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "SQL has mature ecosystem, standardized language, many tools, extensive documentation, and large talent pool. NoSQL ecosystem is newer, more fragmented with different implementations, rapidly evolving tools, and smaller but growing talent pool. SQL benefits from decades of development, NoSQL from innovation and cloud-native design.",
+    "keywords": ["SQL", "NoSQL", "ecosystem", "community", "tools", "talent"],
+    "tags": ["databases", "ecosystem", "community"]
+  },
+  {
+    "text": "Explain the concept of API pagination strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Pagination strategies include offset-based (page number and size), cursor-based (opaque cursor for position), keyset pagination (use last seen value), and time-based pagination. Cursor-based is better for large datasets and real-time data. Choice depends on data characteristics and performance requirements.",
+    "keywords": ["pagination", "offset", "cursor", "keyset", "performance", "large datasets"],
+    "tags": ["API", "design", "performance"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL learning curve?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "SQL has standardized language, many learning resources, and concepts transfer across implementations. NoSQL has varying query languages and concepts per database type, less standardization, but often simpler for basic operations. SQL easier to learn fundamentals, NoSQL requires learning specific database characteristics and patterns.",
+    "keywords": ["SQL", "NoSQL", "learning curve", "standardization", "resources", "simplicity"],
+    "tags": ["databases", "learning", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API caching strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API caching strategies include client-side caching (browser cache), CDN caching (edge caching), application caching (Redis, Memcached), and database query caching. Cache invalidation strategies include time-based, event-based, and manual. Caching reduces latency, server load, and improves scalability but adds complexity.",
+    "keywords": ["caching", "strategies", "CDN", "Redis", "invalidation", "performance"],
+    "tags": ["system design", "performance", "API"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data modeling?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data modeling focuses on normalization, reducing redundancy, defining relationships through foreign keys. NoSQL data modeling emphasizes denormalization, embedding related data, optimizing for read/write patterns. SQL modeling for data integrity, NoSQL for performance and query patterns. Different mindsets for data structure design.",
+    "keywords": ["data modeling", "normalization", "denormalization", "relationships", "performance", "patterns"],
+    "tags": ["databases", "design", "modeling"]
+  },
+  {
+    "text": "Explain the concept of API security headers.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API security headers include CORS (Cross-Origin Resource Sharing), CSP (Content Security Policy), X-Frame-Options (clickjacking protection), X-Content-Type-Options (MIME sniffing protection), Strict-Transport-Security (HTTPS enforcement), and X-XSS-Protection (XSS filtering). Headers protect against various web vulnerabilities and attacks.",
+    "keywords": ["security headers", "CORS", "CSP", "X-Frame-Options", "HTTPS", "XSS"],
+    "tags": ["security", "API", "headers"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL maturity and stability?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "SQL databases are mature, stable, with proven reliability over decades. NoSQL databases are newer, rapidly evolving, with frequent updates and changing features. SQL for mission-critical stability, NoSQL for innovation and modern use cases. SQL offers predictable behavior, NoSQL offers cutting-edge features.",
+    "keywords": ["SQL", "NoSQL", "maturity", "stability", "reliability", "innovation"],
+    "tags": ["databases", "comparison", "stability"]
+  },
+  {
+    "text": "Explain the concept of API versioning deprecation strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API version deprecation strategies include sunset headers (warning about deprecation), grace periods (time to migrate), migration guides, automatic redirects, and feature flags. Communication through documentation, email notifications, and status pages. Smooth deprecation requires planning and developer communication.",
+    "keywords": ["deprecation", "sunset headers", "grace periods", "migration", "communication", "feature flags"],
+    "tags": ["API", "lifecycle", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL vendor lock-in?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL has standard language and concepts, reducing vendor lock-in, though implementations have proprietary features. NoSQL has less standardization, more vendor-specific features and query languages, increasing lock-in risk. SQL easier to migrate between vendors, NoSQL migration more challenging due to implementation differences.",
+    "keywords": ["vendor lock-in", "standardization", "migration", "proprietary", "SQL", "NoSQL"],
+    "tags": ["databases", "comparison", "vendor"]
+  },
+  {
+    "text": "Explain the concept of API load testing.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API load testing simulates expected traffic to measure performance, identify bottlenecks, and determine capacity. Tools include JMeter, Gatling, k6. Metrics include response time, throughput, error rates, and resource utilization. Regular load testing ensures APIs can handle production traffic and helps with capacity planning.",
+    "keywords": ["load testing", "performance", "bottlenecks", "capacity", "JMeter", "metrics"],
+    "tags": ["system design", "testing", "performance"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data integrity?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases enforce data integrity through constraints (primary key, foreign key, unique, check), transactions, and referential integrity. NoSQL databases offer limited integrity enforcement, often relying on application-level validation. SQL for strong data integrity, NoSQL trades integrity for flexibility and performance.",
+    "keywords": ["data integrity", "constraints", "transactions", "referential integrity", "validation", "enforcement"],
+    "tags": ["databases", "integrity", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API documentation standards.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API documentation standards include OpenAPI/Swagger (comprehensive spec), API Blueprint (Markdown-based), RAML (RESTful API Modeling Language), and JSON Schema. Standards enable documentation generation, client SDK creation, and API testing. Good documentation includes endpoints, parameters, responses, examples, and authentication.",
+    "keywords": ["documentation standards", "OpenAPI", "Swagger", "API Blueprint", "RAML", "JSON Schema"],
+    "tags": ["API", "documentation", "standards"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL query performance?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL query performance optimized through indexes, query optimization, and execution plans. NoSQL query performance varies: key-value extremely fast for key lookups, document stores good for nested queries, graph databases excellent for relationship queries. SQL for complex queries, NoSQL for specific access patterns and high throughput.",
+    "keywords": ["query performance", "indexes", "optimization", "key-value", "document", "graph"],
+    "tags": ["databases", "performance", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API security testing.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API security testing includes penetration testing, vulnerability scanning, authentication testing, input validation testing, and authorization testing. Tools include OWASP ZAP, Burp Suite, Postman security features. Regular security testing identifies vulnerabilities like injection attacks, broken authentication, and data exposure.",
+    "keywords": ["security testing", "penetration testing", "vulnerability scanning", "OWASP", "authentication", "authorization"],
+    "tags": ["security", "API", "testing"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL horizontal scaling?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL horizontal scaling achieved through sharding, read replicas, and clustering, but complex to implement and maintain. NoSQL designed for horizontal scaling with built-in sharding, replication, and automatic distribution. SQL scaling possible but requires expertise, NoSQL scaling simpler by design. Both benefit from cloud managed services.",
+    "keywords": ["horizontal scaling", "sharding", "replication", "clustering", "complexity", "distribution"],
+    "tags": ["databases", "scalability", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API governance.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API governance includes policies for API design, security, versioning, documentation, and lifecycle management. Ensures consistency across APIs, compliance with standards, and proper deprecation processes. Tools include API gateways, API management platforms, and governance frameworks. Governance improves API quality and developer experience.",
+    "keywords": ["API governance", "policies", "consistency", "compliance", "lifecycle", "management"],
+    "tags": ["system design", "API", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data relationships?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL uses foreign keys to define relationships between tables, supports complex JOINs, enforces referential integrity. NoSQL handles relationships differently: document databases embed related data or use manual references, graph databases designed for relationships, key-value stores minimal relationship support. SQL for complex relationships, NoSQL for embedded or graph-based relationships.",
+    "keywords": ["relationships", "foreign keys", "JOINs", "embedding", "graph", "referential integrity"],
+    "tags": ["databases", "comparison", "relationships"]
+  },
+  {
+    "text": "Explain the concept of API mocking for development.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API mocking simulates API responses for development and testing without real backend. Tools include Postman Mock Server, JSON Server, WireMock, and Prism. Benefits include parallel development, testing edge cases, and offline development. Mocking should match real API contracts and be updated when APIs change.",
+    "keywords": ["API mocking", "development", "testing", "Postman", "WireMock", "offline development"],
+    "tags": ["API", "development", "testing"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL backup complexity?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL backup more standardized with well-established tools and procedures for consistent backups and point-in-time recovery. NoSQL backup varies by database type and implementation, some require different approaches for different data models. SQL backup processes more mature, NoSQL backup may require custom solutions depending on database.",
+    "keywords": ["backup", "complexity", "standardization", "tools", "recovery", "procedures"],
+    "tags": ["databases", "operations", "backup"]
+  },
+  {
+    "text": "Explain the concept of API lifecycle management.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API lifecycle management includes planning, design, development, testing, deployment, versioning, monitoring, and deprecation. Each phase requires specific processes and tools. Proper lifecycle management ensures API quality, security, and maintainability throughout its existence. API management platforms support lifecycle automation.",
+    "keywords": ["lifecycle management", "planning", "deployment", "versioning", "deprecation", "automation"],
+    "tags": ["system design", "API", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data migration?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data migration uses standardized ETL tools, schema mapping, and transformation scripts. NoSQL data migration varies by data model, may require custom transformation logic, and different tools for different database types. SQL migration more standardized, NoSQL migration depends on source and target database characteristics.",
+    "keywords": ["data migration", "ETL", "schema mapping", "transformation", "standardization", "custom logic"],
+    "tags": ["databases", "migration", "operations"]
+  },
+  {
+    "text": "Explain the concept of API rate limiting implementation.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Rate limiting implementation can be at API gateway, application level, or using reverse proxies. Storage options include in-memory (Redis), distributed caches, or databases. Considerations include distributed systems consistency, performance impact, and configuration flexibility. Implementation choice depends on architecture and requirements.",
+    "keywords": ["rate limiting", "implementation", "API gateway", "Redis", "consistency", "performance"],
+    "tags": ["system design", "API", "implementation"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data validation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases provide built-in data validation through constraints, data types, and triggers. NoSQL databases offer limited built-in validation, often relying on application-level validation or document schema validation. SQL for database-enforced validation, NoSQL for application-level validation flexibility. Validation approach affects data quality.",
+    "keywords": ["data validation", "constraints", "data types", "triggers", "application-level", "schema validation"],
+    "tags": ["databases", "validation", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API monitoring metrics.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API monitoring metrics include request rate, response time (p50, p95, p99), error rate, throughput, latency distribution, and resource utilization. Custom metrics track business-specific KPIs. Metrics collection uses tools like Prometheus, Datadog, or cloud monitoring services. Alerting based on metric thresholds ensures proactive issue detection.",
+    "keywords": ["monitoring metrics", "response time", "error rate", "throughput", "latency", "alerting"],
+    "tags": ["system design", "monitoring", "metrics"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data partitioning?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL partitioning divides large tables into smaller, more manageable pieces based on ranges, lists, or hashes. NoSQL partitioning (sharding) distributes data across servers based on shard keys. SQL partitioning within single database, NoSQL sharding across distributed systems. Both improve query performance and manageability but at different scales.",
+    "keywords": ["partitioning", "sharding", "ranges", "hashes", "performance", "manageability"],
+    "tags": ["databases", "scalability", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API security best practices for authentication.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API authentication best practices include using industry-standard protocols (OAuth 2.0, OpenID Connect), implementing token expiration and refresh, using secure token storage, multi-factor authentication for sensitive operations, and regularly rotating secrets. Avoid basic auth in production, use HTTPS always, and implement proper session management.",
+    "keywords": ["authentication", "OAuth 2.0", "OpenID Connect", "token expiration", "MFA", "HTTPS"],
+    "tags": ["security", "API", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data archiving?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data archiving moves old data to separate tables or databases, maintaining schema consistency. NoSQL archiving varies by data model, may use TTL (time-to-live) features, cold storage, or separate collections. SQL archiving more structured, NoSQL archiving more flexible but less standardized. Both reduce active dataset size and costs.",
+    "keywords": ["data archiving", "TTL", "cold storage", "schema consistency", "flexibility", "costs"],
+    "tags": ["databases", "operations", "archiving"]
+  },
+  {
+    "text": "Explain the concept of API design for mobile applications.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Mobile API design includes optimizing for bandwidth (minimize payload size), supporting offline functionality, implementing efficient pagination, using push notifications, and considering battery impact. Mobile APIs should be forgiving of network conditions, support background sync, and provide progressive data loading.",
+    "keywords": ["mobile API", "bandwidth", "offline", "pagination", "push notifications", "battery"],
+    "tags": ["system design", "API", "mobile"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data compression?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases offer built-in compression at table or column level, with various compression algorithms. NoSQL compression varies by implementation: some compress automatically, others require configuration. SQL compression more standardized, NoSQL compression depends on database type and configuration. Both reduce storage costs and improve I/O performance.",
+    "keywords": ["data compression", "storage costs", "I/O performance", "algorithms", "standardization", "configuration"],
+    "tags": ["databases", "performance", "storage"]
+  },
+  {
+    "text": "Explain the concept of API security for public APIs.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Public API security includes API keys for authentication, rate limiting to prevent abuse, request signing for integrity, IP whitelisting, and monitoring for suspicious activity. Documentation should clearly communicate security requirements. Consider using API gateways for centralized security management and implement proper CORS policies.",
+    "keywords": ["public API", "API keys", "rate limiting", "request signing", "IP whitelisting", "monitoring"],
+    "tags": ["security", "API", "public"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data synchronization?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL synchronization uses replication, log-based CDC (Change Data Capture), and ETL processes. NoSQL synchronization varies: some have built-in replication, others require custom sync logic. SQL synchronization more mature with established tools, NoSQL synchronization depends on database capabilities and may require custom solutions for complex scenarios.",
+    "keywords": ["data synchronization", "replication", "CDC", "ETL", "custom logic", "maturity"],
+    "tags": ["databases", "synchronization", "operations"]
+  },
+  {
+    "text": "Explain the concept of API design for IoT applications.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "IoT API design includes handling high device volumes, supporting lightweight protocols (MQTT, CoAP), implementing efficient data batching, managing device authentication at scale, and supporting offline operation. APIs should handle intermittent connectivity, provide device management endpoints, and optimize for low-bandwidth networks.",
+    "keywords": ["IoT API", "MQTT", "CoAP", "batching", "device authentication", "offline"],
+    "tags": ["system design", "API", "IoT"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data governance?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data governance includes established practices for data quality, lineage, privacy, and compliance with tools and standards. NoSQL data governance is less mature, requiring custom approaches for different data models. SQL governance more mature with dedicated tools, NoSQL governance evolving with database adoption.",
+    "keywords": ["data governance", "quality", "lineage", "privacy", "compliance", "standards"],
+    "tags": ["databases", "governance", "enterprise"]
+  },
+  {
+    "text": "Explain the concept of API security for internal APIs.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Internal API security includes network-level security (VPC, firewalls), service-to-service authentication (mTLS, JWT), principle of least privilege, regular security audits, and monitoring. While less exposed than public APIs, internal APIs still need proper authentication, authorization, and monitoring to prevent insider threats and lateral movement.",
+    "keywords": ["internal API", "network security", "mTLS", "least privilege", "audits", "monitoring"],
+    "tags": ["security", "API", "internal"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data masking?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data masking uses built-in features or third-party tools to mask sensitive data in non-production environments. NoSQL data masking varies by implementation, may require custom masking logic for different data models. SQL masking more standardized, NoSQL masking depends on database type and may require custom implementation.",
+    "keywords": ["data masking", "sensitive data", "privacy", "compliance", "standardization", "custom logic"],
+    "tags": ["databases", "security", "privacy"]
+  },
+  {
+    "text": "Explain the concept of API design for real-time applications.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Real-time API design includes using WebSockets or Server-Sent Events for push updates, implementing optimistic UI updates, handling connection failures gracefully, supporting reconnection logic, and minimizing latency. APIs should provide real-time endpoints alongside REST endpoints for different use cases.",
+    "keywords": ["real-time API", "WebSockets", "SSE", "optimistic UI", "reconnection", "latency"],
+    "tags": ["API", "real-time", "design"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data lineage?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data lineage tracked through database logs, ETL tools, and metadata repositories with established practices. NoSQL data lineage less standardized, requiring custom solutions for different data models. SQL lineage more mature with dedicated tools, NoSQL lineage evolving with database adoption and schema flexibility.",
+    "keywords": ["data lineage", "logs", "ETL", "metadata", "standardization", "custom solutions"],
+    "tags": ["databases", "governance", "lineage"]
+  },
+  {
+    "text": "Explain the concept of API security for partner APIs.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Partner API security includes mutual authentication (mTLS, OAuth 2.0), signed requests, IP restrictions, rate limiting per partner, and comprehensive audit logging. Clear agreements on security requirements, regular security reviews, and incident response procedures. Balance security with partner integration ease.",
+    "keywords": ["partner API", "mTLS", "OAuth 2.0", "signed requests", "audit logging", "agreements"],
+    "tags": ["security", "API", "partners"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data cataloging?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data catalog uses information schema, metadata repositories, and established catalog tools. NoSQL data catalog varies by implementation, may require custom metadata extraction for different data models. SQL cataloging more mature with dedicated tools, NoSQL catalog depends on database capabilities and schema flexibility.",
+    "keywords": ["data catalog", "information schema", "metadata", "standardization", "schema flexibility", "custom extraction"],
+    "tags": ["databases", "governance", "catalog"]
+  },
+  {
+    "text": "Explain the concept of API design for high-availability systems.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "High-availability API design includes redundancy across multiple availability zones, graceful degradation, circuit breakers, retry logic with exponential backoff, and health check endpoints. APIs should handle failures gracefully, provide fallback responses, and maintain service during partial outages.",
+    "keywords": ["high availability", "redundancy", "circuit breaker", "retry logic", "health checks", "graceful degradation"],
+    "tags": ["system design", "API", "reliability"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data quality?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data quality enforced through constraints, validation rules, and established ETL processes. NoSQL data quality relies more on application-level validation, schema validation, and custom quality checks. SQL quality more database-enforced, NoSQL quality more application-managed. Both require ongoing monitoring and improvement.",
+    "keywords": ["data quality", "constraints", "validation", "ETL", "application-level", "monitoring"],
+    "tags": ["databases", "quality", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API security monitoring.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API security monitoring includes tracking authentication failures, unusual request patterns, rate limit violations, and potential attack indicators. Integration with SIEM systems, real-time alerting, and regular security audits. Monitoring helps detect breaches, enforce policies, and demonstrate compliance with security standards.",
+    "keywords": ["security monitoring", "authentication failures", "attack indicators", "SIEM", "alerting", "compliance"],
+    "tags": ["security", "monitoring", "API"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data privacy?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data privacy enforced through row-level security, encryption, and established compliance tools. NoSQL data privacy varies by implementation, may require custom privacy controls for different data models. SQL privacy more standardized with dedicated features, NoSQL privacy depends on database capabilities and configuration.",
+    "keywords": ["data privacy", "row-level security", "encryption", "compliance", "standardization", "custom controls"],
+    "tags": ["databases", "security", "privacy"]
+  },
+  {
+    "text": "Explain the concept of API design for microservices.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Microservices API design includes bounded contexts per service, versioning for independent deployment, circuit breakers for resilience, service discovery, and asynchronous communication where appropriate. APIs should be coarse-grained to minimize inter-service calls, support eventual consistency, and handle partial failures gracefully.",
+    "keywords": ["microservices", "bounded contexts", "circuit breaker", "service discovery", "asynchronous", "eventual consistency"],
+    "tags": ["system design", "API", "microservices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data retention?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data retention managed through automated jobs, partitioning, and established lifecycle policies. NoSQL data retention varies: some have TTL features, others require custom cleanup processes. SQL retention more standardized with mature tools, NoSQL retention depends on database capabilities and may require custom implementation.",
+    "keywords": ["data retention", "automated jobs", "partitioning", "lifecycle policies", "TTL", "custom implementation"],
+    "tags": ["databases", "operations", "retention"]
+  },
+  {
+    "text": "Explain the concept of API security for internal developer portals.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "Internal developer portal security includes SSO integration, role-based access control, API key management, audit logging, and sandbox environments. Implement self-service onboarding with proper approvals, comprehensive documentation, and monitoring for abuse. Balance ease of access with security requirements.",
+    "keywords": ["developer portal", "SSO", "RBAC", "API keys", "audit logging", "sandbox"],
+    "tags": ["security", "API", "developer experience"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data discovery?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data discovery through information schema, metadata queries, and established catalog tools. NoSQL data discovery varies by implementation, may require custom approaches for different data models. SQL discovery more standardized with dedicated tools, NoSQL discovery depends on database capabilities and schema flexibility.",
+    "keywords": ["data discovery", "information schema", "metadata queries", "catalog tools", "standardization", "custom solutions"],
+    "tags": ["databases", "discovery", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API security for cloud-native applications.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Cloud-native API security includes container security, service mesh integration, secret management, identity federation, and cloud-specific security features. Implement security policies consistent with cloud provider best practices, use managed security services, and ensure security across dynamic infrastructure. Consider zero-trust principles.",
+    "keywords": ["cloud-native security", "container security", "service mesh", "secret management", "identity federation", "zero-trust"],
+    "tags": ["security", "API", "cloud-native"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data classification automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data classification automation through ML-based classification, rule-based systems, and established classification tools. NoSQL data classification automation less standardized, requiring custom solutions for different data models. SQL classification automation more mature with dedicated tools, NoSQL classification automation evolving with database adoption.",
+    "keywords": ["classification automation", "ML-based classification", "rule-based systems", "classification tools", "standardization", "custom solutions"],
+    "tags": ["databases", "classification", "automation"]
+  },
+  {
+    "text": "Explain the concept of API design for blockchain applications.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Blockchain API design includes handling blockchain transaction latency, idempotency for transaction retries, webhooks for blockchain events, and smart contract interaction patterns. APIs should handle network congestion, provide transaction status tracking, and implement proper error handling for blockchain-specific failures.",
+    "keywords": ["blockchain API", "transaction latency", "idempotency", "webhooks", "smart contracts", "network congestion"],
+    "tags": ["system design", "API", "blockchain"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data sharing automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data sharing automation through database links, data exchange tools, and established sharing platforms. NoSQL data sharing automation less standardized, requiring custom solutions for different data models. SQL sharing automation more mature with dedicated tools, NoSQL sharing automation depends on database capabilities.",
+    "keywords": ["sharing automation", "database links", "data exchange", "sharing platforms", "standardization", "custom solutions"],
+    "tags": ["databases", "sharing", "automation"]
+  },
+  {
+    "text": "Explain the concept of API security for service meshes.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Service mesh security includes mTLS for service-to-service communication, fine-grained access policies, observability for security events, and automated certificate management. Implement security policies at mesh level, monitor for unusual traffic patterns, and integrate with existing identity providers. Mesh provides unified security but adds complexity.",
+    "keywords": ["service mesh security", "mTLS", "access policies", "observability", "certificate management", "identity providers"],
+    "tags": ["security", "API", "service mesh"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data governance automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data governance automation through established tools for policy enforcement, quality checks, and compliance monitoring. NoSQL data governance automation less standardized, requiring custom solutions for different data models. SQL governance automation more mature with dedicated tools, NoSQL governance automation depends on database capabilities.",
+    "keywords": ["governance automation", "policy enforcement", "quality checks", "compliance monitoring", "standardization", "custom solutions"],
+    "tags": ["databases", "governance", "automation"]
+  },
+  {
+    "text": "Explain the concept of API design for low-code platforms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Low-code platform API design includes schema-driven endpoints, auto-generated documentation, visual API builders, and integration with workflow engines. APIs should support dynamic configuration, provide clear error messages for non-technical users, and integrate with platform's visual development environment.",
+    "keywords": ["low-code API", "schema-driven", "auto-generated documentation", "visual builders", "workflow engines", "dynamic configuration"],
+    "tags": ["system design", "API", "low-code"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data contract testing?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data contract testing through schema validation, established testing frameworks, and data integrity checks. NoSQL data contract testing varies by implementation, may require custom validation for different data models. SQL contract testing more standardized with dedicated tools, NoSQL contract testing depends on database capabilities and schema flexibility.",
+    "keywords": ["contract testing", "schema validation", "testing frameworks", "integrity checks", "standardization", "custom validation"],
+    "tags": ["databases", "testing", "quality"]
+  },
+  {
+    "text": "Explain the concept of API security for API management platforms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API management platform security includes unified authentication, policy enforcement, threat protection, and comprehensive monitoring. Implement security policies at platform level, integrate with enterprise identity systems, and provide security analytics. Platforms simplify security management but create vendor dependency and potential single point of control.",
+    "keywords": ["API management security", "unified authentication", "policy enforcement", "threat protection", "monitoring", "analytics"],
+    "tags": ["security", "API", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data pipeline automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data pipeline automation through ETL tools, stored procedures, and established orchestration frameworks. NoSQL data pipeline automation varies by implementation, may require custom pipeline logic for different data models. SQL pipeline automation more standardized with dedicated tools, NoSQL pipeline automation depends on database capabilities.",
+    "keywords": ["pipeline automation", "ETL tools", "stored procedures", "orchestration", "standardization", "custom logic"],
+    "tags": ["databases", "pipelines", "automation"]
+  },
+  {
+    "text": "Explain the concept of API design for headless CMS.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Headless CMS API design includes content modeling flexibility, multi-language support, image optimization endpoints, and webhook notifications for content changes. APIs should support preview modes, provide filtering and sorting capabilities, and handle content relationships efficiently. Consider GraphQL for flexible content queries.",
+    "keywords": ["headless CMS API", "content modeling", "multi-language", "image optimization", "webhooks", "preview modes"],
+    "tags": ["system design", "API", "CMS"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data quality automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data quality automation through constraint enforcement, established quality tools, and automated validation pipelines. NoSQL data quality automation less standardized, requiring custom validation for different data models. SQL quality automation more mature with dedicated tools, NoSQL quality automation evolving with database adoption and schema flexibility.",
+    "keywords": ["quality automation", "constraint enforcement", "quality tools", "validation pipelines", "standardization", "custom validation"],
+    "tags": ["databases", "quality", "automation"]
+  },
+  {
+    "text": "Explain the concept of API security for zero-trust architecture.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Zero-trust API security includes verify-then-authorize for every request, least privilege access, continuous authentication, and micro-segmentation. Implement device trust verification, behavioral analytics, and automated response to anomalies. Zero-trust assumes breach, requiring continuous validation rather than perimeter-based security.",
+    "keywords": ["zero-trust", "verify-then-authorize", "least privilege", "continuous authentication", "micro-segmentation", "behavioral analytics"],
+    "tags": ["security", "API", "zero-trust"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data lineage automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data lineage automation through database logs, ETL metadata, and established lineage tools. NoSQL data lineage automation less standardized, requiring custom solutions for different data models. SQL lineage automation more mature with dedicated tools, NoSQL lineage automation evolving with database adoption and schema flexibility.",
+    "keywords": ["lineage automation", "database logs", "ETL metadata", "lineage tools", "standardization", "custom solutions"],
+    "tags": ["databases", "lineage", "automation"]
+  },
+  {
+    "text": "Explain the concept of API design for e-commerce platforms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "E-commerce API design includes product catalog APIs, shopping cart management, order processing, payment integration, and inventory management. APIs should handle high concurrency, implement caching for product data, support async order processing, and provide real-time inventory updates. Consider API rate limiting for flash sales.",
+    "keywords": ["e-commerce API", "product catalog", "shopping cart", "order processing", "payment integration", "inventory"],
+    "tags": ["system design", "API", "e-commerce"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data privacy automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data privacy automation through encryption, masking tools, and established compliance frameworks. NoSQL data privacy automation varies by implementation, may require custom privacy controls for different data models. SQL privacy automation more standardized, NoSQL privacy automation depends on database capabilities and regulatory requirements.",
+    "keywords": ["privacy automation", "encryption", "masking", "compliance frameworks", "standardization", "custom controls"],
+    "tags": ["databases", "privacy", "automation"]
+  },
+  {
+    "text": "Explain the concept of API security for DevSecOps.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "DevSecOps API security includes security as code, automated security testing in CI/CD, infrastructure security scanning, and continuous compliance monitoring. Implement security policies in deployment pipelines, integrate security tools with DevOps processes, and provide security feedback to developers. Shift security left in development lifecycle.",
+    "keywords": ["DevSecOps", "security as code", "automated testing", "infrastructure scanning", "continuous compliance", "shift left"],
+    "tags": ["security", "API", "DevSecOps"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data catalog self-service?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data catalog self-service through metadata repositories, search interfaces, and established catalog platforms. NoSQL data catalog self-service varies by implementation, may require custom interfaces for different data models. SQL self-service more mature with dedicated tools, NoSQL self-service depends on database capabilities.",
+    "keywords": ["catalog self-service", "metadata repositories", "search interfaces", "catalog platforms", "standardization", "custom interfaces"],
+    "tags": ["databases", "catalog", "self-service"]
+  },
+  {
+    "text": "Explain the concept of API design for social media platforms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Social media API design includes user profile management, content posting and retrieval, social graph queries, real-time notifications, and media upload handling. APIs should handle high write volumes, implement efficient pagination for feeds, support real-time features, and provide rate limiting per user. Consider GraphQL for flexible data fetching.",
+    "keywords": ["social media API", "user profiles", "content posting", "social graph", "notifications", "media upload"],
+    "tags": ["system design", "API", "social"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data discovery automation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data discovery automation through metadata queries, catalog tools, and established discovery platforms. NoSQL data discovery automation less standardized, requiring custom solutions for different data models. SQL discovery automation more mature with dedicated tools, NoSQL discovery automation evolving with database adoption.",
+    "keywords": ["discovery automation", "metadata queries", "catalog tools", "discovery platforms", "standardization", "custom solutions"],
+    "tags": ["databases", "discovery", "automation"]
+  },
+  {
+    "text": "Explain the concept of microservices communication patterns.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "hard",
+    "idealAnswer": "Microservices communicate via synchronous (REST, gRPC) or asynchronous (message queues, event streaming) patterns. Synchronous is simpler but creates coupling. Asynchronous provides decoupling and reliability. Service mesh handles communication complexity.",
+    "keywords": ["microservices", "communication", "synchronous", "asynchronous"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL when to use each?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Use SQL when data structure is well-defined, relationships are complex, ACID transactions required. Use NoSQL when data structure is flexible or evolving, high write throughput needed, horizontal scaling required.",
+    "keywords": ["SQL", "NoSQL", "use cases", "relationships"],
+    "tags": ["databases", "DBMS", "design"]
+  },
+  {
+    "text": "Explain the concept of API rate limiting.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API rate limiting controls the number of requests a client can make in a time period. Prevents abuse, ensures fair usage, and protects system resources. Algorithms include token bucket, leaky bucket, fixed window.",
+    "keywords": ["rate limiting", "API", "algorithms", "protection"],
+    "tags": ["system design", "security", "API"]
+  },
+  {
+    "text": "What is the difference between stateful and stateless applications?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Stateful applications maintain client context between requests, harder to scale. Stateless applications don't maintain context, each request independent, easier to scale horizontally. Modern architectures favor stateless.",
+    "keywords": ["stateful", "stateless", "context", "scalability"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "Explain the concept of database connection pooling.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Connection pooling maintains a cache of database connections to reuse for multiple requests. Reduces overhead of creating new connections, improves performance. Pool size configuration balances performance and resource consumption.",
+    "keywords": ["connection pooling", "performance", "overhead", "reuse"],
+    "tags": ["databases", "performance", "optimization"]
+  },
+  {
+    "text": "What is the difference between monolithic and serverless architecture?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Monolithic runs continuously on servers, you manage infrastructure. Serverless runs on-demand in functions, cloud manages infrastructure, pay-per-use. Monolithic for stable workloads, serverless for sporadic traffic.",
+    "keywords": ["monolithic", "serverless", "infrastructure", "scaling"],
+    "tags": ["system design", "architecture", "cloud"]
+  },
+  {
+    "text": "Explain the concept of API versioning strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API versioning manages changes without breaking existing clients. Strategies include URL versioning, header versioning, query parameter versioning, and content negotiation. Each has trade-offs in caching and implementation.",
+    "keywords": ["API versioning", "strategies", "URL", "headers"],
+    "tags": ["API", "web", "design"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data models?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL uses relational model with tables, rows, columns, and predefined schemas. NoSQL offers various models: document, key-value, column-family, and graph. More flexible schemas, better for unstructured data.",
+    "keywords": ["SQL", "NoSQL", "data models", "schema"],
+    "tags": ["databases", "DBMS", "comparison"]
+  },
+  {
+    "text": "Explain the concept of eventual consistency in distributed systems.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "hard",
+    "idealAnswer": "Eventual consistency guarantees that if no new updates are made, eventually all accesses will return the last updated value. Used in distributed systems where immediate consistency is impractical. Trade-offs include temporary inconsistencies.",
+    "keywords": ["eventual consistency", "distributed systems", "CAP theorem"],
+    "tags": ["system design", "distributed systems", "consistency"]
+  },
+  {
+    "text": "What is the difference between synchronous and asynchronous replication?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Synchronous replication waits for acknowledgment from all replicas before confirming write, ensures strong consistency but slower performance. Asynchronous replication confirms write immediately, replicates in background, faster but risk of data loss.",
+    "keywords": ["synchronous", "asynchronous", "replication", "consistency"],
+    "tags": ["databases", "replication", "consistency"]
+  },
+  {
+    "text": "Explain the concept of API authentication methods.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API authentication methods include API keys, OAuth 2.0, JWT, Basic Auth, and mutual TLS. Choice depends on security requirements, use case, and implementation complexity. OAuth 2.0 and JWT are most common.",
+    "keywords": ["authentication", "API keys", "OAuth 2.0", "JWT"],
+    "tags": ["security", "API", "authentication"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL scaling?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases traditionally scale vertically, though some support horizontal scaling with complexity. NoSQL databases designed for horizontal scaling across commodity servers. SQL scaling limited by single-server constraints.",
+    "keywords": ["SQL", "NoSQL", "scaling", "vertical", "horizontal"],
+    "tags": ["databases", "scalability", "performance"]
+  },
+  {
+    "text": "Explain the concept of database indexing strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "Indexing strategies include B-tree indexes, hash indexes, composite indexes, covering indexes, and partial indexes. Choice depends on query patterns, read/write ratios, and storage constraints. Over-indexing slows writes.",
+    "keywords": ["indexing", "strategies", "B-tree", "hash"],
+    "tags": ["databases", "performance", "optimization"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL query languages?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL uses standardized declarative language with JOINs for relational data. NoSQL query languages vary by type: document stores use JSON-like queries, key-value stores use simple key access. SQL is more standardized.",
+    "keywords": ["SQL", "NoSQL", "query languages", "standardization"],
+    "tags": ["databases", "DBMS", "queries"]
+  },
+  {
+    "text": "Explain the concept of API security best practices.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API security best practices include using HTTPS, implementing proper authentication and authorization, rate limiting, input validation, output encoding, using security headers, and logging and monitoring.",
+    "keywords": ["API security", "HTTPS", "authentication", "rate limiting"],
+    "tags": ["security", "API", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL transaction support?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases provide full ACID transaction support across multiple operations. NoSQL transaction support varies: some document databases support multi-document transactions, key-value stores often limited to single-key operations.",
+    "keywords": ["SQL", "NoSQL", "transactions", "ACID"],
+    "tags": ["databases", "DBMS", "transactions"]
+  },
+  {
+    "text": "Explain the concept of API documentation tools.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "easy",
+    "idealAnswer": "API documentation tools include Swagger/OpenAPI, Postman, API Blueprint, and RAML. Tools help create, maintain, and share API documentation, improving developer experience and API adoption.",
+    "keywords": ["API documentation", "Swagger", "OpenAPI", "Postman"],
+    "tags": ["API", "tools", "documentation"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL schema flexibility?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases require predefined schema with fixed columns and types, schema changes are expensive. NoSQL databases offer schema flexibility, can store varying structures, evolve schema without downtime.",
+    "keywords": ["SQL", "NoSQL", "schema", "flexibility"],
+    "tags": ["databases", "DBMS", "design"]
+  },
+  {
+    "text": "Explain the concept of API testing strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API testing strategies include unit testing, integration testing, contract testing, performance testing, and security testing. Tools include Postman, JMeter, SoapUI. Automated testing in CI/CD ensures API reliability.",
+    "keywords": ["API testing", "unit testing", "integration testing"],
+    "tags": ["API", "testing", "quality assurance"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data consistency models?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "hard",
+    "idealAnswer": "SQL databases typically offer strong consistency. NoSQL databases offer various consistency models: strong, eventual, causal, and tunable consistency. Trade-offs between consistency, availability, and partition tolerance.",
+    "keywords": ["SQL", "NoSQL", "consistency", "CAP theorem"],
+    "tags": ["databases", "distributed systems", "consistency"]
+  },
+  {
+    "text": "Explain the concept of API gateway patterns.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API gateway patterns include single entry point, request routing, composition, protocol translation, and cross-cutting concerns. Simplifies client interaction, provides security, and handles traffic management.",
+    "keywords": ["API gateway", "routing", "composition", "security"],
+    "tags": ["system design", "API", "gateway"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL use cases?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL use cases: financial systems, inventory management, CRM. NoSQL use cases: real-time big data, content management, social networks, IoT data. SQL for structured data, NoSQL for flexible data.",
+    "keywords": ["SQL", "NoSQL", "use cases", "financial", "big data"],
+    "tags": ["databases", "DBMS", "applications"]
+  },
+  {
+    "text": "Explain the concept of API monitoring and observability.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API monitoring tracks metrics, logging captures events, tracing follows requests across services. Tools include Prometheus, Grafana, ELK stack. Observability combines monitoring, logging, and tracing to understand system behavior.",
+    "keywords": ["monitoring", "observability", "metrics", "logging"],
+    "tags": ["system design", "monitoring"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL deployment models?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases often deployed on dedicated servers or managed services with vertical scaling focus. NoSQL databases designed for distributed deployment across clusters, horizontal scaling, and cloud-native environments.",
+    "keywords": ["SQL", "NoSQL", "deployment", "scaling", "cloud"],
+    "tags": ["databases", "deployment", "cloud"]
+  },
+  {
+    "text": "Explain the concept of API design principles.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API design principles include using nouns for resources, consistent naming conventions, appropriate HTTP methods, status codes, pagination, filtering, sorting, versioning, and comprehensive documentation.",
+    "keywords": ["API design", "REST", "naming conventions", "HTTP methods"],
+    "tags": ["API", "design", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL backup and recovery?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL backup typically involves full database dumps, transaction logs, point-in-time recovery. NoSQL backup varies: document stores use snapshots, key-value stores use key-level backup. SQL backup more standardized.",
+    "keywords": ["SQL", "NoSQL", "backup", "recovery", "snapshots"],
+    "tags": ["databases", "operations", "reliability"]
+  },
+  {
+    "text": "Explain the concept of API rate limiting algorithms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Rate limiting algorithms include token bucket, leaky bucket, fixed window, and sliding window. Choice depends on desired traffic shape, implementation complexity, and accuracy requirements.",
+    "keywords": ["rate limiting", "algorithms", "token bucket", "leaky bucket"],
+    "tags": ["system design", "algorithms", "API"]
+  },
+  {
+    "text": "Explain the concept of containerization and Docker.",
+    "type": "technical",
+    "company": null,
+    "domain": "DevOps",
+    "difficulty": "medium",
+    "idealAnswer": "Containerization packages applications with dependencies into lightweight containers. Docker provides container runtime, images, and orchestration. Benefits include consistency across environments, resource efficiency, and faster deployment.",
+    "keywords": ["containerization", "Docker", "containers", "DevOps"],
+    "tags": ["DevOps", "containers"]
+  },
+  {
+    "text": "What is the difference between Docker and Kubernetes?",
+    "type": "technical",
+    "company": null,
+    "domain": "DevOps",
+    "difficulty": "medium",
+    "idealAnswer": "Docker is a container runtime for building and running containers. Kubernetes is a container orchestration platform that manages, scales, and deploys containerized applications across clusters. Docker for containers, K8s for orchestration.",
+    "keywords": ["Docker", "Kubernetes", "containers", "orchestration"],
+    "tags": ["DevOps", "containers"]
+  },
+  {
+    "text": "Explain the concept of CI/CD pipelines.",
+    "type": "technical",
+    "company": null,
+    "domain": "DevOps",
+    "difficulty": "medium",
+    "idealAnswer": "CI/CD (Continuous Integration/Continuous Deployment) automates building, testing, and deploying code. CI ensures code changes are tested automatically, CD automates deployment to production. Tools include Jenkins, GitLab CI, GitHub Actions.",
+    "keywords": ["CI/CD", "automation", "testing", "deployment"],
+    "tags": ["DevOps", "automation"]
+  },
+  {
+    "text": "What is the difference between monolithic and microservices architecture?",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Monolithic has all functionality in single deployable unit, simpler but harder to scale. Microservices break into small independent services, better scalability and fault isolation but increased complexity. Trade-offs in development and operations.",
+    "keywords": ["monolithic", "microservices", "architecture", "scalability"],
+    "tags": ["system design", "architecture"]
+  },
+  {
+    "text": "Explain the concept of load balancing algorithms.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Load balancing algorithms include round robin, least connections, IP hash, and weighted distribution. Round robin distributes evenly, least connections sends to server with fewest active connections, IP hash ensures session persistence.",
+    "keywords": ["load balancing", "algorithms", "round robin", "least connections"],
+    "tags": ["system design", "scalability"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data modeling?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data modeling focuses on normalization, reducing redundancy, defining relationships through foreign keys. NoSQL data modeling emphasizes denormalization, embedding related data, optimizing for read/write patterns. SQL for integrity, NoSQL for performance.",
+    "keywords": ["data modeling", "normalization", "denormalization", "relationships"],
+    "tags": ["databases", "DBMS", "design"]
+  },
+  {
+    "text": "Explain the concept of API security headers.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API security headers include CORS, CSP, X-Frame-Options, X-Content-Type-Options, Strict-Transport-Security, and X-XSS-Protection. Headers protect against various web vulnerabilities and attacks like XSS, clickjacking, and MITM.",
+    "keywords": ["security headers", "CORS", "CSP", "X-Frame-Options"],
+    "tags": ["security", "API", "headers"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL maturity and stability?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "easy",
+    "idealAnswer": "SQL databases are mature, stable, with proven reliability over decades. NoSQL databases are newer, rapidly evolving, with frequent updates. SQL for mission-critical stability, NoSQL for innovation and modern use cases.",
+    "keywords": ["SQL", "NoSQL", "maturity", "stability", "reliability"],
+    "tags": ["databases", "comparison", "stability"]
+  },
+  {
+    "text": "Explain the concept of API versioning deprecation strategies.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API version deprecation strategies include sunset headers, grace periods, migration guides, automatic redirects, and feature flags. Communication through documentation, email notifications, and status pages. Smooth deprecation requires planning.",
+    "keywords": ["deprecation", "sunset headers", "grace periods", "migration"],
+    "tags": ["API", "lifecycle", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL vendor lock-in?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL has standard language and concepts, reducing vendor lock-in. NoSQL has less standardization, more vendor-specific features and query languages, increasing lock-in risk. SQL easier to migrate, NoSQL migration more challenging.",
+    "keywords": ["vendor lock-in", "standardization", "migration", "proprietary"],
+    "tags": ["databases", "comparison", "vendor"]
+  },
+  {
+    "text": "Explain the concept of API load testing.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API load testing simulates expected traffic to measure performance, identify bottlenecks, and determine capacity. Tools include JMeter, Gatling, k6. Metrics include response time, throughput, error rates. Regular load testing ensures APIs handle production traffic.",
+    "keywords": ["load testing", "performance", "bottlenecks", "capacity"],
+    "tags": ["system design", "testing", "performance"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data integrity?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases enforce data integrity through constraints, validation rules, and transactions. NoSQL databases offer limited integrity enforcement, often relying on application-level validation. SQL for database-enforced integrity, NoSQL for application-managed integrity.",
+    "keywords": ["data integrity", "constraints", "validation", "enforcement"],
+    "tags": ["databases", "integrity", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API documentation standards.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API documentation standards include OpenAPI/Swagger, API Blueprint, RAML, and JSON Schema. Standards enable documentation generation, client SDK creation, and API testing. Good documentation includes endpoints, parameters, responses, examples.",
+    "keywords": ["documentation standards", "OpenAPI", "Swagger", "API Blueprint"],
+    "tags": ["API", "documentation", "standards"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL query performance?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL query performance optimized through indexes, query optimization, and execution plans. NoSQL query performance varies: key-value extremely fast for key lookups, document stores good for nested queries. SQL for complex queries, NoSQL for specific access patterns.",
+    "keywords": ["query performance", "indexes", "optimization", "key-value"],
+    "tags": ["databases", "performance", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API security testing.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API security testing includes penetration testing, vulnerability scanning, authentication testing, input validation testing, and authorization testing. Tools include OWASP ZAP, Burp Suite. Regular security testing identifies vulnerabilities.",
+    "keywords": ["security testing", "penetration testing", "vulnerability scanning"],
+    "tags": ["security", "API", "testing"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL horizontal scaling?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL horizontal scaling achieved through sharding, read replicas, and clustering, but complex to implement. NoSQL designed for horizontal scaling with built-in sharding, replication, and automatic distribution. SQL scaling possible but requires expertise.",
+    "keywords": ["horizontal scaling", "sharding", "replication", "clustering"],
+    "tags": ["databases", "scalability", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API governance.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API governance includes policies for API design, security, versioning, documentation, and lifecycle management. Ensures consistency across APIs, compliance with standards, and proper deprecation processes. Tools include API gateways and management platforms.",
+    "keywords": ["API governance", "policies", "consistency", "compliance"],
+    "tags": ["system design", "API", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data relationships?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL uses foreign keys to define relationships between tables, supports complex JOINs, enforces referential integrity. NoSQL handles relationships differently: document databases embed related data or use manual references. SQL for complex relationships, NoSQL for embedded or graph-based relationships.",
+    "keywords": ["relationships", "foreign keys", "JOINs", "embedding"],
+    "tags": ["databases", "comparison", "relationships"]
+  },
+  {
+    "text": "Explain the concept of API mocking for development.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API mocking simulates API responses for development and testing without real backend. Tools include Postman Mock Server, JSON Server, WireMock. Benefits include parallel development, testing edge cases, and offline development.",
+    "keywords": ["API mocking", "development", "testing", "offline"],
+    "tags": ["API", "development", "testing"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL backup complexity?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL backup more standardized with well-established tools and procedures. NoSQL backup varies by database type and implementation, some require different approaches for different data models. SQL backup processes more mature.",
+    "keywords": ["backup", "complexity", "standardization", "tools"],
+    "tags": ["databases", "operations", "backup"]
+  },
+  {
+    "text": "Explain the concept of API lifecycle management.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API lifecycle management includes planning, design, development, testing, deployment, versioning, monitoring, and deprecation. Each phase requires specific processes and tools. Proper lifecycle management ensures API quality and maintainability.",
+    "keywords": ["lifecycle management", "planning", "deployment", "versioning"],
+    "tags": ["system design", "API", "management"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data migration?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data migration uses standardized ETL tools, schema mapping, and transformation scripts. NoSQL data migration varies by data model, may require custom transformation logic. SQL migration more standardized, NoSQL migration depends on database characteristics.",
+    "keywords": ["data migration", "ETL", "schema mapping", "transformation"],
+    "tags": ["databases", "migration", "operations"]
+  },
+  {
+    "text": "Explain the concept of API rate limiting implementation.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "Rate limiting implementation can be at API gateway, application level, or using reverse proxies. Storage options include in-memory (Redis), distributed caches, or databases. Considerations include distributed systems consistency and performance impact.",
+    "keywords": ["rate limiting", "implementation", "API gateway", "Redis"],
+    "tags": ["system design", "API", "implementation"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data validation?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL databases provide built-in data validation through constraints, data types, and triggers. NoSQL databases offer limited built-in validation, often relying on application-level validation or document schema validation. SQL for database-enforced validation.",
+    "keywords": ["data validation", "constraints", "data types", "triggers"],
+    "tags": ["databases", "validation", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API monitoring metrics.",
+    "type": "technical",
+    "company": null,
+    "domain": "System Design",
+    "difficulty": "medium",
+    "idealAnswer": "API monitoring metrics include request rate, response time (p50, p95, p99), error rate, throughput, latency distribution, and resource utilization. Custom metrics track business-specific KPIs. Metrics collection uses tools like Prometheus, Datadog.",
+    "keywords": ["monitoring metrics", "response time", "error rate", "throughput"],
+    "tags": ["system design", "monitoring", "metrics"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data partitioning?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL partitioning divides large tables into smaller pieces based on ranges, lists, or hashes. NoSQL partitioning (sharding) distributes data across servers based on shard keys. SQL partitioning within single database, NoSQL sharding across distributed systems.",
+    "keywords": ["partitioning", "sharding", "ranges", "hashes"],
+    "tags": ["databases", "scalability", "comparison"]
+  },
+  {
+    "text": "Explain the concept of API security best practices for authentication.",
+    "type": "technical",
+    "company": null,
+    "domain": "Web Development",
+    "difficulty": "medium",
+    "idealAnswer": "API authentication best practices include using industry-standard protocols (OAuth 2.0, OpenID Connect), implementing token expiration and refresh, using secure token storage, multi-factor authentication for sensitive operations, and regularly rotating secrets.",
+    "keywords": ["authentication", "OAuth 2.0", "OpenID Connect", "token expiration"],
+    "tags": ["security", "API", "best practices"]
+  },
+  {
+    "text": "What is the difference between SQL and NoSQL data archiving?",
+    "type": "technical",
+    "company": null,
+    "domain": "DBMS",
+    "difficulty": "medium",
+    "idealAnswer": "SQL data archiving moves old data to separate tables or databases, maintaining schema consistency. NoSQL archiving varies by data model, may use TTL features, cold storage, or separate collections. Both reduce active dataset size and costs.",
+    "keywords": ["data archiving", "TTL", "cold storage", "schema consistency"],
+    "tags": ["databases", "operations", "archiving"]
+  }
+]

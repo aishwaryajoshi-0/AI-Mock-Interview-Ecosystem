@@ -1,7 +1,9 @@
 import axios from 'axios';
 import { env } from '../config/env.js';
 import fs from 'fs';
-import pdfParse from 'pdf-parse';
+import { createRequire } from 'module';
+const require = createRequire(import.meta.url);
+const pdfParse = require('pdf-parse');
 
 /**
  * Parse a resume PDF file and extract text content

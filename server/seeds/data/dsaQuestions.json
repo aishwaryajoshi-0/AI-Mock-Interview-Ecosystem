@@ -1,0 +1,1232 @@
+[
+  {
+    "text": "Implement a function to reverse a string.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays/Strings",
+    "difficulty": "easy",
+    "idealAnswer": "Use two pointers approach - one at start, one at end. Swap characters and move pointers towards center. Time complexity O(n), space complexity O(1) for in-place reversal.",
+    "keywords": ["string", "reverse", "two pointers"],
+    "tags": ["arrays", "strings", "easy"]
+  },
+  {
+    "text": "Find the maximum subarray sum (Kadane's algorithm).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Kadane's algorithm: maintain current_sum and max_sum. For each element, current_sum = max(element, current_sum + element). Update max_sum = max(max_sum, current_sum). Time O(n), space O(1).",
+    "keywords": ["subarray", "maximum sum", "Kadane"],
+    "tags": ["arrays", "dynamic programming", "medium"]
+  },
+  {
+    "text": "Implement a function to check if a string is a palindrome.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Strings",
+    "difficulty": "easy",
+    "idealAnswer": "Use two pointers: one at start, one at end. Compare characters while moving pointers towards center. Return false if mismatch. Time O(n), space O(1).",
+    "keywords": ["palindrome", "string", "two pointers"],
+    "tags": ["strings", "easy"]
+  },
+  {
+    "text": "Find the longest substring without repeating characters.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Strings",
+    "difficulty": "medium",
+    "idealAnswer": "Sliding window with hash map: maintain window [left, right] with unique characters. Use hash map to store last index of each character. Time O(n), space O(min(m,n)).",
+    "keywords": ["sliding window", "substring", "hash map"],
+    "tags": ["strings", "sliding window", "medium"]
+  },
+  {
+    "text": "Implement binary search on a sorted array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "Initialize low=0, high=n-1. While low <= high: mid = (low+high)/2. If arr[mid] == target, return mid. If arr[mid] < target, low = mid+1. Else high = mid-1. Time O(log n), space O(1).",
+    "keywords": ["binary search", "sorted array"],
+    "tags": ["arrays", "search", "easy"]
+  },
+  {
+    "text": "Detect a cycle in a linked list (Floyd's algorithm).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "medium",
+    "idealAnswer": "Floyd's cycle detection: use two pointers - slow moves one step, fast moves two steps. If they meet, cycle exists. Time O(n), space O(1).",
+    "keywords": ["linked list", "cycle detection", "Floyd"],
+    "tags": ["linked lists", "medium"]
+  },
+  {
+    "text": "Reverse a linked list.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "easy",
+    "idealAnswer": "Iterative approach: maintain prev, curr, next pointers. While curr not null: next = curr.next, curr.next = prev, prev = curr, curr = next. Return prev. Time O(n), space O(1).",
+    "keywords": ["linked list", "reverse"],
+    "tags": ["linked lists", "easy"]
+  },
+  {
+    "text": "Find the middle element of a linked list.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "easy",
+    "idealAnswer": "Two-pointer approach: slow moves one step, fast moves two steps. When fast reaches end, slow is at middle. Time O(n), space O(1).",
+    "keywords": ["linked list", "middle", "two pointers"],
+    "tags": ["linked lists", "easy"]
+  },
+  {
+    "text": "Implement a stack using arrays.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Stack",
+    "difficulty": "easy",
+    "idealAnswer": "Use array with top pointer. Push: increment top, add element. Pop: return element at top, decrement top. Time O(1) for all operations, space O(n).",
+    "keywords": ["stack", "array", "LIFO"],
+    "tags": ["stack", "easy"]
+  },
+  {
+    "text": "Implement a queue using two stacks.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Queue",
+    "difficulty": "medium",
+    "idealAnswer": "Use two stacks: input_stack for enqueue, output_stack for dequeue. Enqueue: push to input_stack. Dequeue: if output_stack empty, transfer all from input_stack, then pop. Amortized O(1).",
+    "keywords": ["queue", "stack", "amortized"],
+    "tags": ["queue", "stack", "medium"]
+  },
+  {
+    "text": "Implement depth-first search (DFS) on a binary tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "medium",
+    "idealAnswer": "Recursive: visit root, then recursively visit left subtree, then right subtree (pre-order). Can also do in-order or post-order. Time O(n), space O(h) where h is height.",
+    "keywords": ["DFS", "binary tree", "recursive"],
+    "tags": ["trees", "DFS", "medium"]
+  },
+  {
+    "text": "Implement breadth-first search (BFS) on a binary tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "medium",
+    "idealAnswer": "Use queue: enqueue root. While queue not empty: dequeue node, process it, enqueue left child, enqueue right child. Time O(n), space O(w) where w is max width.",
+    "keywords": ["BFS", "binary tree", "queue"],
+    "tags": ["trees", "BFS", "medium"]
+  },
+  {
+    "text": "Find the height/depth of a binary tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "easy",
+    "idealAnswer": "Recursive: height = 1 + max(height(left), height(right)). Base case: null returns 0. Time O(n), space O(h).",
+    "keywords": ["binary tree", "height", "recursive"],
+    "tags": ["trees", "easy"]
+  },
+  {
+    "text": "Check if a binary tree is balanced.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "medium",
+    "idealAnswer": "For each node, check if |height(left) - height(right)| <= 1. Optimized: return height from recursion, return -1 if unbalanced. Time O(n), space O(h).",
+    "keywords": ["binary tree", "balanced", "height"],
+    "tags": ["trees", "medium"]
+  },
+  {
+    "text": "Implement merge sort.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Sorting",
+    "difficulty": "medium",
+    "idealAnswer": "Divide array into halves recursively until single elements. Merge sorted halves by comparing elements. Time O(n log n), space O(n). Stable sort.",
+    "keywords": ["merge sort", "divide and conquer"],
+    "tags": ["sorting", "medium"]
+  },
+  {
+    "text": "Implement quick sort.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Sorting",
+    "difficulty": "medium",
+    "idealAnswer": "Choose pivot, partition array around pivot. Recursively sort left and right partitions. Average O(n log n), worst O(n²). Space O(log n). In-place, not stable.",
+    "keywords": ["quick sort", "partition", "pivot"],
+    "tags": ["sorting", "medium"]
+  },
+  {
+    "text": "Find the kth largest element in an array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Quickselect algorithm: similar to quicksort but only recurse into partition containing kth element. Average O(n), worst O(n²). Or use min-heap of size k, O(n log k).",
+    "keywords": ["kth largest", "quickselect", "heap"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a min-heap.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Heap",
+    "difficulty": "medium",
+    "idealAnswer": "Use array representation: parent at i, left child at 2i+1, right at 2i+2. Insert: add at end, bubble up. Extract min: swap root with last, remove last, bubble down. Time O(log n).",
+    "keywords": ["heap", "min-heap", "priority queue"],
+    "tags": ["heap", "medium"]
+  },
+  {
+    "text": "Detect if two strings are anagrams.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Strings",
+    "difficulty": "easy",
+    "idealAnswer": "Sort both strings and compare: O(n log n). Or count character frequencies using hash map: O(n) time, O(1) space for fixed charset.",
+    "keywords": ["anagram", "string", "hash map"],
+    "tags": ["strings", "easy"]
+  },
+  {
+    "text": "Find the intersection of two arrays.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "Use hash set: add all elements from first array to set. Iterate second array, if element in set, add to result and remove from set. Time O(n+m), space O(min(n,m)).",
+    "keywords": ["intersection", "hash set"],
+    "tags": ["arrays", "easy"]
+  },
+  {
+    "text": "Implement a function to merge two sorted arrays.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "Two-pointer approach: compare elements from both arrays, add smaller to result, advance that pointer. When one array exhausted, add remaining elements. Time O(n+m), space O(n+m).",
+    "keywords": ["merge", "sorted arrays", "two pointers"],
+    "tags": ["arrays", "easy"]
+  },
+  {
+    "text": "Find the first non-repeating character in a string.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Strings",
+    "difficulty": "easy",
+    "idealAnswer": "Two-pass approach: first pass count character frequencies using hash map. Second pass find first character with count 1. Time O(n), space O(1) for fixed charset.",
+    "keywords": ["non-repeating", "string", "hash map"],
+    "tags": ["strings", "easy"]
+  },
+  {
+    "text": "Implement a function to rotate an array by k positions.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Reverse entire array, reverse first k elements, reverse remaining elements. Handle k > n by k = k % n. Time O(n), space O(1).",
+    "keywords": ["rotate", "array", "reverse"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the longest common prefix among an array of strings.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Strings",
+    "difficulty": "easy",
+    "idealAnswer": "Vertical scanning: compare characters at each index across all strings. Stop when mismatch found. Time O(n*m) where n is number of strings, m is min length.",
+    "keywords": ["common prefix", "string", "vertical scan"],
+    "tags": ["strings", "easy"]
+  },
+  {
+    "text": "Implement a function to check if parentheses are balanced.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Stack",
+    "difficulty": "easy",
+    "idealAnswer": "Use stack: iterate through string, push opening brackets, for closing bracket check if stack top matches. At end, return true if stack empty. Time O(n), space O(n).",
+    "keywords": ["balanced parentheses", "stack"],
+    "tags": ["stack", "easy"]
+  },
+  {
+    "text": "Find the number of islands in a 2D grid.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph/Matrix",
+    "difficulty": "medium",
+    "idealAnswer": "DFS/BFS approach: iterate through grid, when find '1', increment count and perform DFS/BFS to mark all connected '1's as visited. Time O(m*n), space O(m*n).",
+    "keywords": ["islands", "DFS", "BFS", "grid"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Implement Dijkstra's algorithm for shortest path.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "hard",
+    "idealAnswer": "Use min-priority queue: initialize distances to infinity except source (0). Extract min distance node, relax all neighbors. Time O((V+E) log V). Doesn't work with negative weights.",
+    "keywords": ["Dijkstra", "shortest path", "priority queue"],
+    "tags": ["graph", "hard"]
+  },
+  {
+    "text": "Detect if a graph has a cycle.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "medium",
+    "idealAnswer": "For directed graph: use DFS with three states (unvisited, visiting, visited). If we encounter a node in visiting state during DFS, cycle exists. Time O(V+E), space O(V).",
+    "keywords": ["cycle detection", "graph", "DFS"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Implement BFS for shortest path in unweighted graph.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "medium",
+    "idealAnswer": "Use queue: start from source, enqueue with distance 0. While queue not empty: dequeue node, for each unvisited neighbor, set distance = current + 1, enqueue. Time O(V+E), space O(V).",
+    "keywords": ["BFS", "shortest path", "unweighted graph"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Find the lowest common ancestor (LCA) in a binary tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "medium",
+    "idealAnswer": "Recursive: if current node is null or equals p or q, return current. Recursively find LCA in left and right subtrees. If both return non-null, current is LCA. Time O(n), space O(h).",
+    "keywords": ["LCA", "binary tree", "recursive"],
+    "tags": ["trees", "medium"]
+  },
+  {
+    "text": "Serialize and deserialize a binary tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "hard",
+    "idealAnswer": "Serialize: use pre-order traversal, include null markers for missing children. Deserialize: use same pre-order, reconstruct tree using markers. Time O(n), space O(n).",
+    "keywords": ["serialize", "deserialize", "binary tree"],
+    "tags": ["trees", "hard"]
+  },
+  {
+    "text": "Implement a trie (prefix tree).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trie",
+    "difficulty": "medium",
+    "idealAnswer": "Node structure: children (hash map), is_end flag. Insert: traverse/create nodes for each character, mark end. Search: traverse, return true if end at last character. Time O(L) per operation.",
+    "keywords": ["trie", "prefix tree", "insert", "search"],
+    "tags": ["trie", "medium"]
+  },
+  {
+    "text": "Find all permutations of a string.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: fix character at position, recursively permute remaining characters. Swap approach: for each position, swap with all positions to its right, recurse, swap back. Time O(n! * n).",
+    "keywords": ["permutations", "backtracking", "swap"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Solve N-Queens problem.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "hard",
+    "idealAnswer": "Place queens row by row, check if position is safe. Use arrays to track attacked columns and diagonals. Backtrack when no safe position found. Time O(N!), space O(N).",
+    "keywords": ["N-Queens", "backtracking", "recursion"],
+    "tags": ["backtracking", "hard"]
+  },
+  {
+    "text": "Implement memoization for Fibonacci sequence.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "easy",
+    "idealAnswer": "Use hash map or array to store computed values. Base cases: fib(0)=0, fib(1)=1. For n>1: fib(n) = fib(n-1) + fib(n-2), check memo first. Time O(n), space O(n).",
+    "keywords": ["Fibonacci", "memoization", "dynamic programming"],
+    "tags": ["dynamic programming", "easy"]
+  },
+  {
+    "text": "Solve the knapsack problem (0/1).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: create 2D array dp[i][w] = max value using first i items with capacity w. For each item, either include or exclude. Time O(n*W), space O(n*W) or O(W) optimized.",
+    "keywords": ["knapsack", "0/1", "dynamic programming"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Find the longest increasing subsequence (LIS).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: dp[i] = length of LIS ending at i. For each i, check all j < i where arr[j] < arr[i]. Time O(n²), space O(n). Optimized with binary search: O(n log n).",
+    "keywords": ["LIS", "dynamic programming", "binary search"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Solve the coin change problem (minimum coins).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: dp[i] = min coins to make amount i. Initialize dp[0]=0, others=inf. For each coin, for amount from coin to target: dp[amount] = min(dp[amount], dp[amount-coin] + 1). Time O(amount * coins).",
+    "keywords": ["coin change", "dynamic programming", "minimum"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Implement a function to find if two trees are identical.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "easy",
+    "idealAnswer": "Recursive: both null return true, one null return false, values differ return false. Recursively check left and right subtrees. Time O(n), space O(h).",
+    "keywords": ["identical trees", "binary tree", "recursive"],
+    "tags": ["trees", "easy"]
+  },
+  {
+    "text": "Find the diameter of a binary tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "medium",
+    "idealAnswer": "For each node, calculate left height and right height, diameter = max(diameter, left + right). Return height = 1 + max(left, right). Use post-order traversal. Time O(n), space O(h).",
+    "keywords": ["diameter", "binary tree", "height"],
+    "tags": ["trees", "medium"]
+  },
+  {
+    "text": "Implement a function to validate a binary search tree.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Trees",
+    "difficulty": "medium",
+    "idealAnswer": "In-order traversal should yield sorted values. Use recursive with min/max bounds: each node must be > min and < max. Time O(n), space O(h). Handle integer overflow.",
+    "keywords": ["BST", "validate", "in-order"],
+    "tags": ["trees", "medium"]
+  },
+  {
+    "text": "Find the intersection point of two linked lists.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "medium",
+    "idealAnswer": "Two-pointer approach: get lengths of both lists. Advance pointer of longer list by difference. Then move both pointers together until they meet. Time O(n+m), space O(1).",
+    "keywords": ["linked list", "intersection", "two pointers"],
+    "tags": ["linked lists", "medium"]
+  },
+  {
+    "text": "Remove Nth node from end of linked list.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "medium",
+    "idealAnswer": "Two-pointer approach: advance fast pointer N steps first. Then move both slow and fast until fast reaches end. Slow is at Nth from end. Remove slow node. Time O(n), space O(1).",
+    "keywords": ["linked list", "remove", "two pointers"],
+    "tags": ["linked lists", "medium"]
+  },
+  {
+    "text": "Implement a function to clone a linked list with random pointer.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "hard",
+    "idealAnswer": "Two-pass approach: first pass create copy nodes and map original to copy. Second pass set next and random pointers using map. Time O(n), space O(n).",
+    "keywords": ["linked list", "clone", "random pointer"],
+    "tags": ["linked lists", "hard"]
+  },
+  {
+    "text": "Find the majority element in an array (appears > n/2 times).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "Boyer-Moore voting algorithm: maintain candidate and count. For each element, if count=0, set candidate=element. If element==candidate, count++, else count--. Time O(n), space O(1).",
+    "keywords": ["majority element", "Boyer-Moore", "voting"],
+    "tags": ["arrays", "easy"]
+  },
+  {
+    "text": "Implement a function to merge k sorted lists.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "hard",
+    "idealAnswer": "Use min-heap of size k: add first node of each list. Extract min, add to result, push next node from that list. Time O(n log k) where n is total nodes, space O(k).",
+    "keywords": ["merge k lists", "min-heap", "linked lists"],
+    "tags": ["linked lists", "heap", "hard"]
+  },
+  {
+    "text": "Find the peak element in an array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Binary search approach: compare mid with neighbors. If mid < mid+1, peak in right half, else in left half. Peak guaranteed to exist. Time O(log n), space O(1).",
+    "keywords": ["peak element", "binary search", "array"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to search in rotated sorted array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Modified binary search: find which half is sorted by comparing mid with left. If target in sorted half, search there, else search other half. Time O(log n), space O(1).",
+    "keywords": ["rotated array", "binary search", "search"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the minimum in rotated sorted array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Binary search: compare mid with right. If mid < right, min in left half (including mid), else in right half. Time O(log n), space O(1).",
+    "keywords": ["rotated array", "minimum", "binary search"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to compute the square root of a number.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Math",
+    "difficulty": "medium",
+    "idealAnswer": "Binary search: search in range [0, n]. For mid, if mid*mid == n, return mid. If mid*mid < n, search right half, else left half. Time O(log n), space O(1).",
+    "keywords": ["square root", "binary search"],
+    "tags": ["math", "medium"]
+  },
+  {
+    "text": "Find all prime numbers up to n (Sieve of Eratosthenes).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Math",
+    "difficulty": "medium",
+    "idealAnswer": "Create boolean array of size n+1, initialize all true. Start from 2, mark all multiples as false. Move to next true number, repeat. Time O(n log log n), space O(n).",
+    "keywords": ["primes", "sieve", "Eratosthenes"],
+    "tags": ["math", "medium"]
+  },
+  {
+    "text": "Implement a function to check if a number is prime.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Math",
+    "difficulty": "easy",
+    "idealAnswer": "Check divisibility from 2 to √n. If any divisor found, not prime. Handle n <= 1 as not prime, 2 and 3 as prime. Time O(√n), space O(1).",
+    "keywords": ["prime", "divisibility", "square root"],
+    "tags": ["math", "easy"]
+  },
+  {
+    "text": "Implement a function to calculate power (x^n).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Math",
+    "difficulty": "medium",
+    "idealAnswer": "Fast exponentiation: if n even, result = power(x, n/2)². If n odd, result = x * power(x, n-1). Handle negative n. Time O(log n), space O(log n).",
+    "keywords": ["power", "fast exponentiation"],
+    "tags": ["math", "medium"]
+  },
+  {
+    "text": "Find the GCD of two numbers (Euclidean algorithm).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Math",
+    "difficulty": "easy",
+    "idealAnswer": "Euclidean algorithm: gcd(a, b) = gcd(b, a % b). Base case: if b == 0, return a. Recursively apply until b becomes 0. Time O(log min(a,b)), space O(log min(a,b)).",
+    "keywords": ["GCD", "Euclidean", "recursive"],
+    "tags": ["math", "easy"]
+  },
+  {
+    "text": "Implement a function to generate all valid parentheses combinations.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: track open and close counts. Can add '(' if open < n, can add ')' if close < open. When length = 2n, add to result. Time O(4ⁿ/√n), space O(n).",
+    "keywords": ["parentheses", "backtracking", "Catalan"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Find the edit distance between two strings (Levenshtein).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: dp[i][j] = min operations to convert s[0:i] to t[0:j]. If chars equal, dp[i][j] = dp[i-1][j-1]. Else: dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]). Time O(m*n).",
+    "keywords": ["edit distance", "Levenshtein", "dynamic programming"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Find the longest palindromic substring.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Strings",
+    "difficulty": "medium",
+    "idealAnswer": "Expand around center: for each index, expand outward while palindrome. Handle odd and even length palindromes. Track max length. Time O(n²), space O(1).",
+    "keywords": ["palindrome", "substring", "expand"],
+    "tags": ["strings", "medium"]
+  },
+  {
+    "text": "Find the median of two sorted arrays.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "hard",
+    "idealAnswer": "Binary search on smaller array: partition both arrays such that elements on left are <= elements on right. Check if partition is valid. Time O(log(min(m,n))), space O(1).",
+    "keywords": ["median", "binary search", "sorted arrays"],
+    "tags": ["arrays", "hard"]
+  },
+  {
+    "text": "Implement a function to solve the trapping rain water problem.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "hard",
+    "idealAnswer": "Two-pointer approach: maintain left_max and right_max. Move pointer with smaller max. Water at position = min(left_max, right_max) - height[i]. Time O(n), space O(1).",
+    "keywords": ["trapping rain water", "two pointers"],
+    "tags": ["arrays", "hard"]
+  },
+  {
+    "text": "Find the longest consecutive sequence in an array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Use hash set: add all elements to set. For each element, if element-1 not in set, it's sequence start. Count consecutive elements. Track max length. Time O(n), space O(n).",
+    "keywords": ["consecutive sequence", "hash set"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement LRU cache.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Design",
+    "difficulty": "medium",
+    "idealAnswer": "Hash map + doubly linked list: map key to node for O(1) access. List maintains order (most recent at head). On get, move to head. On put, add to head, if capacity exceeded, remove tail. Time O(1).",
+    "keywords": ["LRU cache", "hash map", "linked list"],
+    "tags": ["design", "medium"]
+  },
+  {
+    "text": "Find the sliding window maximum.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Deque",
+    "difficulty": "hard",
+    "idealAnswer": "Deque storing indices: maintain decreasing order. For each element, remove indices outside window, remove smaller elements from back, add current index. Front is max. Time O(n), space O(k).",
+    "keywords": ["sliding window max", "deque", "monotonic"],
+    "tags": ["deque", "hard"]
+  },
+  {
+    "text": "Implement a function to design a median finder.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Heap",
+    "difficulty": "hard",
+    "idealAnswer": "Two heaps: max-heap for lower half, min-heap for upper half. Balance sizes. Median = max-heap top if odd, average of tops if even. Time O(log n) per operation, space O(n).",
+    "keywords": ["median finder", "two heaps", "stream"],
+    "tags": ["heap", "hard"]
+  },
+  {
+    "text": "Find the k closest points to origin.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Heap",
+    "difficulty": "medium",
+    "idealAnswer": "Max-heap of size k: calculate distance for each point, push to heap, if size > k pop max. At end, heap contains k closest. Time O(n log k), space O(k).",
+    "keywords": ["k closest", "heap", "distance"],
+    "tags": ["heap", "medium"]
+  },
+  {
+    "text": "Implement a function to find top k frequent elements.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Heap",
+    "difficulty": "medium",
+    "idealAnswer": "Count frequencies with hash map. Use min-heap of size k: push (freq, element), if size > k pop min. At end, heap contains k most frequent. Time O(n + n log k).",
+    "keywords": ["top k frequent", "heap", "frequency"],
+    "tags": ["heap", "medium"]
+  },
+  {
+    "text": "Find the intersection of two linked lists.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "easy",
+    "idealAnswer": "Two-pointer approach: get lengths of both lists. Advance pointer of longer list by difference. Move both pointers together until they meet. Time O(n+m), space O(1).",
+    "keywords": ["intersection", "linked list", "two pointers"],
+    "tags": ["linked lists", "easy"]
+  },
+  {
+    "text": "Implement a function to reverse nodes in k-group in linked list.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Linked Lists",
+    "difficulty": "hard",
+    "idealAnswer": "Reverse k nodes at a time, connect to previous group. Use dummy head. Count k nodes, reverse them, connect. If less than k nodes at end, don't reverse. Time O(n), space O(1).",
+    "keywords": ["reverse k-group", "linked list", "reverse"],
+    "tags": ["linked lists", "hard"]
+  },
+  {
+    "text": "Find the merge intervals (overlapping intervals).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Sort intervals by start time. Initialize result with first interval. For each interval, if overlaps with last in result, merge by updating end. Else, add to result. Time O(n log n), space O(n).",
+    "keywords": ["merge intervals", "sorting", "overlapping"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the palindrome partitioning.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: for each position, try all substrings. If substring is palindrome, add to partition and recurse. Use DP to precompute palindrome checks. Time O(n * 2^n), space O(n²).",
+    "keywords": ["palindrome partitioning", "backtracking", "DP"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Find the combination sum (candidates can be used unlimited times).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: sort candidates, for each position, try including current number and recurse on same index. When remaining == 0, add combination. Time O(2^target), space O(target).",
+    "keywords": ["combination sum", "backtracking", "unlimited"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Find all subsets (power set) of a set.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: for each position, either include or exclude current element, recurse on next position. When reach end, add current subset. Time O(2^n), space O(n).",
+    "keywords": ["subsets", "power set", "backtracking"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Find the permutation sequence (kth permutation of n numbers).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Math",
+    "difficulty": "medium",
+    "idealAnswer": "Factorial number system: for each position, calculate which number to place based on k and remaining factorials. Remove used number, update k. Time O(n²), space O(n).",
+    "keywords": ["kth permutation", "factorial", "math"],
+    "tags": ["math", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the next permutation.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Find first decreasing element from right (pivot). Find element just larger than pivot from right. Swap them. Reverse suffix after pivot. Time O(n), space O(1).",
+    "keywords": ["next permutation", "in-place", "lexicographic"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the spiral matrix (traverse in spiral order).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Four boundaries: top, bottom, left, right. Traverse right, increment top. Traverse down, decrement right. Traverse left, decrement bottom. Traverse up, increment left. Time O(m*n), space O(1).",
+    "keywords": ["spiral matrix", "boundaries", "traversal"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the spiral matrix II (generate n x n spiral with 1 to n²).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Similar to spiral matrix traversal but filling values. Initialize n x n matrix with zeros. Use same boundary approach, fill with incrementing counter. Time O(n²), space O(n²).",
+    "keywords": ["spiral matrix II", "generate", "fill"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to rotate an image (n x n matrix) 90 degrees.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Transpose matrix, then reverse each row. In-place, O(1) extra space. Time O(n²). For non-square, need extra space. Clockwise vs counter-clockwise differs in order.",
+    "keywords": ["rotate image", "transpose", "in-place"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the set matrix zeroes (set entire row and column to 0 if element is 0).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Use first row and column as markers (O(1) space). First pass: mark zero positions. Second pass: use marks to set zeros. Handle first row/col separately. Time O(m*n), space O(1).",
+    "keywords": ["set matrix zeroes", "in-place", "markers"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the game of life.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Use two bits per cell: current state in bit 0, next state in bit 1. For each cell, count live neighbors, set next state. Second pass: shift bit 1 to bit 0. Time O(m*n), space O(1).",
+    "keywords": ["game of life", "in-place", "cellular automaton"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the search a 2D matrix II (sorted rows and columns).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Start from top-right corner: if current > target, move left; if current < target, move down. Time O(m + n), space O(1). Can also start from bottom-left.",
+    "keywords": ["search 2D matrix", "sorted", "staircase"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the sudoku using backtracking.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "hard",
+    "idealAnswer": "Find empty cell, try digits 1-9. Check if valid (row, column, 3x3 box). If valid, place digit and recurse. If fails, backtrack. Time O(9^(n*n)), space O(n*n).",
+    "keywords": ["Sudoku", "backtracking", "constraint satisfaction"],
+    "tags": ["backtracking", "hard"]
+  },
+  {
+    "text": "Find the word search (word exists in grid).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "DFS from each cell matching first character. Mark visited cells, explore 4 directions recursively. Backtrack by unmarking. Time O(m*n*4^L), space O(L).",
+    "keywords": ["word search", "DFS", "backtracking", "grid"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the N-Queens problem.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "hard",
+    "idealAnswer": "Place queens row by row, check if position is safe. Use arrays to track attacked columns and diagonals. Backtrack when no safe position. Time O(N!), space O(N).",
+    "keywords": ["N-Queens", "backtracking", "recursion"],
+    "tags": ["backtracking", "hard"]
+  },
+  {
+    "text": "Find the N-Queens II (count solutions, don't return boards).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "hard",
+    "idealAnswer": "Same backtracking as N-Queens but only count solutions. Use bit manipulation for efficiency. Count valid configurations. Time O(N!), space O(N).",
+    "keywords": ["N-Queens II", "count", "bit manipulation"],
+    "tags": ["backtracking", "hard"]
+  },
+  {
+    "text": "Implement a function to solve the restore IP addresses.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: try placing dots at valid positions. Each segment must be 0-255, no leading zeros unless single digit. Need exactly 4 segments. Time O(3^4), space O(4).",
+    "keywords": ["restore IP", "backtracking", "segments"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Find the generate parentheses (n pairs of valid parentheses).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: track open and close counts. Can add '(' if open < n, can add ')' if close < open. When length = 2n, add to result. Time O(4^n/√n), space O(n).",
+    "keywords": ["generate parentheses", "backtracking", "Catalan"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the letter combinations of phone number.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: map digits to letters. For each position, try all possible letters for that digit, recurse on next position. Time O(4^n * n), space O(n).",
+    "keywords": ["letter combinations", "phone", "backtracking"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Find the combination sum III (k numbers that sum to n, 1-9, unique).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Backtracking",
+    "difficulty": "medium",
+    "idealAnswer": "Backtracking: try numbers from 1 to 9, each used at most once. Track current sum and count. When sum == n and count == k, add to result. Time O(C(9,k)), space O(k).",
+    "keywords": ["combination sum III", "backtracking", "unique"],
+    "tags": ["backtracking", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the palindrome partitioning II (minimum cuts).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "hard",
+    "idealAnswer": "DP: dp[i] = min cuts for s[0:i]. Precompute palindrome table isPal[i][j]. For each i, try all j < i where isPal[j][i-1], dp[i] = min(dp[i], dp[j] + 1). Time O(n²), space O(n²).",
+    "keywords": ["palindrome partitioning II", "DP", "minimum cuts"],
+    "tags": ["dynamic programming", "hard"]
+  },
+  {
+    "text": "Find the unique binary search trees (count of unique BSTs with n nodes).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "Catalan number: dp[n] = sum(dp[i] * dp[n-1-i]) for i from 0 to n-1. Each node as root, left subtree with i nodes, right with n-1-i nodes. dp[0] = 1. Time O(n²), space O(n).",
+    "keywords": ["unique BST", "Catalan", "dynamic programming"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the interleaving string (s3 formed by interleaving s1 and s2).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: dp[i][j] = true if s1[0:i] and s2[0:j] can form s3[0:i+j]. If s1[i-1] == s3[i+j-1] and dp[i-1][j], or s2[j-1] == s3[i+j-1] and dp[i][j-1], then dp[i][j] = true. Time O(m*n), space O(m*n).",
+    "keywords": ["interleaving", "DP", "string"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Find the edit distance between two strings (Levenshtein).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: dp[i][j] = min operations to convert s[0:i] to t[0:j]. If chars equal, dp[i][j] = dp[i-1][j-1]. Else: dp[i][j] = 1 + min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]). Time O(m*n), space O(m*n).",
+    "keywords": ["edit distance", "Levenshtein", "dynamic programming"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the distinct subsequences (number of distinct subsequences).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "hard",
+    "idealAnswer": "DP: dp[i][j] = number of distinct subsequences of s[0:i] that equal t[0:j]. If chars match, dp[i][j] = dp[i-1][j] + dp[i-1][j-1]. Else dp[i][j] = dp[i-1][j]. Base: dp[i][0] = 1. Time O(m*n), space O(n).",
+    "keywords": ["distinct subsequences", "DP", "count"],
+    "tags": ["dynamic programming", "hard"]
+  },
+  {
+    "text": "Find the longest palindromic subsequence (not substring).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "DP: dp[i][j] = LPS length for s[i:j+1]. If s[i] == s[j], dp[i][j] = 2 + dp[i+1][j-1]. Else dp[i][j] = max(dp[i+1][j], dp[i][j-1]). Time O(n²), space O(n²).",
+    "keywords": ["LPS", "subsequence", "DP"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Find the shortest common supersequence.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "hard",
+    "idealAnswer": "First find LCS using DP. Then construct SCS by merging both strings, including LCS only once. Time O(m*n) for LCS + O(m+n) for construction, space O(m*n). Length = m + n - LCS length.",
+    "keywords": ["SCS", "LCS", "merge"],
+    "tags": ["dynamic programming", "hard"]
+  },
+  {
+    "text": "Find the minimum number of deletions to make two strings equal.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Dynamic Programming",
+    "difficulty": "medium",
+    "idealAnswer": "Use LCS: minimum deletions = (len(s1) - LCS) + (len(s2) - LCS). Delete characters not in LCS from both strings. Time O(m*n) for LCS, space O(min(m,n)).",
+    "keywords": ["deletions", "LCS", "equal strings"],
+    "tags": ["dynamic programming", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the repeated DNA sequences.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Hash",
+    "difficulty": "medium",
+    "idealAnswer": "Sliding window of size 10: use hash map to count each 10-letter sequence. Add sequences with count > 1 to result. Optimize with rolling hash or encoding. Time O(n), space O(n).",
+    "keywords": ["repeated DNA", "sliding window", "hash"],
+    "tags": ["hash", "medium"]
+  },
+  {
+    "text": "Find the longest consecutive sequence in an array (unsorted).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Use hash set: add all elements to set. For each element, if element-1 not in set, it's sequence start. Count consecutive elements. Track max length. Time O(n), space O(n).",
+    "keywords": ["consecutive sequence", "hash set", "array"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the summary ranges.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Iterate through sorted array, track start of current range. When find gap (nums[i] != nums[i-1] + 1), add range to result. Handle single element vs range. Time O(n), space O(1).",
+    "keywords": ["summary ranges", "sorted", "condense"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the missing ranges in sorted array (lower and upper bounds).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Iterate through array, track expected number. If nums[i] != expected, add missing range. Update expected = nums[i] + 1. After loop, handle range from last element to upper. Time O(n), space O(1).",
+    "keywords": ["missing ranges", "sorted", "bounds"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the missing number (0 to n, one missing).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "XOR approach: XOR all numbers from 0 to n with array elements. Result is missing number. Time O(n), space O(1). Sum formula: expected sum - actual sum = missing.",
+    "keywords": ["missing number", "XOR", "sum"],
+    "tags": ["arrays", "easy"]
+  },
+  {
+    "text": "Find the first missing positive (smallest positive integer not in array).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "hard",
+    "idealAnswer": "Place each number in its correct index (nums[i] should be at index nums[i]-1 if in range). Then scan to find first index where nums[i] != i+1. Time O(n), space O(1).",
+    "keywords": ["first missing positive", "in-place", "cyclic sort"],
+    "tags": ["arrays", "hard"]
+  },
+  {
+    "text": "Implement a function to solve the find all numbers disappeared in array.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "In-place marking: for each number, mark index abs(num)-1 as negative. Numbers whose indices remain positive are missing. Time O(n), space O(1).",
+    "keywords": ["disappeared numbers", "in-place", "marking"],
+    "tags": ["arrays", "easy"]
+  },
+  {
+    "text": "Find the set matrix zeroes (set entire row and column to 0 if element is 0).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Use first row and column as markers (O(1) space). First pass: mark zero positions. Second pass: use marks to set zeros. Handle first row/col separately. Time O(m*n), space O(1).",
+    "keywords": ["set matrix zeroes", "in-place", "markers"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the game of life.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Use two bits per cell: current state in bit 0, next state in bit 1. For each cell, count live neighbors, set next state. Second pass: shift bit 1 to bit 0. Time O(m*n), space O(1).",
+    "keywords": ["game of life", "in-place", "cellular automaton"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the search a 2D matrix II (rows and columns sorted).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Start from top-right corner: if current > target, move left; if current < target, move down. Time O(m + n), space O(1). Can also start from bottom-left.",
+    "keywords": ["search 2D matrix", "sorted", "staircase"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the search a 2D matrix (sorted rows, first of each row sorted).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "medium",
+    "idealAnswer": "Binary search on first column to find row, then binary search on that row. Time O(log m + log n), space O(1). Or treat as 1D sorted array and binary search with index conversion.",
+    "keywords": ["search 2D matrix", "binary search", "sorted"],
+    "tags": ["arrays", "medium"]
+  },
+  {
+    "text": "Find the search insert position (where to insert in sorted array).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Arrays",
+    "difficulty": "easy",
+    "idealAnswer": "Binary search: if target found, return index. If not found, return left pointer (insertion position). Standard binary search with early exit on match. Time O(log n), space O(1).",
+    "keywords": ["search insert", "binary search", "sorted"],
+    "tags": ["arrays", "easy"]
+  },
+  {
+    "text": "Implement a function to solve the count of smaller numbers after self.",
+    "type": "dsa",
+    "company": null,
+    "domain": "Binary Indexed Tree",
+    "difficulty": "hard",
+    "idealAnswer": "Process from right to left. Use BIT or segment tree to count numbers seen so far. For each number, query count of numbers smaller than current. Coordinate compression for large values. Time O(n log n), space O(n).",
+    "keywords": ["smaller numbers", "BIT", "merge sort"],
+    "tags": ["BIT", "hard"]
+  },
+  {
+    "text": "Find the count of range sum (sum of elements in range [i, j] <= upper).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Binary Indexed Tree",
+    "difficulty": "hard",
+    "idealAnswer": "Prefix sum + BIT: compute prefix sums, for each prefix sum, count number of previous prefix sums >= prefix - upper. Use BIT for efficient counting. Time O(n log n), space O(n).",
+    "keywords": ["range sum", "BIT", "prefix sum"],
+    "tags": ["BIT", "hard"]
+  },
+  {
+    "text": "Implement a function to solve the reverse pairs (i < j and nums[i] > 2*nums[j]).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Binary Indexed Tree",
+    "difficulty": "hard",
+    "idealAnswer": "Process from right to left, use BIT to count numbers > 2*current. Coordinate compression for large values. Time O(n log n), space O(n). Merge sort approach also O(n log n).",
+    "keywords": ["reverse pairs", "BIT", "merge sort"],
+    "tags": ["BIT", "hard"]
+  },
+  {
+    "text": "Find the number of islands II (dynamic island addition/removal).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Union Find",
+    "difficulty": "hard",
+    "idealAnswer": "Union-Find with path compression: for each land addition, initialize as new island, check 4 neighbors, union if land. Count decreases with each union. Time O(k * α(n)), space O(m*n).",
+    "keywords": ["islands II", "union find", "dynamic"],
+    "tags": ["union find", "hard"]
+  },
+  {
+    "text": "Implement a function to solve the redundant connection (find edge to remove to make tree).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Union Find",
+    "difficulty": "medium",
+    "idealAnswer": "Union-Find: iterate edges, union nodes. If two nodes already connected, this edge creates cycle, return it. Return last such edge found. Time O(n α(n)), space O(n).",
+    "keywords": ["redundant connection", "union find", "cycle"],
+    "tags": ["union find", "medium"]
+  },
+  {
+    "text": "Find the redundant connection II (directed graph, remove edge to make tree).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Union Find",
+    "difficulty": "hard",
+    "idealAnswer": "Union-Find with parent tracking: build graph, find node with two parents. Try removing each incoming edge, check if graph becomes tree. Time O(n α(n)), space O(n).",
+    "keywords": ["redundant connection II", "directed", "union find"],
+    "tags": ["union find", "hard"]
+  },
+  {
+    "text": "Implement a function to solve the accounts merge (merge accounts with same email).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Union Find",
+    "difficulty": "medium",
+    "idealAnswer": "Union-Find: map emails to accounts, union accounts sharing emails. Group accounts by root, merge emails, sort, return. Time O(n log n) for sorting, space O(n).",
+    "keywords": ["accounts merge", "union find", "email"],
+    "tags": ["union find", "medium"]
+  },
+  {
+    "text": "Find the number of provinces (connected components in graph).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Union Find",
+    "difficulty": "medium",
+    "idealAnswer": "Union-Find: initialize each city as separate set. For each connection, union the cities. Count number of unique roots (provinces). Time O(n² α(n)), space O(n).",
+    "keywords": ["provinces", "union find", "connected components"],
+    "tags": ["union find", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the longest consecutive sequence (using Union Find).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Union Find",
+    "difficulty": "medium",
+    "idealAnswer": "Union-Find with size tracking: for each number, union with num-1 and num+1 if they exist. Track size of each set. Return max size. Time O(n α(n)), space O(n).",
+    "keywords": ["consecutive sequence", "union find", "size"],
+    "tags": ["union find", "medium"]
+  },
+  {
+    "text": "Find the equations of possible trust (graph trust propagation).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph/DFS",
+    "difficulty": "medium",
+    "idealAnswer": "DFS with trust values: build adjacency list with weights. For each query, DFS from source to target, multiply trust values along path. Use memoization to cache results. Time O(n + q * n), space O(n).",
+    "keywords": ["equations of trust", "DFS", "graph"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the clone graph (deep copy of undirected graph).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "medium",
+    "idealAnswer": "BFS/DFS with hash map: map original nodes to cloned nodes. Start from given node, clone neighbors recursively/iteratively. Use map to avoid cloning same node twice. Time O(V+E), space O(V).",
+    "keywords": ["clone graph", "BFS", "hash map"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Find the course schedule (can finish all courses with prerequisites).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "medium",
+    "idealAnswer": "Topological sort: build adjacency list and in-degree count. BFS (Kahn's): queue nodes with in-degree 0, remove edges, add to queue. If processed count == numCourses, return true. Time O(V+E), space O(V+E).",
+    "keywords": ["course schedule", "topological sort", "cycle"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the alien dictionary (order of characters).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "hard",
+    "idealAnswer": "Build graph from word comparisons: edge from char before to char after. Topological sort to get order. Handle cycles (invalid order). Time O(C) where C is total characters, space O(C).",
+    "keywords": ["alien dictionary", "topological sort", "graph"],
+    "tags": ["graph", "hard"]
+  },
+  {
+    "text": "Find the sequence reconstruction (check if sequence is unique topological order).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "medium",
+    "idealAnswer": "Build graph from org sequences, get topological order. Check if given sequence matches topological order and each position has only one possible next node. Time O(n + total sequence length), space O(n).",
+    "keywords": ["sequence reconstruction", "topological sort", "unique"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Implement a function to solve the course schedule II (order to finish courses).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph",
+    "difficulty": "medium",
+    "idealAnswer": "Topological sort: same as course schedule but return order. BFS: add nodes to result in order of processing. DFS: add to result in reverse post-order. If cycle exists, return empty array. Time O(V+E), space O(V+E).",
+    "keywords": ["course schedule II", "topological order", "BFS"],
+    "tags": ["graph", "medium"]
+  },
+  {
+    "text": "Find the minimum height trees (roots that minimize tree height).",
+    "type": "dsa",
+    "company": null,
+    "domain": "Graph/BFS",
+    "difficulty": "medium",
+    "idealAnswer": "BFS leaf trimming: repeatedly remove leaf nodes until 1 or 2 nodes remain. These are centroids (min height roots). Time O(n), space O(n). Alternative: find longest path, middle nodes are centroids.",
+    "keywords": ["minimum height trees", "centroids", "BFS"],
+    "tags": ["graph", "medium"]
+  }
+]
