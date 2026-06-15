@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 const questionSchema = new mongoose.Schema({
   text: { type: String, required: true, trim: true },
   type: { type: String, enum: ['hr', 'technical', 'dsa', 'company-specific'], required: true },
-  company: { type: String, enum: ['amazon', 'microsoft', 'deshaw', null], default: null },
+  company: { type: String, enum: ['amazon', 'microsoft', 'deshaw', 'google', 'meta', 'apple', 'netflix', 'uber', 'airbnb', 'twitter', 'linkedin', 'stripe', 'spotify', 'salesforce', 'slack', 'dropbox', 'zoom', 'coinbase', 'doordash', 'tiktok', 'roblox', 'shopify', 'square', 'instacart', 'pinterest', 'robinhood', 'discord', null], default: null },
   domain: { type: String, trim: true },
   difficulty: { type: String, enum: ['easy', 'medium', 'hard'], default: 'medium' },
   idealAnswer: { type: String, default: '' },

@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const useSpeechRecognition = () => {
   const [transcript, setTranscript] = useState("");
   const [isListening, setIsListening] = useState(false);
   const [supported, setSupported] = useState(false);
   const [error, setError] = useState(null);
+  const recognitionRef = useRef(null);
 
   useEffect(() => {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -35,8 +36,8 @@ const useSpeechRecognition = () => {
       setTranscript(transcriptText);
     };
 
-    recognition.onerror = () => {
-      setError("Speech recognition encountered an error.");
+    recognition.onerror = (event) => {
+      setError(`Speech recognition error: ${event.error}`);
       recognition.stop();
       setIsListening(false);
     };
@@ -46,15 +47,16 @@ const useSpeechRecognition = () => {
     };
 
     recognition.start();
+    recognitionRef.current = recognition;
     setError(null);
     setIsListening(true);
   };
 
   const stop = () => {
-    const Recognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!Recognition) return;
-    const recognition = new Recognition();
-    recognition.stop();
+    if (recognitionRef.current) {
+      recognitionRef.current.stop();
+      recognitionRef.current = null;
+    }
     setIsListening(false);
   };
 

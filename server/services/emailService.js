@@ -21,7 +21,8 @@ const createTransporter = () => {
 export const sendLoginOtpEmail = async ({ to, name, otp }) => {
   const transporter = createTransporter();
   if (!transporter) {
-    throw new Error('Email is not configured');
+    console.log(`[EMAIL NOT CONFIGURED] Login OTP for ${to}: ${otp}`);
+    return;
   }
 
   await transporter.sendMail({
@@ -43,7 +44,8 @@ export const sendLoginOtpEmail = async ({ to, name, otp }) => {
 export const sendRegisterOtpEmail = async ({ to, name, otp }) => {
   const transporter = createTransporter();
   if (!transporter) {
-    throw new Error('Email is not configured');
+    console.log(`[EMAIL NOT CONFIGURED] Register OTP for ${to}: ${otp}`);
+    return;
   }
 
   await transporter.sendMail({

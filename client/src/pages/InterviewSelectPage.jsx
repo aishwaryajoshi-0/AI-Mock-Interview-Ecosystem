@@ -44,11 +44,10 @@ const InterviewSelectPage = () => {
 
     try {
       const data = {
-        type: selectedType,
+        domain: selectedType === 'company-specific' ? 'General' : selectedType,
+        totalCount: numQuestions,
         company: selectedType === 'company-specific' ? selectedCompany : null,
-        difficulty,
-        numQuestions,
-        domain: selectedType === 'company-specific' ? 'General' : selectedType
+        role: null
       };
 
       const response = await interviewAPI.startSession(data);

@@ -15,7 +15,7 @@ export const progressAPI = {
 
   // Get detailed feedback for a specific session
   getSessionFeedback: async (sessionId) => {
-    const response = await axios.get(`${API_BASE_URL}/progress/session/${sessionId}/feedback`, {
+    const response = await axios.get(`${API_BASE_URL}/progress/session/${sessionId}`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('mockInterviewToken')}`
       }

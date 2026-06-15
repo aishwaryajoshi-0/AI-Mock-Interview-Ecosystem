@@ -1,14 +1,18 @@
 import mongoose from 'mongoose';
 import Question from '../models/Question.js';
 import { env } from '../config/env.js';
-import hrQuestions from './data/hrQuestions.json';
-import technicalQuestions from './data/technicalQuestions.json';
-import dsaQuestions from './data/dsaQuestions.json';
-import companyQuestions from './data/companyQuestions.json';
+import hrQuestions from './data/hrQuestions.json' with { type: 'json' };
+import technicalQuestions from './data/technicalQuestions.json' with { type: 'json' };
+import dsaQuestions from './data/dsaQuestions.json' with { type: 'json' };
+import companyQuestions from './data/companyQuestions.json' with { type: 'json' };
 
 const seedQuestions = async () => {
   try {
-    await mongoose.connect(env.MONGODB_URI);
+    const mongoUri = process.env.MONGO_URI || process.env.MONGODB_URI;
+    if (!mongoUri) {
+      throw new Error('MONGODB_URI or MONGO_URI environment variable is not set');
+    }
+    await mongoose.connect(mongoUri);
     console.log('Connected to MongoDB');
 
     // Clear existing questions

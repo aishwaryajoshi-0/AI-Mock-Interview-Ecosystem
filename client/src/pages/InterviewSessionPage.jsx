@@ -49,7 +49,7 @@ const InterviewSessionPage = () => {
       const response = await interviewAPI.getSessionById(sessionId);
       if (response.success) {
         setSession(response.data.session);
-        setQuestions(response.data.session.questions || []);
+        setQuestions(response.data.questions || []);
         setLoading(false);
       }
     } catch (error) {

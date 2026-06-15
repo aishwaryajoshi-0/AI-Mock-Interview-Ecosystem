@@ -73,7 +73,7 @@ export const startSession = async (req, res, next) => {
     const session = await Session.create({
       userId,
       domain,
-      questions: selectedQuestions.map((question) => question?._id?.toString?.() || question?.toString?.()),
+      questions: selectedQuestions.map((question) => question._id),
       status: 'ongoing',
       targetCompany: company || null,
       targetRole: role || null,
@@ -196,7 +196,9 @@ export const getFollowUp = async (req, res, next) => {
  */
 export const getSessionById = async (req, res, next) => {
   try {
-    const session = await Session.findById(req.params.id).populate('userId', 'name email');
+    const session = await Session.findById(req.params.id)
+      .populate('userId', 'name email')
+      .populate('questions');
     if (!session) {
       return apiError(res, 'Session not found', 404);
     }
@@ -205,7 +207,7 @@ export const getSessionById = async (req, res, next) => {
       return apiError(res, 'Unauthorized access', 403);
     }
 
-    return apiSuccess(res, session, 'Session retrieved successfully');
+    return apiSuccess(res, { session, questions: session.questions }, 'Session retrieved successfully');
   } catch (error) {
     return next(error);
   }
